@@ -128,8 +128,10 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1 minmax(100%);
-    margin: 100px auto;
+    justify-content: center;
+    margin: auto;
     width: 100%;
+    max-width: 100%;
 
 }
 
@@ -137,55 +139,68 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     width: 90%;
+    max-width: 100%;
+    height: auto;
     margin: 15px auto;
-    padding: 3px;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0.979);
     border: 3px solid rgb(33, 34, 34);
     border-radius: 10px;
     box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.637);
 }
 
-.grid-producto-index form {
+.calidad {
     display: flex;
-    justify-content: right;
-    position: relative;
-    margin-right: 0;
-    margin-left: 80px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 5px;
 
 }
 
 
-.clasificacion-producto-1 label {
-    color: rgb(220, 235, 10);
-    justify-content: right;
-    font-size: 30px;
-
+.neumatico-descripcion {
+    width: 100%;
 }
 
-.clasificacion-producto-1 input {
-    display: none;
-}
+
+
 
 .grid-producto-index .img4-index {
-    width: 220px;
-    height: 220px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
     margin: auto;
+    background-color: rgb(248, 242, 242);
 
+}
+
+.img4-index img {
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
 }
 
 .descripcion-producto {
-    width: 220px;
+    width: 100%;
+    margin: 15px auto;
+    height: 70px;
     background-color: rgb(95, 94, 94);
     border: 3px solid white;
     border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
 }
 
 .descripcion-producto h5:nth-child(1) {
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     background-color: rgba(44, 49, 49, 0.08);
     text-align: center;
 
@@ -196,10 +211,136 @@ header {
     font-family: sans-serif;
     color: blanchedalmond;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 3px;
 
 }
+
+
+@media screen and (max-width: 1250px) {
+    .container-grid-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1 minmax(100%);
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .grid-producto-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 530px;
+        margin: 15px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.979);
+        border: 3px solid rgb(33, 34, 34);
+        border-radius: 10px;
+        box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.637);
+    }
+
+    .calidad {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        min-width: 100%;
+        margin: 5px;
+
+    }
+
+    .neumatico-descripcion {
+        width: 100%;
+
+    }
+
+    .grid-producto-index .img4-index {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        margin: 15px auto;
+        background-color: rgb(248, 242, 242);
+
+    }
+
+    .img4-index img {
+        width: 80%;
+        max-width: 400px;
+        height: 200px;
+        margin: 15px auto;
+    }
+
+    .descripcion-producto {
+        width: 100%;
+        margin: 15px auto;
+        height: 70px;
+        background-color: rgb(95, 94, 94);
+        border: 3px solid white;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+
+
+    }
+
+    .descripcion-producto h5:nth-child(1) {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: rgba(44, 49, 49, 0.08);
+        text-align: center;
+
+
+    }
+
+    .descripcion-producto h5:nth-child(2) {
+        font-family: sans-serif;
+        color: blanchedalmond;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-grid-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1 minmax(100%);
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .grid-producto-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        min-width: 400px;
+        height: 530px;
+        margin: 15px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.979);
+        border: 3px solid rgb(33, 34, 34);
+        border-radius: 10px;
+        box-shadow: 5px 10px 5px 1px rgba(0, 0, 0, 0.637);
+    }
+}
+
 
 /*-------FIN MAIN INDEX-------------*/
 
@@ -407,28 +548,21 @@ footer {
 
 
 
-.container-grid-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1 minmax(100%);
+.container-footer {
+    display: flex;
+    flex-direction: row;
     margin: auto;
     min-width: 80%;
     max-width: 100%;
+    padding: 15px;
 
 }
 
-.grid-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: 15px auto;
-    padding: 3px;
 
-}
 
 .ubicacion {
     margin: 14px auto;
+    padding: 30px;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -461,7 +595,8 @@ footer {
 
 .contacto {
     width: 100%;
-    margin: 5px auto;
+    margin: 14px auto;
+    padding: 20px;
     border: none;
     background: none;
     text-align: center;
@@ -498,7 +633,8 @@ footer {
 
 .horario {
     width: 100%;
-    margin: 5px auto;
+    margin: 14px auto;
+    padding: 20px;
 }
 
 .horario img {
@@ -526,10 +662,11 @@ footer {
 }
 
 .redes {
-    margin: 30px auto;
+    margin: 5px auto;
     width: 100%;
     display: flex;
     justify-content: right;
+    align-items: baseline;
 }
 
 .icon-redes {
@@ -561,5 +698,120 @@ footer {
     text-align: center;
     font-family: sans-serif;
 }
+
+@media screen and (max-width: 1060px) {
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+
+    .footer-flex .ubicacion {
+        width: 100%;
+    }
+
+    .ubicacion {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    .contacto {
+        width: 50%;
+        margin: auto;
+        border: none;
+        background: none;
+        text-align: center;
+
+    }
+
+    .horario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .horario img {
+        display: none;
+    }
+
+    .titulos-horarios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        flex-wrap: wrap;
+        padding: 5px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .horario h3 {
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 1px;
+        font-weight: 100;
+        font-size: 30px;
+        color: rgb(189, 186, 186);
+        text-align: center;
+    }
+
+    .horario h5 {
+        width: 100%;
+        margin: 5px auto;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        font-weight: 100;
+        font-size: 20px;
+        color: rgb(189, 186, 186);
+        text-align: center;
+
+    }
+
+    .redes {
+        margin: 5px auto;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: baseline;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .contacto {
+        width: 100%;
+        margin: auto;
+        border: none;
+        background: none;
+        text-align: center;
+
+    }
+
+
+
+}
+
+
 
 /*-----------------FIN FOOTER-------------------*/
