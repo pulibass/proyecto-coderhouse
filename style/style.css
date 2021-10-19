@@ -140,10 +140,16 @@ header label {
         background: #0575E6;
         background: -webkit-linear-gradient(to right, #021B79, #0575E6);
         background: linear-gradient(to right, #021B79, #0575E6);
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
+
     }
 
     nav ul {
         margin-top: -10px;
+    }
+
+    nav li {
+        margin-left: 20px;
     }
 
 
@@ -362,6 +368,10 @@ header label {
 
 
 @media screen and (max-width: 1250px) {
+    .main-index {
+        margin-top: 70px;
+    }
+
     .container-grid-index {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -968,12 +978,25 @@ footer {
     }
 
     .horario {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin: 5px auto;
         border: none;
         background: none;
         text-align: center;
     }
+
+    .titulos-horarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+        flex-wrap: wrap;
+        padding: 5px;
+        width: 80%;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
