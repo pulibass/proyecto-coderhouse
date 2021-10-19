@@ -330,6 +330,8 @@ header label {
         width: 80%;
         height: 360px;
         margin: 15px auto;
+        box-shadow: 0px 0px 20px grey;
+
     }
 
     .calidad {
@@ -409,6 +411,8 @@ header label {
         width: 30%;
         min-width: 250px;
         height: 320px;
+        box-shadow: 0px 0px 20px grey;
+
     }
 
     .calidad {
