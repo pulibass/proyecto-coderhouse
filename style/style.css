@@ -22,19 +22,16 @@ header {
     height: 60px;
     display: flex;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
-    background: #BBD2C5;
-    background: -webkit-linear-gradient(to left, #292E49, #536976, #BBD2C5);
-    background: linear-gradient(to left, #292E49, #536976, #BBD2C5);
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
     position: sticky;
     top: 0;
     z-index: 2;
 
 }
 
-.logo {
-    width: 30%;
-    display: flex;
-}
+
 
 .logo img {
     width: 200px;
@@ -42,59 +39,173 @@ header {
 
 }
 
-.container-nav {
+nav {
     width: 80%;
     display: flex;
     justify-content: right;
+    flex-direction: row;
 }
 
-.container-nav li {
+nav li {
     list-style: none;
     display: inline-block;
     position: relative;
-    margin: 15px 7px;
+    margin: 15px 8px;
 
 }
 
-.container-nav .img-iconos {
+nav .img-iconos {
     position: absolute;
     margin-top: 10px;
-    margin-left: -5px;
+    margin-left: -15px;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(8, 99, 20, 0.705);
+    border-radius: 110px;
 }
 
-.container-nav li a {
+
+
+nav li a {
     color: rgba(230, 231, 231, 0.945);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-decoration: none;
     padding: 10px 12px;
     display: flex;
     flex-direction: row;
 }
 
-.container-nav li:hover {
-    border-bottom: 5px solid #00bf8f;
-
+nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 50px;
+    transition: 1s;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 
 
-.container-nav li ul {
+nav li ul {
     display: none;
     position: absolute;
     min-width: 140px;
 }
 
-@media screen and (max-width:1100px) {
+header #checkbtn {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    header {
+        display: flex;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
     nav {
-        display: none;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: -100%;
+        height: 485px;
+        flex-wrap: wrap;
+        background: #0575E6;
+        background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+        background: linear-gradient(to right, #021B79, #0575E6);
 
     }
+
+    nav ul {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+        width: 80%;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+
+    nav li a {
+        justify-content: center;
+        font-size: larger;
+        letter-spacing: 10px;
+
+    }
+
+
+
+    nav .img-iconos {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -130px;
+        width: 20px;
+        height: 20px;
+    }
+
+    nav a {
+        justify-content: center;
+        text-align: left;
+        font-size: 5px;
+        border-bottom: 2px solid white;
+    }
+
+    #checkbtn {
+        display: none;
+    }
+
+    .menu-hamb {
+        margin: 12px 25px 0px auto;
+        display: block;
+        height: 15px;
+    }
+
+    .cruz-boton {
+        margin: 12px 25px 0px auto;
+        display: none;
+        height: 15px;
+    }
+
+
+    #checkbtn:checked~nav {
+        margin-top: 60px;
+        transition: all 300ms ease-in;
+    }
+
+    #checkbtn:checked~.cruz-boton {
+        display: block;
+        transition: all 300ms ease-in-out;
+
+    }
+
+    #checkbtn:checked~.menu-hamb {
+        left: 0;
+        display: none;
+    }
 }
+
 
 
 
@@ -785,7 +896,6 @@ footer {
         justify-content: center;
         align-self: center;
         margin: 5px auto;
-        background-color: red;
     }
 
     .ubicacion iframe {
@@ -794,7 +904,6 @@ footer {
         margin: auto;
         justify-content: center;
         align-items: center;
-        background-color: green;
     }
 
 
@@ -804,7 +913,6 @@ footer {
         border: none;
         background: none;
         text-align: center;
-        background-color: red;
     }
 
     .horario {
@@ -813,7 +921,6 @@ footer {
         border: none;
         background: none;
         text-align: center;
-        background-color: red;
     }
 }
 
@@ -821,12 +928,10 @@ footer {
 
     .ubicacion h5 {
         font-size: 13px;
-        background-color: green;
     }
 
     .contacto h5 {
         font-size: 15px;
-        background-color: green;
     }
 }
 
