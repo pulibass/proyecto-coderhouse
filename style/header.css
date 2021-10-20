@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.logo img {
+    margin-left: 35px;
+    width: 200px;
+    height: 60px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 15px 30px;
+}
+
+nav .img-iconos {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -15px;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(8, 99, 20, 0.705);
+    border-radius: 110px;
+}
+
+nav li a {
+    color: rgba(230, 231, 231, 0.945);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 50px;
+    transition: 1s;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+header #checkbtn {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    header {
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
+        background: #0575E6;
+        background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+        background: linear-gradient(to right, #021B79, #0575E6);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 60px;
+    }
+
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 50px;
+        background: #0575E6;
+        background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+        background: linear-gradient(to right, #021B79, #0575E6);
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
+    }
+
+    nav ul {
+        margin-top: -10px;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: -200%;
+        height: 485px;
+        flex-wrap: wrap;
+        background: #0575E6;
+        background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+        background: linear-gradient(to right, #021B79, #0575E6);
+    }
+
+    nav ul {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+        width: 80%;
+        max-width: 400px;
+        justify-content: center;
+    }
+
+    nav li a {
+        justify-content: center;
+        font-size: larger;
+        letter-spacing: 10px;
+    }
+
+    nav .img-iconos {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -130px;
+        width: 20px;
+        height: 20px;
+    }
+
+    nav a {
+        justify-content: center;
+        text-align: left;
+        font-size: 5px;
+        border-bottom: 2px solid white;
+    }
+
+    #checkbtn {
+        display: none;
+    }
+
+    .menu-hamb {
+        margin: 12px 25px 0px auto;
+        display: block;
+        height: 15px;
+    }
+
+    .cruz-boton {
+        margin: 12px 25px 0px auto;
+        display: none;
+        height: 15px;
+    }
+
+
+    #checkbtn:checked~nav {
+        margin-top: 60px;
+        transition: all 300ms ease-in;
+    }
+
+    #checkbtn:checked~.cruz-boton {
+        display: block;
+        transition: all 300ms ease-in-out;
+
+    }
+
+    #checkbtn:checked~.menu-hamb {
+        left: 0;
+        display: none;
+    }
+}
