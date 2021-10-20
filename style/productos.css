@@ -22,21 +22,21 @@
 .titulos-cubiertas {
     color: rgb(13, 160, 228);
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
     font-size: 40px;
 }
 
 .titulos-amortiguadores {
     color: rgb(238, 177, 8);
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
     font-size: 40px;
 }
 
 .titulos-frenos {
     color: rgb(189, 240, 8);
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 20px;
     font-size: 40px;
 }
 
@@ -69,4 +69,56 @@
     margin: auto;
     height: 3px;
     background-color: rgb(105, 103, 103);
+}
+
+@media screen and (max-width:768px) {
+    .titulos-cubiertas {
+        color: rgb(13, 160, 228);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .titulos-amortiguadores {
+        color: rgb(238, 177, 8);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .titulos-frenos {
+        color: rgb(189, 240, 8);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .titulos-cubiertas {
+        color: rgb(13, 160, 228);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .titulos-amortiguadores {
+        color: rgb(238, 177, 8);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .titulos-frenos {
+        color: rgb(189, 240, 8);
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+    }
 }

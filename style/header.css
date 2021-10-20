@@ -35,7 +35,7 @@ nav li {
     list-style: none;
     display: inline-block;
     position: relative;
-    margin: 15px 30px;
+    margin: 15px 20px;
 }
 
 nav .img-iconos {
@@ -126,7 +126,8 @@ header label {
     }
 
     nav li {
-        margin-left: 20px;
+        margin: 15px 15px;
+
     }
 }
 
