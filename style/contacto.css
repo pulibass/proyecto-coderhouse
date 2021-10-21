@@ -18,8 +18,10 @@
 
 .titulos-contacto {
     width: 90%;
-    margin: 15px;
+    max-width: 1100px;
+    margin: 15px auto;
     font-family: sans-serif;
+    background-color: red;
 }
 
 .titulos-contacto h4 {
