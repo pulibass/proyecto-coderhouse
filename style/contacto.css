@@ -5,9 +5,9 @@
 }
 
 .main-contacto {
-    margin: 0px auto 60px auto;
-    width: 100%;
-    display: flex;
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
 }
 
 .titulos {
@@ -19,12 +19,25 @@
     text-decoration: underline;
 }
 
+.ubicacion-contacto {
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+}
+
+.ubicacion-contacto iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
 .contenedor-contacto {
     width: 100%;
-    margin: 0px auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .parrafos {
@@ -38,7 +51,7 @@
 }
 
 .p1 {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 40px;
 }
 
@@ -49,13 +62,14 @@
 
 .p4 {
     width: 100%;
-    margin-top: 100px;
-    font-size: 50px;
+    margin-top: 5px;
+    font-size: 40px;
     font-style: italic;
     font-weight: bold;
     text-align: right;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .p4 span {
     text-align: right;
@@ -63,17 +77,78 @@
     color: brown;
 }
 
-.contacto-section {
+.sucursal-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin: 100px auto;
+}
+
+.info h5 {
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.info h3 {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px auto;
+
+}
+
+.info h4 {
+    width: 100%;
+    font-size: 15px;
+    justify-content: left;
+    margin: 5px auto;
+
+}
+
+.cv {
     width: 100%;
     margin: auto;
-    margin-top: -25px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+.cv h3 {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.cv p {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px auto;
+
+}
+
+.contacto-section {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .contacto-section form {
     border: 2px solid black;
-    width: 80%;
+    width: 100%;
     padding: 25px;
     color: rgb(239, 237, 241);
     display: flex;
@@ -138,6 +213,8 @@
 
 .comentario textarea {
     border: 2px solid black;
+    height: 200px;
+    width: 100%;
 }
 
 .terminos {
@@ -168,4 +245,148 @@
     background-color: #959899;
     border: 2px solid rgb(5, 5, 5);
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .main-contacto {
+        margin: auto;
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .sucursal-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 15px;
+        padding: 5px;
+    }
+
+    .info {
+        width: 50%;
+        display: flex;
+        margin: 5px;
+    }
+
+    .info h5 {
+        width: 100%;
+        text-align: right;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px auto;
+    }
+
+    .info h3 {
+        width: 100%;
+        font-size: 15px;
+        margin: 5px auto;
+        text-align: right;
+
+    }
+
+    .info h4 {
+        width: 100%;
+        text-align: right;
+        font-size: 20px;
+        margin: 5px auto;
+
+    }
+
+    .cv {
+        width: 50%;
+        margin: 5px;
+    }
+
+    .cv h3 {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cv p {
+        width: 100%;
+        font-size: 20px;
+        margin: 5px auto;
+        text-align: left;
+
+    }
+
+    .contacto-section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+
+    .sucursal-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 50%;
+        display: flex;
+    }
+
+    .info h5 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .info h3 {
+        width: 100%;
+        font-size: 15px;
+        margin: 5px auto;
+        text-align: center;
+
+    }
+
+    .info h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: 5px auto;
+
+    }
+
+    .cv {
+        width: 50%;
+    }
+
+    .cv h3 {
+        text-align: center;
+
+    }
+
+    .cv p {
+        width: 100%;
+        font-size: 20px;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .contacto-section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
 }
