@@ -10,3 +10,40 @@
     max-width: 1300px;
     margin: 50px auto 80px auto;
 }
+
+.titulos-usuarios {
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+.titulos-usuarios h2 {
+    text-decoration: underline;
+    color: rgb(241, 30, 30);
+    font-weight: bold;
+}
+
+.contenedor-usuarios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.usuario-registrado {
+    width: 40%;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.usuario-nuevo {
+    width: 40%;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.icono-usuarios {
+    position: relative;
+    width: 10px;
+    margin-top: -87px;
+    margin-left: 2px;
+}

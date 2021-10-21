@@ -63,151 +63,193 @@
 
     <main class="main-usuarios">
 
-        <section>
+        <section class="titulos-usuarios">
 
             <div>
                 <h4>/USUARIO</h4>
                 <h2>USUARIO</h2>
             </div>
 
-            <section class="usuario-registrado">
 
-                <form>
+            <section class="contenedor-usuarios">
 
-                    <div class="input-usuario">
-                        <label for="usuario">USUARIO</label>
-                        <input type="text" id="usuario">
-                        <img src="" alt="icono avatar">
-                    </div>
-                    <div class="input-usuario">
-                        <label for="contraseña">CONTRASEÑA</label>
-                        <input type="text" id="contraseña">
-                        <img src="" alt="icono Candado">
-                    </div>
-                    <div class="boton-ingreso">
-                        <button type="submit">INGRESAR</button>
-                    </div>
-                    <div class="ingreso-red">
-                        <img src="" alt="logo-google">
-                        <button type="submit">INGRESAR CON</button>
-                    </div>
-                    <div class="ingreso-red">
-                        <img src="" alt="logo-mail">
-                        <button type="submit">INGRESAR CON</button>
-                    </div>
+                <section class="usuario-registrado">
 
-                </form>
+                    <form>
+                        <div class="form-floating mb-3 ">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+                                class="svg-inline--fa fa-user icono-usuarios" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z">
+                                </path>
+                            </svg>
 
-            </section>
-
-            <section class="usuario-nuevo">
-
-                <form>
-
-                    <div class="contenedor-text1">
-                        <div class="nuevo-usuario">
-                            <label for="nombre-usuario">NOMBRE</label>
-                            <input type="text" id="nombre-usuario" required placeholder="Nombre">
+                            <label for="floatingInput">Email address</label>
                         </div>
-                        <div class="nuevo-usuario">
-                            <label for="apellido-usuario">APELLIDO</label>
-                            <input type="text" id="apellido-usuario" required placeholder="Apellido">
-                        </div>
-                    </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="key"
+                                class="svg-inline--fa fa-key icono-usuarios" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M336 0c-97.2 0-176 78.8-176 176c0 14.71 2.004 28.93 5.406 42.59l-156 156C3.371 380.6 0 388.8 0 397.3V496C0 504.8 7.164 512 16 512l96 0c8.836 0 16-7.164 16-16v-48h48c8.836 0 16-7.164 16-16v-48h57.37c4.242 0 8.312-1.688 11.31-4.688l32.72-32.72C307.1 349.1 321.3 351.1 336 351.1c97.2 0 176-78.8 176-176S433.2 0 336 0zM376 176c-22.09 0-40-17.91-40-40S353.9 96 376 96S416 113.9 416 136S398.1 176 376 176z">
+                                </path>
+                            </svg>
+                            <label for="floatingPassword">Password</label>
 
-                    <div class="contenedor-text2">
-                        <div class="nuevo-usuario">
+                        </div>
+                        <div class="boton-ingreso">
+                            <button type="submit">INGRESAR</button>
+                        </div>
+
+                        <div class="ingreso-red">
+                            <img src="" alt="logo-google">
+                            <button type="submit">INGRESAR CON</button>
+                        </div>
+
+                        <div class="ingreso-red">
+                            <img src="" alt="logo-mail">
+                            <button type="submit">INGRESAR CON</button>
+                        </div>
+
+                        <!--   <div class="input-usuario">
                             <label for="usuario">USUARIO</label>
                             <input type="text" id="usuario">
                             <img src="" alt="icono avatar">
                         </div>
-                        <div class="nuevo-usuario">
+                        <div class="input-usuario">
                             <label for="contraseña">CONTRASEÑA</label>
                             <input type="text" id="contraseña">
                             <img src="" alt="icono Candado">
                         </div>
-                    </div>
-
-                    <div class="contenedor-fecha">
-                        <label for="fecha">FECHA DE NACIMIENTO</label>
-                        <div class="input-dia">
-                            <label for="dia">Día</label>
-                            <select name="dia" id="dia" required>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option>z</option>
-                                <option></option>
-                            </select>
+                        <div class="boton-ingreso">
+                            <button type="submit">INGRESAR</button>
                         </div>
-
-                        <div class="input-mes">
-                            <label for="mes">Mes</label>
-                            <select name="mes" id="mes" required>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option>z</option>
-                                <option></option>
-                            </select>
+                        <div class="ingreso-red">
+                            <img src="" alt="logo-google">
+                            <button type="submit">INGRESAR CON</button>
                         </div>
+                        <div class="ingreso-red">
+                            <img src="" alt="logo-mail">
+                            <button type="submit">INGRESAR CON</button>
+                        </div> -->
 
-                        <div class="input-año">
-                            <label for="año">Año</label>
-                            <select name="año" id="año" required>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option>z</option>
-                                <option></option>
-                            </select>
-                        </div>
+                    </form>
 
-                    </div>
+                </section>
 
-                    <div class="input-sexo">
-                        <label for="sexo">SEXO</label>
-                        <div>
-                            <div class="input-radio-sexo">
-                                <label for="mujer">Mujer</label>
-                                <input type="radio" name="mujer" id="mujer" required>
+                <section class="usuario-nuevo">
+
+                    <form>
+
+                        <div class="contenedor-text1">
+                            <div class="nuevo-usuario">
+                                <label for="nombre-usuario">NOMBRE</label>
+                                <input type="text" id="nombre-usuario" required placeholder="Nombre">
                             </div>
-                            <div class="input-radio-sexo">
-                                <label for="hombre">Hombre</label>
-                                <input type="radio" name="hombre" id="hombre" required>
-                            </div>
-                            <div class="input-radio-sexo">
-                                <label for="personalizado">Personalizado</label>
-                                <input type="radio" name="personalizado" id="personalizado" required>
+                            <div class="nuevo-usuario">
+                                <label for="apellido-usuario">APELLIDO</label>
+                                <input type="text" id="apellido-usuario" required placeholder="Apellido">
                             </div>
                         </div>
-                    </div>
 
-                    <div class="politicas-nuevo-usuario">
-                        <h6>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de datos y la
-                            Política de cookies. Es posible que te enviemos notificaciones por SMS, que puedes
-                            desactivar cuando quieras.</h6>
-                    </div>
+                        <div class="contenedor-text2">
+                            <div class="nuevo-usuario">
+                                <label for="usuario">USUARIO</label>
+                                <input type="text" id="usuario">
+                                <img src="" alt="icono avatar">
+                            </div>
+                            <div class="nuevo-usuario">
+                                <label for="contraseña">CONTRASEÑA</label>
+                                <input type="text" id="contraseña">
+                                <img src="" alt="icono Candado">
+                            </div>
+                        </div>
 
-                    <div class="boton-ingreso-nuevoU">
-                        <button type="submit">INGRESAR</button>
-                    </div>
+                        <div class="contenedor-fecha">
+                            <label for="fecha">FECHA DE NACIMIENTO</label>
+                            <div class="input-dia">
+                                <label for="dia">Día</label>
+                                <select name="dia" id="dia" required>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option>z</option>
+                                    <option></option>
+                                </select>
+                            </div>
 
-                </form>
+                            <div class="input-mes">
+                                <label for="mes">Mes</label>
+                                <select name="mes" id="mes" required>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option>z</option>
+                                    <option></option>
+                                </select>
+                            </div>
 
+                            <div class="input-año">
+                                <label for="año">Año</label>
+                                <select name="año" id="año" required>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option>z</option>
+                                    <option></option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="input-sexo">
+                            <label for="sexo">SEXO</label>
+                            <div>
+                                <div class="input-radio-sexo">
+                                    <label for="mujer">Mujer</label>
+                                    <input type="radio" name="mujer" id="mujer" required>
+                                </div>
+                                <div class="input-radio-sexo">
+                                    <label for="hombre">Hombre</label>
+                                    <input type="radio" name="hombre" id="hombre" required>
+                                </div>
+                                <div class="input-radio-sexo">
+                                    <label for="personalizado">Personalizado</label>
+                                    <input type="radio" name="personalizado" id="personalizado" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="politicas-nuevo-usuario">
+                            <h6>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de datos y la
+                                Política de cookies. Es posible que te enviemos notificaciones por SMS, que puedes
+                                desactivar cuando quieras.</h6>
+                        </div>
+
+                        <div class="boton-ingreso-nuevoU">
+                            <button type="submit">INGRESAR</button>
+                        </div>
+
+                    </form>
+
+                </section>
             </section>
+
 
     </main>
 
