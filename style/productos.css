@@ -6,6 +6,9 @@
 
 .main-productos {
     margin-top: 70px;
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
 }
 
 .titulos {

@@ -11,6 +11,8 @@ html {
 /*-------COMIENZO MAIN INDEX-------------*/
 .main-index {
     width: 90%;
+    margin: auto;
+    max-width: 1300px;
     margin: 50px auto 80px auto;
 }
 

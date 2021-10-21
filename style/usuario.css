@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-usuarios {
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
+    margin: 50px auto 80px auto;
+}

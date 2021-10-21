@@ -4,11 +4,26 @@
     box-sizing: border-box;
 }
 
-.main-productos {
+.titulos {
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+.titulos h2 {
+    text-decoration: underline;
+    color: rgb(241, 30, 30);
+    font-weight: bold;
+}
+
+.main-ofertas {
     margin-top: 70px;
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
 }
 
 .titulos {
+    width: 100%;
     margin: 15px;
     font-family: sans-serif;
 }
