@@ -14,10 +14,14 @@ html {
     margin: auto;
     max-width: 1300px;
     margin: 50px auto 80px auto;
+    display: grid;
+    grid-template-rows: 2 minmax(100%);
 }
 
 .titulos-index {
     font-family: sans-serif;
+    grid-template-columns: 12fr;
+    grid-template-rows: 1 minmax(100%);
 }
 
 .titulos-index h1 {
@@ -31,7 +35,7 @@ html {
     justify-content: center;
     margin: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 1100px;
 }
 
 .grid-producto-index {
