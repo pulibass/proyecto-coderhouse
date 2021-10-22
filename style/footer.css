@@ -292,6 +292,14 @@ footer {
 
 @media screen and (max-width: 400px) {
 
+    .ubicacion iframe {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
     .ubicacion h5 {
         font-size: 13px;
     }
