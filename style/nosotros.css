@@ -5,10 +5,10 @@
 }
 
 .main-nosotros {
-    width: 90%;
+    width: 100%;
     margin: auto;
     max-width: 1300px;
-    margin: 50px auto 80px auto;
+    margin: 50px auto;
 }
 
 .titulos-nosotros {
@@ -100,6 +100,18 @@
     text-align: left;
     text-shadow: 1px 1px 2px rgb(204, 201, 201);
 
+}
+
+.fotos-local {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.fotos-local img {
+    width: 100%;
+    max-width: 1100px;
+    object-fit: cover;
 }
 
 @media screen and (max-width:1024px) {
