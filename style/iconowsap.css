@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-whatsapp {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 2;
+    margin-top: 0px auto;
+    position: fixed;
+
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: right;
+    margin-top: 100px;
+    background-color: wheat;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.whatsapp button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    margin: auto;
+    z-index: 2;
+}
+
+.whatsapp img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width: 1250px) {
+
+
+    .contenedor-whatsapp {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 1300px;
+        z-index: 1;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .contenedor-whatsapp {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 1300px;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        margin-top: 300px;
+
+
+    }
+
+    .whatsapp button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .whatsapp img {
+        width: 60px;
+        height: 60px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .contenedor-whatsapp {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 1300px;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        margin-top: 300px;
+
+
+    }
+
+    .whatsapp button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .whatsapp img {
+        width: 60px;
+        height: 60px;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .contenedor-whatsapp {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 1300px;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .whatsapp {
+        display: flex;
+        justify-content: right;
+        background-color: wheat;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        margin-top: 300px;
+    }
+
+    .whatsapp button {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+
+    }
+
+    .whatsapp img {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+
+    }
+}

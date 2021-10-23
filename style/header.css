@@ -16,7 +16,11 @@ header {
     background: linear-gradient(to right, #021B79, #0575E6);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+}
+
+.logo {
+    width: 20%;
 }
 
 .logo img {
@@ -26,10 +30,11 @@ header {
 }
 
 nav {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: right;
     flex-direction: row;
+    z-index: 5;
 }
 
 nav li {
