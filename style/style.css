@@ -11,11 +11,10 @@ html {
 /*-------COMIENZO MAIN INDEX-------------*/
 .main-index {
     width: 90%;
-    margin: auto;
+    margin: 70px auto;
     max-width: 1300px;
-    margin: 50px auto 80px auto;
     display: grid;
-    grid-template-rows: 2 minmax(100%);
+    grid-template-rows: 3 minmax(100%);
 }
 
 .titulos-index {
@@ -33,7 +32,7 @@ html {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1 minmax(100%);
     justify-content: center;
-    margin: auto;
+    margin: 80px auto;
     width: 100%;
     max-width: 1100px;
 }
@@ -83,9 +82,9 @@ html {
 
 .descripcion-producto {
     width: 100%;
-    margin: 15px auto;
+    margin: 5px auto;
     height: 70px;
-    background-color: rgb(95, 94, 94);
+    background-color: rgb(250, 250, 250);
     border: 3px solid white;
     border-radius: 0px 0px 10px 10px;
     display: flex;
@@ -97,19 +96,29 @@ html {
 .descripcion-producto h5:nth-child(1) {
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    background-color: rgba(44, 49, 49, 0.08);
+    font-size: 12px;
+    background-color: rgb(252, 246, 246);
     text-align: center;
 }
 
 .descripcion-producto h5:nth-child(2) {
     font-family: sans-serif;
-    color: blanchedalmond;
+    color: rgb(7, 7, 7);
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing: 3px;
     text-align: center;
+    font-weight: bold;
 }
+
+.carrusel {
+
+    margin: 50px auto;
+    border: 4px solid rgba(167, 166, 166, 0.74);
+    box-shadow: 0px 0px 20px grey;
+}
+
+
 
 
 
@@ -152,17 +161,17 @@ html {
     }
 
     .img4-index img {
-        width: 80%;
-        max-width: 400px;
+        width: 70%;
+        max-width: 300px;
         height: 200px;
         margin: 15px auto;
     }
 
     .descripcion-producto {
         width: 100%;
-        margin: 15px auto;
+        margin: 5px auto;
         height: 70px;
-        background-color: rgb(95, 94, 94);
+        background-color: rgb(255, 250, 250);
         border: 3px solid white;
         border-radius: 0px 0px 10px 10px;
         display: flex;
@@ -174,18 +183,19 @@ html {
     .descripcion-producto h5:nth-child(1) {
         font-family: sans-serif;
         font-weight: bold;
-        font-size: 15px;
-        background-color: rgba(44, 49, 49, 0.08);
+        font-size: 12px;
+        background-color: rgb(250, 255, 255);
         text-align: center;
     }
 
     .descripcion-producto h5:nth-child(2) {
         font-family: sans-serif;
-        color: blanchedalmond;
+        color: rgb(10, 10, 10);
         text-align: center;
-        font-size: 15px;
+        font-size: 10px;
         letter-spacing: 3px;
         text-align: center;
+        font-weight: bold;
     }
 }
 
@@ -205,7 +215,7 @@ html {
         flex-direction: column;
         width: 30%;
         min-width: 250px;
-        height: 320px;
+        height: 350px;
         box-shadow: 0px 0px 20px grey;
     }
 
@@ -219,12 +229,12 @@ html {
 
     .grid-producto-index .img4-index {
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
 
     .img4-index img {
-        width: 90%;
-        max-width: 300px;
+        width: 60%;
+        max-width: 200px;
         height: 100px;
     }
 }
@@ -234,5 +244,43 @@ html {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1 minmax(100%);
+        margin: auto;
+    }
+
+    .container-grid-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1 minmax(100%);
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .grid-producto-index {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        max-width: 150px;
+        height: 350px;
+        box-shadow: 0px 0px 20px grey;
+    }
+
+    .calidad {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-width: 100%;
+        margin-top: -25px;
+    }
+
+    .grid-producto-index .img4-index {
+        width: 100%;
+        height: 200px;
+    }
+
+    .img4-index img {
+        width: 60%;
+        max-width: 200px;
+        height: 100px;
     }
 }
