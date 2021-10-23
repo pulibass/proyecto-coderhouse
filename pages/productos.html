@@ -71,19 +71,20 @@
                 <h2>NUESTROS PRODUCTOS</h2>
             </div>
             <div class="boton-navegacion">
-                <select name="navegacion" id="navegacion">
+                <select name="navegacion" id="navegacion" onchange="location = this.value;">
                     <option value="">Buscar por productos</option>
-                    <option value="cubiertas"><a href="#cubiertas">Cubiertas</a></option>
-                    <option value="amortiguadores"><a href="#amortiguadores">Amortiguadores</a></option>
-                    <option value="freno"><a href="#frenos">Frenos</a></option>
+                    <option value="#cubiertas"><a href="#cubiertas">Cubiertas</a></option>
+                    <option value="#amortiguadores">Amortiguadores</option>
+                    <option value="#frenos">Frenos</option>
                 </select>
             </div>
         </section>
 
         <section class="contenedor-productos">
-            <h3 class="titulos-cubiertas">CUBIERTAS</h3>
             <a id="cubiertas"></a>
-            <div class="container d-flex justify-content-center">
+            <h3 class="titulos-cubiertas">CUBIERTAS</h3>
+
+            <div class=" container d-flex justify-content-center">
                 <div class="row">
 
                     <div
@@ -222,8 +223,10 @@
         </section>
 
         <section class="contenedor-productos">
-            <h3 class="titulos-amortiguadores">AMORTIGUADORES</h3>
+
             <a id="amortiguadores"></a>
+
+            <h3 class="titulos-amortiguadores">AMORTIGUADORES</h3>
 
             <div class="container d-flex justify-content-center">
                 <div class="row">
@@ -377,8 +380,10 @@
         </section>
 
         <section class="contenedor-productos">
-            <h3 class="titulos-frenos">FRENOS</h3>
+
             <a id="frenos"></a>
+
+            <h3 class="titulos-frenos">FRENOS</h3>
 
             <div class="container d-flex justify-content-center">
                 <div class="row">
