@@ -28,6 +28,7 @@
     width: 100%;
     max-width: 1300px;
     text-align: right;
+    z-index: 999;
 }
 
 .boton-navegacion select {
@@ -39,6 +40,8 @@
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 50;
+    z-index: 999;
+
 
 }
 

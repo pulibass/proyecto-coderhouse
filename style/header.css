@@ -21,6 +21,7 @@ header {
 
 .logo {
     width: 20%;
+    z-index: 3;
 }
 
 .logo img {

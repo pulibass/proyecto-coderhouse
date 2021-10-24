@@ -7,10 +7,10 @@
 .contenedor-whatsapp {
     display: flex;
     justify-content: right;
-    width: 100%;
     max-width: 1400px;
+    height: 60px;
     z-index: 2;
-    margin-top: 0px auto;
+    margin-top: 500px auto;
     position: fixed;
 
 }
@@ -18,17 +18,15 @@
 .whatsapp {
     display: flex;
     justify-content: right;
-    margin-top: 100px;
-    background-color: wheat;
+    margin-top: 230px;
+    margin-left: 1290px;
     width: 60px;
     height: 60px;
-    border-radius: 100px;
 }
 
 .whatsapp button {
     width: 60px;
     height: 60px;
-    border-radius: 100px;
     background: none;
     border: none;
     margin: auto;
@@ -39,7 +37,6 @@
     width: 60px;
     height: 60px;
     margin: auto;
-    border-radius: 100px;
 }
 
 
