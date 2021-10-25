@@ -40,7 +40,7 @@
     justify-content: center;
 }
 
-.tarjeta:hover {
+.tarjeta-contenida:hover {
     transition: all 1s 0s ease, all 1s 0s ease;
     transform: scale(1.1);
     cursor: pointer;

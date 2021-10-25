@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .main-productos {
     margin-top: 70px;
     width: 90%;
@@ -41,8 +40,6 @@
     text-transform: uppercase;
     font-weight: 50;
     z-index: 999;
-
-
 }
 
 .titulos-cubiertas {
@@ -66,6 +63,10 @@
     font-size: 40px;
 }
 
+.tarjeta-contenedor {
+    height: 1000px;
+}
+
 .contenedor-productos {
     margin-top: 70px;
 }
@@ -78,14 +79,15 @@
 .tarjeta {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-.tarjeta:hover {
+.tarjeta-contenida:hover {
     transition: all 1s 0s ease, all 1s 0s ease;
     transform: scale(1.1);
     cursor: pointer;
 }
-
 
 .tarjeta-contenida {
     border: 4px solid rgb(61, 61, 61);

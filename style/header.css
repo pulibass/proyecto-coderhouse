@@ -62,24 +62,28 @@ nav li a {
     padding: 10px 12px;
     display: flex;
     flex-direction: row;
+    position: relative;
+}
+
+
+nav a::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.582);
-    border-radius: 50px;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    border-radius: 10px;
     transition: 1s;
     color: white;
-    border-bottom: 1px solid white;
+    box-shadow: 1px 0px 0px 2px #018bb9;
     transform: scale(1.1);
-
-
 }
 
-nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
 
 header #checkbtn {
     display: none;

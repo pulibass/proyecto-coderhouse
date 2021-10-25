@@ -49,6 +49,7 @@ html {
     flex-direction: column;
     align-items: center;
     align-self: center;
+    position: relative;
     width: 90%;
     max-width: 100%;
     height: 350px;
@@ -58,7 +59,42 @@ html {
     border: 3px solid rgb(33, 34, 34);
     border-radius: 10px;
     box-shadow: 0px 0px 20px grey;
+    overflow: hidden;
 
+
+}
+
+.grid-producto-index::before {
+    content: '';
+    position: absolute;
+    margin-top: -50px;
+    width: 100%;
+    height: 200%;
+    border-radius: 10%;
+    background: linear-gradient(#d5d5d8, #FBFF00);
+    animation: tarjeta-index 5s linear infinite;
+
+
+}
+
+.grid-producto-index::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: #000000fa;
+    border-radius: 16px;
+
+
+}
+
+@keyframes tarjeta-index {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -74,10 +110,14 @@ html {
     align-content: center;
     width: 100%;
     margin-top: -22px;
+    z-index: 2;
+
 }
 
 .neumatico-descripcion {
     width: 100%;
+    z-index: 2;
+
 }
 
 .grid-producto-index .img4-index {
@@ -87,12 +127,16 @@ html {
     border-radius: 10px 10px 0px 0px;
     margin: auto;
     background-color: rgb(255, 255, 255);
+    z-index: 2;
+
 }
 
 .img4-index img {
     width: 100%;
     max-width: 400px;
     margin: 15px auto;
+    z-index: 2;
+
 }
 
 .descripcion-producto {
