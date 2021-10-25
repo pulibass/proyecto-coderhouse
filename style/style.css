@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+    transition-duration: 4000ms;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -53,6 +58,14 @@ html {
     border: 3px solid rgb(33, 34, 34);
     border-radius: 10px;
     box-shadow: 0px 0px 20px grey;
+
+}
+
+
+
+.grid-producto-index:hover {
+    transform: translateY(-10px);
+
 }
 
 .calidad {

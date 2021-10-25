@@ -5,21 +5,17 @@
 }
 
 .contenedor-whatsapp {
-    display: flex;
-    justify-content: right;
     max-width: 1400px;
     height: 60px;
     z-index: 2;
     margin-top: 500px auto;
+    margin-left: 10px;
     position: fixed;
 
 }
 
 .whatsapp {
-    display: flex;
-    justify-content: right;
-    margin-top: 230px;
-    margin-left: 1290px;
+    margin-top: 400px;
     width: 60px;
     height: 60px;
 }
@@ -37,30 +33,22 @@
     width: 60px;
     height: 60px;
     margin: auto;
+
 }
 
 
 @media screen and (max-width: 1250px) {
 
-
     .contenedor-whatsapp {
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        max-width: 1300px;
         z-index: 1;
         position: fixed;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
 
-
     .contenedor-whatsapp {
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        max-width: 1300px;
         z-index: 1;
         position: fixed;
     }
@@ -69,8 +57,6 @@
         width: 60px;
         height: 60px;
         margin-top: 300px;
-
-
     }
 
     .whatsapp button {
@@ -81,18 +67,12 @@
     .whatsapp img {
         width: 60px;
         height: 60px;
-
     }
 }
 
 @media screen and (max-width: 768px) {
 
-
     .contenedor-whatsapp {
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        max-width: 1300px;
         z-index: 2;
         position: fixed;
     }
@@ -101,8 +81,6 @@
         width: 60px;
         height: 60px;
         margin-top: 300px;
-
-
     }
 
     .whatsapp button {
@@ -113,25 +91,17 @@
     .whatsapp img {
         width: 60px;
         height: 60px;
-
     }
 }
 
 @media screen and (max-width: 500px) {
 
-
     .contenedor-whatsapp {
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        max-width: 1300px;
         z-index: 2;
         position: fixed;
     }
 
     .whatsapp {
-        display: flex;
-        justify-content: right;
         background-color: wheat;
         width: 30px;
         height: 30px;
@@ -145,7 +115,6 @@
         width: 30px;
         height: 30px;
         margin: auto;
-
     }
 
     .whatsapp img {

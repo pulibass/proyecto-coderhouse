@@ -70,6 +70,9 @@ nav a:hover {
     transition: 1s;
     color: white;
     border-bottom: 1px solid white;
+    transform: scale(1.1);
+
+
 }
 
 nav li ul {
@@ -163,12 +166,12 @@ header label {
 
     #checkbtn:checked~nav {
         margin-top: 60px;
-        transition: all 300ms ease-in;
+        transition: all 500ms ease-in;
     }
 
     #checkbtn:checked~.cruz-boton {
         display: block;
-        transition: all 300ms ease-in-out;
+        transition: all 500ms ease-in-out;
     }
 
     #checkbtn:checked~.menu-hamb {
@@ -239,7 +242,10 @@ header label {
         transition: none;
         color: white;
         border-bottom: none;
+        transform: none;
+
     }
+
 
     nav .img-iconos {
         margin-right: 10px;

@@ -250,14 +250,17 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid #121213;
     border-radius: 5px;
-}
-
-.boton-ingreso-nuevo button:hover {
     background-color: #080808;
     color: #f6f7f8;
     border: #747575;
+}
+
+.boton-ingreso-nuevo button:hover {
+    border: 1px solid #121213;
+    background-color: #747575;
+    color: #e9e8e8;
+
 }
 
 @media screen and (max-width: 768px) {

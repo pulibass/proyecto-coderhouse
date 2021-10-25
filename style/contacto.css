@@ -171,7 +171,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    background-color: rgb(30, 87, 134);
+    background: linear-gradient(#334257, #476072, #548CA8, #476072);
     font-family: sans-serif;
     text-transform: uppercase;
 }
