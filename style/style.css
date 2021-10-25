@@ -69,7 +69,7 @@ html {
     position: absolute;
     margin-top: -50px;
     width: 100%;
-    height: 200%;
+    height: 100%;
     border-radius: 10%;
     background: linear-gradient(#d5d5d8, #FBFF00);
     animation: tarjeta-index 5s linear infinite;
@@ -87,6 +87,8 @@ html {
 
 }
 
+
+
 @keyframes tarjeta-index {
     0% {
         transform: rotate(0deg);
@@ -98,11 +100,11 @@ html {
 }
 
 
-
 .grid-producto-index:hover {
     transform: translateY(-10px);
 
 }
+
 
 .calidad {
     display: flex;
