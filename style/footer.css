@@ -155,6 +155,10 @@ footer {
 }
 
 @media screen and (max-width: 1260px) {
+    footer {
+        z-index: 3;
+    }
+
     .titulo-informativo h2 {
         font-size: 20px;
     }
@@ -180,6 +184,10 @@ footer {
 }
 
 @media screen and (max-width: 1060px) {
+
+    footer {
+        z-index: 3;
+    }
 
     .titulo-informativo h2 {
         font-size: 18px;
@@ -218,6 +226,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    footer {
+        z-index: 3;
+    }
 
     .container-footer {
         display: flex;

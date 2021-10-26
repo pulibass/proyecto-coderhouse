@@ -11,6 +11,8 @@
     width: 90%;
     margin: auto;
     max-width: 1300px;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .titulos {
@@ -38,6 +40,8 @@
 .tarjeta {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .tarjeta-contenida:hover {

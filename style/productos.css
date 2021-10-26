@@ -10,6 +10,7 @@
     margin: auto;
     max-width: 1300px;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 .titulos {
@@ -63,9 +64,6 @@
     font-size: 40px;
 }
 
-.tarjeta-contenedor {
-    height: 1000px;
-}
 
 .contenedor-productos {
     margin-top: 70px;
