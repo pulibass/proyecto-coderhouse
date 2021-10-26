@@ -233,14 +233,21 @@ header label {
     }
 
     nav a:hover {
-        background-color: rgba(0, 0, 0, 0);
         border-radius: none;
         transition: none;
         color: white;
         border-bottom: none;
+        cursor: pointer;
+        background: none;
+        background: -webkit-linear-gradient(none);
+        background: linear-gradient(none);
+        border-radius: none;
+        transition: none;
+        box-shadow: none;
         transform: none;
 
     }
+
 
 
     nav .img-iconos {

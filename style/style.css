@@ -64,7 +64,7 @@ html {
 
 }
 
-.grid-producto-index::before {
+.grid-producto-index:hover::before {
     content: '';
     position: absolute;
     margin-top: -50px;
@@ -72,8 +72,7 @@ html {
     height: 100%;
     border-radius: 10%;
     background: linear-gradient(#d5d5d8, #FBFF00);
-    animation: tarjeta-index 5s linear infinite;
-
+    animation: tarjeta-index 20s linear infinite;
 
 }
 
@@ -83,11 +82,7 @@ html {
     inset: 4px;
     background-color: #000000fa;
     border-radius: 16px;
-
-
 }
-
-
 
 @keyframes tarjeta-index {
     0% {
@@ -102,9 +97,7 @@ html {
 
 .grid-producto-index:hover {
     transform: translateY(-10px);
-
 }
-
 
 .calidad {
     display: flex;
