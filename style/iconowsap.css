@@ -16,11 +16,9 @@
 .contenedor-whatsapp a {
     width: 60px;
     height: 60px;
-    top: 530px;
+    top: 680px;
     position: fixed;
     z-index: 999;
-
-
 }
 
 .contenedor-whatsapp img {
@@ -32,6 +30,26 @@
 
 }
 
+
+@media screen and (max-width: 768px) {
+    .contenedor-whatsapp a {
+        width: 60px;
+        height: 60px;
+        top: 700px;
+        position: fixed;
+        z-index: 999;
+    }
+
+
+    .contenedor-whatsapp img {
+        width: 35px;
+        height: 35px;
+        margin: auto;
+        margin-left: 15px;
+        z-index: 999;
+
+    }
+}
 
 @media screen and (max-width: 500px) {
 
