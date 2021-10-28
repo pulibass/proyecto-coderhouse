@@ -5,69 +5,24 @@
 }
 
 .contenedor-whatsapp {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    height: 60px;
-    z-index: 999;
-}
-
-
-.contenedor-whatsapp a {
-    width: 60px;
-    height: 60px;
-    top: 550px;
-    bottom: 550px;
     position: fixed;
-    z-index: 999;
+    bottom: 20px;
+    left: 5px;
 }
 
 .contenedor-whatsapp img {
-    width: 60px;
-    height: 60px;
-    margin: auto;
-    margin-left: 5px;
+    width: 50px;
+    height: 50px;
     z-index: 999;
 
 }
 
-
-@media screen and (max-width: 768px) {
-    .contenedor-whatsapp a {
-        width: 60px;
-        height: 60px;
-        top: 680px;
-        bottom: 550px;
-        position: fixed;
-        z-index: 999;
-    }
-
-
-    .contenedor-whatsapp img {
-        width: 50px;
-        height: 50px;
-        margin: auto;
-        margin-left: 5px;
-        z-index: 999;
-
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .contenedor-whatsapp a {
-        width: 60px;
-        height: 60px;
-        top: 700px;
-        bottom: 570px;
-        position: fixed;
-        z-index: 999;
-    }
+
 
     .contenedor-whatsapp img {
         width: 35px;
         height: 35px;
-        margin: auto;
-        margin-left: 5px;
         z-index: 999;
 
     }
