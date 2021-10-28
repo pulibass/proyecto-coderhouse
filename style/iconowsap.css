@@ -16,7 +16,8 @@
 .contenedor-whatsapp a {
     width: 60px;
     height: 60px;
-    top: 600px;
+    top: 550px;
+    bottom: 550px;
     position: fixed;
     z-index: 999;
 }
@@ -35,29 +36,38 @@
     .contenedor-whatsapp a {
         width: 60px;
         height: 60px;
-        top: 600px;
+        top: 550px;
+        bottom: 550px;
         position: fixed;
         z-index: 999;
     }
 
 
     .contenedor-whatsapp img {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         margin: auto;
-        margin-left: 15px;
+        margin-left: 5px;
         z-index: 999;
 
     }
 }
 
 @media screen and (max-width: 500px) {
+    .contenedor-whatsapp a {
+        width: 60px;
+        height: 60px;
+        top: 570px;
+        bottom: 570px;
+        position: fixed;
+        z-index: 999;
+    }
 
     .contenedor-whatsapp img {
         width: 35px;
         height: 35px;
         margin: auto;
-        margin-left: 15px;
+        margin-left: 5px;
         z-index: 999;
 
     }
