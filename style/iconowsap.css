@@ -20,13 +20,16 @@
 
 .contenedor-whatsapp a {
     cursor: pointer;
+
 }
+
+
 
 .contenedor-whatsapp .texto-whatsapp {
     background-color: rgba(0, 0, 0, 0.337);
     margin-top: -38px;
     margin-left: 50px;
-    width: 100px;
+    width: 120px;
     position: absolute;
     transition: 500ms all ease;
     opacity: 0;
@@ -54,4 +57,17 @@
         height: 35px;
         z-index: 3;
     }
+
+    .texto-whatsapp h5 {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contenedor-whatsapp .texto-whatsapp {
+        margin-top: -29px;
+        margin-left: 35px;
+        width: 80px;
+    }
+
 }
