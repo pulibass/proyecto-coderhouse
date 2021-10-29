@@ -97,6 +97,10 @@
     box-shadow: 2px 5px 10px 5px rgb(112, 111, 111);
 }
 
+.descripcion-productos {
+    font-size: 12px;
+}
+
 .linea {
     margin-top: 70px;
 }
