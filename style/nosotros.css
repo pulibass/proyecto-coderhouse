@@ -39,7 +39,6 @@
 .foto-local {
     width: 100%;
     max-width: 1300px;
-    z-index: 1;
 }
 
 .textos-nosotros {
@@ -112,6 +111,7 @@
     width: 100%;
     max-width: 1100px;
     object-fit: cover;
+    z-index: 1;
 }
 
 @media screen and (max-width:1024px) {

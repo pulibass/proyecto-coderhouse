@@ -13,7 +13,7 @@ footer {
     background: -webkit-linear-gradient(to right, #434343, #000000);
     background: linear-gradient(to right, #434343, #000000);
     position: static;
-    z-index: 3;
+    z-index: 995;
 }
 
 .container-footer {
