@@ -5,8 +5,8 @@
 }
 
 .main-contacto {
-    margin: auto;
-    width: 100%;
+    margin: 20PX auto;
+    width: 90%;
 }
 
 .container-contacto {
@@ -273,7 +273,7 @@
 @media screen and (max-width:1024px) {
 
     .main-contacto {
-        margin: auto;
+        margin: 20PX auto;
         width: 90%;
         max-width: 900px;
     }

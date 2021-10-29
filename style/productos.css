@@ -5,9 +5,8 @@
 }
 
 .main-productos {
-    margin-top: 70px;
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     max-width: 1300px;
     scroll-behavior: smooth;
     overflow: hidden;

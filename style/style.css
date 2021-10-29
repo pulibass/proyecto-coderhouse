@@ -16,7 +16,7 @@ html {
 /*-------COMIENZO MAIN INDEX-------------*/
 .main-index {
     width: 90%;
-    margin: 70px auto;
+    margin: 20px auto;
     max-width: 1300px;
     display: grid;
     grid-template-rows: 3 minmax(100%);
@@ -168,7 +168,7 @@ html {
 
 @media screen and (max-width: 1250px) {
     .main-index {
-        margin-top: 70px;
+        margin-top: 20px;
     }
 
     .container-grid-index {
@@ -289,8 +289,6 @@ html {
         grid-template-columns: 1fr;
         grid-template-rows: 1 minmax(100%);
         margin: auto;
-
-
     }
 
     .container-grid-index {
@@ -337,7 +335,6 @@ html {
         margin: 5px auto;
         height: 70px;
         margin-left: -8px;
-
     }
 }
 
