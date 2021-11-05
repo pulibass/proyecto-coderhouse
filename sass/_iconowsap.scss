@@ -1,0 +1,79 @@
+@import './variables';
+@import './mixins';
+
+
+* {
+    @include format-document;
+}
+
+.contenedor-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 3;
+
+    img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    a {
+        cursor: pointer;
+
+    }
+
+
+
+
+    .texto-whatsapp {
+        background-color: rgba(0, 0, 0, 0.337);
+        margin-top: -38px;
+        margin-left: 50px;
+        width: 120px;
+        position: absolute;
+        transition: 500ms all ease;
+        opacity: 0;
+        text-align: center;
+        color: #fff;
+        visibility: hidden;
+        background-color: #45c014;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+}
+
+.contenedor-whatsapp:hover>.texto-whatsapp {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 3;
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .contenedor-whatsapp {
+        img {
+            width: 35px;
+            height: 35px;
+            z-index: 3;
+        }
+
+        .texto-whatsapp {
+            margin-top: -29px;
+            margin-left: 35px;
+            width: 80px;
+
+            h5 {
+                font-size: 12px;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
