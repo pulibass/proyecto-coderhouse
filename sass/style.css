@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -889,6 +890,271 @@ header label {
           box-sizing: border-box;
 }
 
+.main-nosotros {
+  width: 90%;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+.main-nosotros .titulos-nosotros {
+  width: 100%;
+  max-width: 1300px;
+  margin: 15px auto;
+  font-family: sans-serif;
+}
+
+.main-nosotros .titulos-nosotros h4 {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.main-nosotros .titulos-nosotros h2 {
+  text-decoration: underline;
+  color: #f11e1e;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.main-nosotros .contenedor-nosotros {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.main-nosotros .contenedor-nosotros .foto-local {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  margin-top: -200px;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo {
+  width: 30%;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(1) {
+  font-size: 40px;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  color: #eceaea;
+  text-shadow: 1px 1px 2px black;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(2) {
+  font-size: 40px;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  color: #f11e1e;
+  text-shadow: 1px 1px 2px black;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion {
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 80%;
+  max-width: 1300px;
+  text-align: right;
+  padding: 20px;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h2 {
+  color: #f11e1e;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px #131212;
+}
+
+.main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h5 {
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  text-shadow: 1px 1px 2px #ccc9c9;
+}
+
+.main-nosotros .contenedor-nosotros .fotos-local {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.main-nosotros .contenedor-nosotros .fotos-local img {
+  width: 100%;
+  max-width: 1100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-nosotros .contenedor-nosotros .textos-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin-top: -180px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo {
+    width: 30%;
+    padding: 20px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(1) {
+    font-size: 20px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(2) {
+    font-size: 20px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 90%;
+    max-width: 1300px;
+    text-align: right;
+    padding: 20px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h2 {
+    font-size: 20px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h5 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nosotros .contenedor-nosotros .textos-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin-top: -150px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo {
+    width: 30%;
+    padding: 20px;
+    margin-top: 35px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(1) {
+    font-size: 20px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(2) {
+    font-size: 20px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion {
+    margin-top: 15px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h2 {
+    font-size: 15px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h5 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main-nosotros .contenedor-nosotros .textos-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin-top: -150px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(1) {
+    font-size: 15px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(2) {
+    font-size: 15px;
+    text-align: right;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h2 {
+    font-size: 10px;
+  }
+  .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h5 {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-nosotros .contenedor-nosotros .textos-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin-top: -180px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .main-contacto {
   margin: 20PX auto;
   width: 90%;
@@ -1757,6 +2023,389 @@ header label {
     width: 60%;
     margin: 5px;
     font-size: 8px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-usuarios {
+  width: 90%;
+  margin: auto;
+  max-width: 1300px;
+  margin: 50px auto 80px auto;
+}
+
+.main-usuarios .titulos-usuarios {
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.main-usuarios .titulos-usuarios h2 {
+  text-decoration: underline;
+  color: #f11e1e;
+  font-weight: bold;
+}
+
+.main-usuarios .contenedor-usuarios {
+  margin: 70px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 15px;
+  border: 1px solid #e9e5e5;
+  padding: 15px;
+  -webkit-box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
+          box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .olvido-contraseña {
+  width: 100%;
+  text-align: right;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .boton-ingreso {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .boton-ingreso button {
+  width: 40%;
+  background-color: #005B96;
+  color: #f6f7f8;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #2BA0FF;
+  border-radius: 5px;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .boton-ingreso button:hover {
+  background-color: #228bd1;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .icono-usuarios {
+  position: relative;
+  width: 25px;
+  margin-top: -100px;
+  padding-left: 15px;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .form-floating label {
+  padding: 1rem 2rem;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px;
+  margin-top: 100px;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-facebook {
+  width: 100%;
+  text-align: center;
+  background-color: #005B96;
+  border-radius: 10px;
+  height: 30px;
+  margin: 15px auto;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-facebook button {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #ececf3;
+  font-weight: bold;
+  font-size: 12px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-facebook .icon-facebook {
+  color: #ececf3;
+  margin: auto;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-facebook:hover {
+  background-color: #228bd1;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-google {
+  width: 100%;
+  text-align: center;
+  background-color: #F02513;
+  border-radius: 10px;
+  height: 30px;
+  margin: 15px auto;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-google button {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #ececf3;
+  font-weight: bold;
+  font-size: 12px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-google .icon-google {
+  color: #ececf3;
+  margin: auto;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-google:hover {
+  background-color: #ee4738;
+}
+
+.main-usuarios .contenedor-usuarios .linea-divisoria {
+  background-color: #868585;
+  margin-top: 40px;
+  height: 500px;
+  width: 1px;
+}
+
+.main-usuarios .contenedor-usuarios .usuario-nuevo {
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid #e9e5e5;
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
+          box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+}
+
+.main-usuarios .contenedor-usuarios .nuevo-usuario label {
+  font-weight: bold;
+  margin: 5px auto;
+}
+
+.main-usuarios .contenedor-usuarios .nuevo-usuario input {
+  width: 100%;
+  margin: 5px auto;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.main-usuarios .contenedor-usuarios .nuevo-usuario input {
+  padding-left: 15px;
+}
+
+.main-usuarios .contenedor-usuarios .contenedor-fecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px auto;
+}
+
+.main-usuarios .contenedor-usuarios .titulo-fecha {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+}
+
+.main-usuarios .contenedor-usuarios .contenedor-fecha input {
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.main-usuarios .contenedor-usuarios .contenedor-sexo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px auto;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.main-usuarios .contenedor-usuarios .contenedor-sexo label {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.main-usuarios .contenedor-usuarios .contenedor-sexo select {
+  width: 100%;
+  text-align: center;
+}
+
+.main-usuarios .contenedor-usuarios .politicas-usuario {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.main-usuarios .contenedor-usuarios .politicas-usuario h6 {
+  font-size: 11px;
+}
+
+.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo {
+  width: 100%;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo button {
+  width: 40%;
+  background-color: #747575;
+  color: #202020;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #080808;
+  color: #f6f7f8;
+  border: #747575;
+}
+
+.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo button:hover {
+  border: 1px solid #121213;
+  background-color: #747575;
+  color: #e9e8e8;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-usuarios {
+    margin: 70px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usuario-registrado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px auto;
+  }
+  .linea-divisoria {
+    background-color: #868585;
+    height: 2px;
+    width: 200px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .usuario-nuevo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 35px auto;
+  }
+  .redes-contacto {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .boton-ingreso-nuevo button {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .icon-facebook {
+    margin: auto;
+    width: 12px;
+  }
+  .ingreso-facebook button {
+    font-size: 8px;
+    margin: auto;
+  }
+  .icon-google {
+    margin: auto;
+    width: 12px;
+  }
+  .ingreso-google button {
+    font-size: 8px;
+    margin: auto;
+    text-transform: uppercase;
   }
 }
 
