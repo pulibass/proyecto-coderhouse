@@ -6,20 +6,14 @@
 }
 
 .main-productos {
-    width: 90%;
-    margin: 20px auto;
-    max-width: 1300px;
-    scroll-behavior: smooth;
-    overflow: hidden;
+    @include main;
 
     .titulos {
-        margin: 15px;
-        font-family: sans-serif;
+        @include titulos-principales;
 
         h2 {
-            text-decoration: underline;
-            color: rgb(241, 30, 30);
-            font-weight: bold;
+            @include titulos-principales-h2;
+
         }
     }
 
@@ -48,23 +42,19 @@
 
         .titulos-cubiertas {
             color: rgb(13, 160, 228);
-            font-weight: bold;
-            margin-left: 20px;
-            font-size: 40px;
+            @include titulos-productos-desktop;
+
         }
 
         .titulos-amortiguadores {
             color: rgb(238, 177, 8);
-            font-weight: bold;
-            margin-left: 20px;
-            font-size: 40px;
+            @include titulos-productos-desktop;
         }
 
         .titulos-frenos {
             color: rgb(189, 240, 8);
-            font-weight: bold;
-            margin-left: 20px;
-            font-size: 40px;
+            @include titulos-productos-desktop;
+
         }
 
         .buton-icono {
@@ -73,22 +63,14 @@
         }
 
         .tarjeta {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
+            @include tarjeta-productos-ofertas;
 
             .tarjeta-contenida {
-                border: 4px solid rgb(61, 61, 61);
-                border-radius: 10px;
-                box-shadow: 0px 0px 20px rgb(19, 18, 18);
+                @include tarjeta-contenida-productos-ofertas;
             }
 
             .tarjeta-contenida:hover {
-                transition: all 1s 0s ease, all 1s 0s ease;
-                transform: scale(1.1);
-                cursor: pointer;
-                box-shadow: 2px 5px 10px 5px rgb(112, 111, 111);
+                @include tarjeta-contenida-productos-ofertas-hover;
             }
 
             .descripcion-productos {
@@ -100,10 +82,7 @@
             margin-top: 70px;
 
             hr {
-                width: 60%;
-                margin: auto;
-                height: 3px;
-                background-color: rgb(105, 103, 103);
+                @include linea-hr;
             }
         }
 
@@ -127,21 +106,17 @@
         .contenedor-productos {
 
             .titulos-cubiertas {
-                margin: auto;
-                text-align: center;
-                font-size: 40px;
+                @include titulos-productos-tablet;
             }
 
             .titulos-amortiguadores {
-                margin: auto;
-                text-align: center;
-                font-size: 40px;
+                @include titulos-productos-tablet;
+
             }
 
             .titulos-frenos {
-                margin: auto;
-                text-align: center;
-                font-size: 40px;
+                @include titulos-productos-tablet;
+
             }
         }
     }
@@ -162,21 +137,17 @@
         .contenedor-productos {
 
             .titulos-cubiertas {
-                margin: auto;
-                text-align: center;
-                font-size: 30px;
+                @include titulos-productos-celular;
             }
 
             .titulos-amortiguadores {
-                margin: auto;
-                text-align: center;
-                font-size: 30px;
+                @include titulos-productos-celular;
+
             }
 
             .titulos-frenos {
-                margin: auto;
-                text-align: center;
-                font-size: 30px;
+                @include titulos-productos-celular;
+
             }
         }
     }

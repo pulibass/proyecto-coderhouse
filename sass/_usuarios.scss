@@ -6,19 +6,15 @@
 }
 
 .main-usuarios {
-    width: 90%;
-    margin: auto;
-    max-width: 1300px;
-    margin: 50px auto 80px auto;
+    @include main;
 
-    .titulos-usuarios {
-        margin: 15px;
-        font-family: sans-serif;
+
+    .titulos {
+        @include titulos-principales;
 
         h2 {
-            text-decoration: underline;
-            color: rgb(241, 30, 30);
-            font-weight: bold;
+            @include titulos-principales-h2;
+
         }
     }
 

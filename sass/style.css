@@ -894,13 +894,16 @@ header label {
   width: 90%;
   margin: 20px auto;
   max-width: 1300px;
-  scroll-behavior: smooth;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .main-productos .titulos {
   margin: 15px;
   font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
 }
 
 .main-productos .titulos h2 {
@@ -1065,9 +1068,11 @@ header label {
 }
 
 .main-ofertas .titulos {
-  width: 100%;
   margin: 15px;
   font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
 }
 
 .main-ofertas .titulos h2 {
@@ -1143,23 +1148,18 @@ header label {
   margin: 20px auto;
 }
 
-.main-nosotros .titulos-nosotros {
-  width: 100%;
-  max-width: 1300px;
-  margin: 15px auto;
+.main-nosotros .titulos {
+  margin: 15px;
   font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
 }
 
-.main-nosotros .titulos-nosotros h4 {
-  font-weight: bold;
-  margin-left: 30px;
-}
-
-.main-nosotros .titulos-nosotros h2 {
+.main-nosotros .titulos h2 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
-  margin-left: 30px;
 }
 
 .main-nosotros .contenedor-nosotros {
@@ -1403,27 +1403,22 @@ header label {
 }
 
 .main-contacto {
-  margin: 20PX auto;
+  margin: 20px auto;
   width: 90%;
 }
 
-.main-contacto .titulos-contacto {
-  width: 90%;
-  max-width: 1100px;
-  margin: 15px auto;
+.main-contacto .titulos {
+  margin: 15px;
   font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
 }
 
-.main-contacto .titulos-contacto h4 {
-  font-weight: bold;
-  margin-left: 30px;
-}
-
-.main-contacto .titulos-contacto h2 {
+.main-contacto .titulos h2 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
-  margin-left: 30px;
 }
 
 .main-contacto .container-contacto {
@@ -2282,17 +2277,21 @@ header label {
 
 .main-usuarios {
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
   max-width: 1300px;
-  margin: 50px auto 80px auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.main-usuarios .titulos-usuarios {
+.main-usuarios .titulos {
   margin: 15px;
   font-family: sans-serif;
+  width: 100%;
+  margin: auto;
+  max-width: 1300px;
 }
 
-.main-usuarios .titulos-usuarios h2 {
+.main-usuarios .titulos h2 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
