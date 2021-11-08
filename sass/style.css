@@ -889,6 +889,884 @@ header label {
           box-sizing: border-box;
 }
 
+.main-contacto {
+  margin: 20PX auto;
+  width: 90%;
+}
+
+.main-contacto .titulos-contacto {
+  width: 90%;
+  max-width: 1100px;
+  margin: 15px auto;
+  font-family: sans-serif;
+}
+
+.main-contacto .titulos-contacto h4 {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.main-contacto .titulos-contacto h2 {
+  text-decoration: underline;
+  color: #f11e1e;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.main-contacto .container-contacto {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.main-contacto .container-contacto .ubicacion-contacto {
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+}
+
+.main-contacto .container-contacto .ubicacion-contacto iframe {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
+          box-shadow: 2px 5px 10px 5px #706f6f;
+}
+
+.main-contacto .container-contacto .contenedor-contacto {
+  width: 100%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .parrafos {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .parrafos .p1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .parrafos .p2 {
+  margin-top: 15px;
+  font-size: 33px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .parrafos .p4 {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .parrafos .p4 span {
+  text-align: right;
+  margin-left: 100px;
+  color: brown;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 100px auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h5 {
+  text-align: left;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h3 {
+  width: 100%;
+  font-size: 15px;
+  margin: 5px auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
+  width: 100%;
+  font-size: 15px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 5px auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv h3 {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv p {
+  width: 100%;
+  font-size: 15px;
+  margin: 5px auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form {
+  width: 100%;
+  padding: 25px;
+  color: #efedf1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#334257), color-stop(#476072), color-stop(#548CA8), to(#476072));
+  background: linear-gradient(#334257, #476072, #548CA8, #476072);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
+          box-shadow: 2px 5px 10px 5px #706f6f;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts {
+  margin: 5px auto;
+  width: 30%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts input {
+  width: 100%;
+  height: 30px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-select-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px auto;
+  width: 30%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-select-radio select {
+  height: 30px;
+  cursor: pointer;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
+  margin: 5px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto;
+  width: 80%;
+  font-size: 20px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario textarea {
+  height: 200px;
+  width: 100%;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos {
+  margin: 5px auto;
+  width: 100%;
+  font-size: 15px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos input {
+  cursor: pointer;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .button {
+  margin: 5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
+  background-color: #35a3c5;
+  border: 2px solid gray;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button:hover {
+  background-color: #959899;
+  border: 2px solid #050505;
+  cursor: pointer;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-contacto {
+    margin: 20PX auto;
+    width: 90%;
+    max-width: 900px;
+  }
+  .main-contacto .container-contacto {
+    margin: auto;
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto {
+    width: 100%;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h3 {
+    width: 100%;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv {
+    width: 50%;
+    margin: 5px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv p {
+    width: 100%;
+    font-size: 20px;
+    margin: 5px auto;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form {
+    width: 100%;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 15px;
+    cursor: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
+    margin: 15px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
+    margin: 5px;
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos {
+    margin: 5px auto;
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos input {
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button {
+    width: 80%;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section {
+    width: 100%;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form {
+    width: 100%;
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 15px;
+    cursor: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
+    cursor: pointer;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+    font-size: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario textarea {
+    height: 100px;
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 10px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos input {
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button {
+    width: 100%;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-contacto .container-contacto .contenedor-contacto .ubicacion-contacto iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h5 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h3 {
+    width: 100%;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv p {
+    width: 100%;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form {
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 15px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts input {
+    width: 100%;
+    height: 30px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-select-radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-select-radio select {
+    height: 30px;
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 13px;
+    cursor: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio label {
+    margin: 5px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio input {
+    margin: 5px;
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+    font-size: 15px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario textarea {
+    height: 150px;
+    width: 100%;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos {
+    margin: 5px auto;
+    width: 100%;
+    font-size: 10px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos input {
+    cursor: pointer;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button {
+    width: 100%;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
+    width: 60%;
+    margin: 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-contacto .container-contacto .ubicacion-contacto iframe {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto {
+    width: 100%;
+    margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .parrafos {
+    width: 100%;
+    padding: 8px;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .parrafos .p1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .parrafos .p2 {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .parrafos .p4 {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .parrafos .p4 span {
+    margin-left: 100px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h5 {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h3 {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
+    width: 100%;
+    font-size: 12px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv p {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px auto;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button {
+    width: 100%;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
+    width: 60%;
+    margin: 5px;
+    font-size: 8px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 footer {
   width: 100%;
   max-width: 1400px;

@@ -1,0 +1,829 @@
+@import './variables';
+@import './mixins';
+
+* {
+    @include format-document;
+}
+
+.main-contacto {
+    margin: 20PX auto;
+    width: 90%;
+
+
+
+    .titulos-contacto {
+        width: 90%;
+        max-width: 1100px;
+        margin: 15px auto;
+        font-family: sans-serif;
+
+        h4 {
+            font-weight: bold;
+            margin-left: 30px;
+
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: rgb(241, 30, 30);
+            font-weight: bold;
+            margin-left: 30px;
+
+        }
+    }
+
+
+    .container-contacto {
+        width: 90%;
+        margin: auto;
+        max-width: 1100px;
+
+
+        .ubicacion-contacto {
+            width: 100%;
+            margin: auto;
+            max-width: 800px;
+
+            iframe {
+                width: 100%;
+                height: 250px;
+                margin-top: 20px;
+                box-shadow: 2px 5px 10px 5px rgb(112, 111, 111);
+
+            }
+        }
+
+
+        .contenedor-contacto {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .parrafos {
+                width: 100%;
+                padding: 15px;
+                font-size: 20px;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Bebas Neue', cursive;
+
+                .p1 {
+                    margin-top: 10px;
+                    font-size: 40px;
+                }
+
+                .p2 {
+                    margin-top: 15px;
+                    font-size: 33px;
+                }
+
+                .p4 {
+                    width: 100%;
+                    margin-top: 5px;
+                    font-size: 40px;
+                    font-style: italic;
+                    font-weight: bold;
+                    text-align: right;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+                    span {
+                        text-align: right;
+                        margin-left: 100px;
+                        color: brown;
+                    }
+                }
+
+            }
+
+
+            .sucursal-info {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+                .info {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: center;
+                    align-self: center;
+                    margin: 100px auto;
+
+                    h5 {
+                        text-align: left;
+                        width: 100%;
+                        font-size: 25px;
+                        font-weight: bold;
+                        margin: 5px auto;
+                    }
+
+                    h3 {
+                        width: 100%;
+                        font-size: 15px;
+                        margin: 5px auto;
+                    }
+
+                    h4 {
+                        width: 100%;
+                        font-size: 15px;
+                        justify-content: left;
+                        margin: 5px auto;
+                    }
+                }
+
+
+                .cv {
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: center;
+                    align-self: center;
+                    align-items: center;
+
+                    h3 {
+                        font-weight: bold;
+                        text-align: left;
+                        width: 100%;
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 15px;
+                        margin: 5px auto;
+                    }
+                }
+
+            }
+
+
+            .contacto-section {
+                width: 50%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+
+                form {
+                    width: 100%;
+                    padding: 25px;
+                    color: rgb(239, 237, 241);
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    background: linear-gradient(#334257, #476072, #548CA8, #476072);
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                    box-shadow: 2px 5px 10px 5px rgb(112, 111, 111);
+
+
+                    .inputs-texts {
+                        margin: 5px auto;
+                        width: 30%;
+                        font-size: 15px;
+                        font-weight: bold;
+
+                        input {
+                            width: 100%;
+                            height: 30px;
+                        }
+                    }
+
+
+                    .inputs-select-radio {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5px auto;
+                        width: 30%;
+                        font-size: 15px;
+                        font-weight: bold;
+
+                        select {
+                            height: 30px;
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    .select-radio {
+                        display: flex;
+                        margin: 15px auto;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        font-size: 15px;
+                        font-weight: bold;
+                        cursor: auto;
+
+                        label {
+                            margin: 5px;
+                        }
+
+                        input {
+                            margin: 5px;
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    .comentario {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0px auto;
+                        width: 80%;
+                        font-size: 20px;
+
+                        textarea {
+                            height: 200px;
+                            width: 100%;
+                        }
+                    }
+
+
+                    .terminos {
+                        margin: 5px auto;
+                        width: 100%;
+                        font-size: 15px;
+
+                        input {
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    .button {
+                        margin: 5px auto;
+                        display: flex;
+
+                        button {
+                            background-color: #35a3c5;
+                            border: 2px solid gray;
+                            text-align: center;
+                            font-size: 20px;
+                            color: white;
+                            padding: 5px;
+                            cursor: pointer;
+                            margin: 5px;
+                        }
+
+                        button:hover {
+                            background-color: #959899;
+                            border: 2px solid rgb(5, 5, 5);
+                            cursor: pointer;
+                            color: black;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .main-contacto {
+        margin: 20PX auto;
+        width: 90%;
+        max-width: 900px;
+
+        .container-contacto {
+            margin: auto;
+            width: 100%;
+
+            .contenedor-contacto {
+                width: 100%;
+                margin: auto;
+
+                .sucursal-info {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 5px;
+                    padding: 5px;
+
+                    .info {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        margin: 5px auto;
+
+                        h5 {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: auto;
+                        }
+
+                        h3 {
+                            width: 100%;
+                            font-size: 15px;
+                            margin: auto;
+                            text-align: center;
+                        }
+
+                        h4 {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 20px;
+                            margin: auto;
+                        }
+                    }
+
+                    .cv {
+                        width: 50%;
+                        margin: 5px;
+
+                        h3 {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        p {
+                            width: 100%;
+                            font-size: 20px;
+                            margin: 5px auto;
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+                .contacto-section {
+                    width: 80%;
+                    max-width: 500px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+
+                    form {
+                        width: 100%;
+                        margin: auto;
+
+                        .select-radio {
+                            display: flex;
+                            margin: 15px auto;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            font-size: 15px;
+                            cursor: auto;
+
+                            label {
+                                margin: 15px;
+                            }
+
+                            input {
+                                margin: 5px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .terminos {
+                            margin: 5px auto;
+                            width: 100%;
+
+                            input {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .button {
+                            width: 80%;
+                            margin: 5px auto;
+                            display: flex;
+
+                            button {
+                                width: 80%;
+                                text-align: center;
+                                font-size: 18px;
+                                padding: 5px;
+                                cursor: pointer;
+                                margin: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-contacto {
+
+        .container-contacto {
+
+
+            .contenedor-contacto {
+                .contacto-section {
+                    width: 100%;
+                    margin: auto;
+
+                    form {
+                        width: 100%;
+                        padding: 25px;
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+
+
+                        .select-radio {
+                            width: 100%;
+                            display: flex;
+                            margin: auto;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            font-size: 15px;
+                            cursor: auto;
+
+
+                            label {
+                                margin: 5px auto;
+                            }
+
+                            input {
+                                cursor: pointer;
+                                margin: 5px auto;
+                            }
+                        }
+
+
+                        .comentario {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0px auto;
+                            width: 100%;
+                            font-size: 20px;
+
+                            textarea {
+                                height: 100px;
+                                width: 100%;
+                            }
+                        }
+
+
+                        .terminos {
+                            margin: 5px auto;
+                            width: 100%;
+                            font-size: 10px;
+
+                            input {
+                                cursor: pointer;
+                            }
+                        }
+
+
+                        .button {
+                            width: 100%;
+                            margin: 5px auto;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+
+                            button {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 15px;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .main-contacto {
+
+        .container-contacto {
+
+
+            .contenedor-contacto {
+
+
+                .ubicacion-contacto {
+
+                    iframe {
+                        width: 100%;
+                        height: 200px;
+                        margin-top: 20px;
+                    }
+                }
+
+                .sucursal-info {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+
+                    .info {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: center;
+                        align-self: center;
+                        margin: auto;
+
+                        h5 {
+                            text-align: center;
+                            width: 100%;
+                            font-size: 30px;
+                            font-weight: bold;
+                            margin: 5px auto;
+                        }
+
+                        h3 {
+                            width: 100%;
+                            font-size: 20px;
+                            margin: 5px auto;
+                        }
+
+                        h4 {
+                            width: 100%;
+                            font-size: 15px;
+                            margin: 5px auto;
+                        }
+                    }
+
+
+                    .cv {
+                        width: 100%;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: center;
+                        align-self: center;
+                        align-items: center;
+
+                        h3 {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        p {
+                            width: 100%;
+                            font-size: 20px;
+                            margin: 5px auto;
+                        }
+                    }
+                }
+
+                .contacto-section {
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+
+                    form {
+                        width: 100%;
+
+
+                        .inputs-texts {
+                            margin: 5px auto;
+                            width: 100%;
+                            font-size: 15px;
+
+                            input {
+                                width: 100%;
+                                height: 30px;
+                            }
+                        }
+
+
+                        .inputs-select-radio {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 5px auto;
+                            width: 100%;
+
+
+                            select {
+                                height: 30px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .select-radio {
+                            width: 100%;
+                            display: flex;
+                            margin: 2px auto;
+                            flex-direction: column;
+                            font-size: 13px;
+                            cursor: auto;
+
+                            .punto-radio {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+
+
+                                label {
+                                    margin: 5px;
+                                }
+
+                                input {
+                                    margin: 5px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                        }
+
+
+                        .comentario {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0px auto;
+                            width: 100%;
+                            font-size: 15px;
+
+                            textarea {
+                                height: 150px;
+                                width: 100%;
+                            }
+                        }
+
+
+                        .terminos {
+                            margin: 5px auto;
+                            width: 100%;
+                            font-size: 10px;
+
+                            input {
+                                cursor: pointer;
+                            }
+                        }
+
+
+                        .button {
+                            width: 100%;
+                            margin: 5px auto;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+
+                            button {
+                                width: 60%;
+                                margin: 5px;
+                                font-size: 12px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .main-contacto {
+
+        .container-contacto {
+            .ubicacion-contacto {
+
+                iframe {
+                    width: 100%;
+                    height: 150px;
+                    margin-top: 20px;
+                }
+            }
+
+            .contenedor-contacto {
+                width: 100%;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .parrafos {
+                    width: 100%;
+                    padding: 8px;
+                    margin: 0px auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .p1 {
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+
+                    .p2 {
+                        margin-top: 15px;
+                        font-size: 25px;
+                    }
+
+                    .p4 {
+                        width: 100%;
+                        margin-top: 5px;
+                        font-size: 25px;
+
+
+                        span {
+                            margin-left: 100px;
+                        }
+                    }
+                }
+
+
+                .sucursal-info {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+
+                    .info {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: center;
+                        align-self: center;
+                        margin: auto;
+
+                        h5 {
+                            text-align: center;
+                            width: 100%;
+                            font-size: 20px;
+                            margin: 5px auto;
+                        }
+
+                        h3 {
+                            width: 100%;
+                            font-size: 15px;
+                            margin: 5px auto;
+                        }
+
+                        h4 {
+                            width: 100%;
+                            font-size: 12px;
+                            margin: 5px auto;
+                        }
+                    }
+
+
+                    .cv {
+                        width: 100%;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: center;
+                        align-self: center;
+                        align-items: center;
+
+                        h3 {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        p {
+                            width: 100%;
+                            font-size: 15px;
+                            margin: 5px auto;
+                        }
+                    }
+
+                }
+
+                .contacto-section {
+
+                    form {
+
+                        .button {
+                            width: 100%;
+                            margin: 5px auto;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+
+                            button {
+                                width: 60%;
+                                margin: 5px;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
