@@ -170,176 +170,208 @@
             flex-direction: column;
             justify-content: center;
             margin: 15px;
-        }
 
-        .nuevo-usuario label {
-            font-weight: bold;
-            margin: 5px auto;
-        }
+            form {
 
-        .nuevo-usuario input {
-            width: 100%;
-            margin: 5px auto;
-            border-radius: 5px;
-            height: 40px;
-        }
+                .nuevo-usuario {
 
-        .nuevo-usuario input {
-            padding-left: 15px;
-        }
+                    label {
+                        font-weight: bold;
+                        margin: 5px auto;
+                    }
 
-        .contenedor-fecha {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 20px auto;
-        }
+                    input {
+                        width: 100%;
+                        margin: 5px auto;
+                        border-radius: 5px;
+                        height: 40px;
+                        padding-left: 15px;
 
-        .titulo-fecha {
-            width: 100%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            font-weight: bold;
-        }
+                    }
 
-        .contenedor-fecha input {
-            margin: 15px auto;
-            width: 100%;
-            text-align: center;
-            font-size: large;
-            letter-spacing: 5px;
-            font-weight: bold;
-            border-radius: 5px;
-        }
+                }
 
-        .contenedor-sexo {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 20px auto;
-            width: 100%;
-            text-align: center;
-            font-size: large;
-            letter-spacing: 5px;
-            font-weight: bold;
-        }
 
-        .contenedor-sexo label {
-            width: 100%;
-            text-align: center;
-            font-size: 15px;
-        }
+                .contenedor-fecha {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-top: 20px auto;
 
-        .contenedor-sexo select {
-            width: 100%;
-            text-align: center;
-        }
+                    .titulo-fecha {
+                        width: 100%;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: bold;
+                    }
 
-        .politicas-usuario {
-            margin-top: 15px;
-            width: 100%;
-        }
+                    input {
+                        margin: 15px auto;
+                        width: 100%;
+                        text-align: center;
+                        font-size: large;
+                        letter-spacing: 5px;
+                        font-weight: bold;
+                        border-radius: 5px;
+                    }
+                }
 
-        .politicas-usuario h6 {
-            font-size: 11px;
 
-        }
+                .contenedor-sexo {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-top: 20px auto;
+                    width: 100%;
+                    text-align: center;
+                    font-size: large;
+                    letter-spacing: 5px;
+                    font-weight: bold;
 
-        .boton-ingreso-nuevo {
-            width: 100%;
-            margin-top: 15px;
-            padding: 5px;
-        }
+                    label {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 15px;
+                    }
 
-        .boton-ingreso-nuevo button {
-            width: 40%;
-            background-color: #747575;
-            color: #202020;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: bold;
-            border-radius: 5px;
-            background-color: #080808;
-            color: #f6f7f8;
-            border: #747575;
-        }
+                    select {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
 
-        .boton-ingreso-nuevo button:hover {
-            border: 1px solid #121213;
-            background-color: #747575;
-            color: #e9e8e8;
 
+                .politicas-usuario {
+                    margin-top: 15px;
+                    width: 100%;
+
+                    h6 {
+                        font-size: 11px;
+
+                    }
+                }
+
+
+                .boton-ingreso-nuevo {
+                    width: 100%;
+                    margin-top: 15px;
+                    padding: 5px;
+
+                    button {
+                        width: 40%;
+                        background-color: #747575;
+                        color: #202020;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        background-color: #080808;
+                        color: #f6f7f8;
+                        border: #747575;
+                    }
+
+                    button:hover {
+                        border: 1px solid #121213;
+                        background-color: #747575;
+                        color: #e9e8e8;
+
+                    }
+                }
+            }
         }
     }
-
 }
 
 
 @media screen and (max-width: 768px) {
-    .contenedor-usuarios {
-        margin: 70px auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
 
-    .usuario-registrado {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 400px;
-        margin: 5px auto;
-    }
+    .main-usuarios {
 
-    .linea-divisoria {
-        background-color: rgb(134, 133, 133);
-        height: 2px;
-        width: 200px;
-        margin: auto;
-        margin-top: 25px;
-    }
+        .contenedor-usuarios {
+            margin: 70px auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
-    .usuario-nuevo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 400px;
-        margin: 35px auto;
-    }
+            .usuario-registrado {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+                margin: 5px auto;
+            }
 
-    .redes-contacto {
-        margin-top: 5px;
-    }
+            .linea-divisoria {
+                height: 2px;
+                width: 200px;
+                margin: auto;
+                margin-top: 25px;
+            }
 
+            .usuario-nuevo {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+                margin: 35px auto;
+            }
+
+            .redes-contacto {
+                margin-top: 5px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:360px) {
 
-    .boton-ingreso-nuevo button {
-        font-size: 12px;
-        font-weight: bold;
-    }
 
-    .icon-facebook {
-        margin: auto;
-        width: 12px;
-    }
+    .main-usuarios {
 
-    .ingreso-facebook button {
-        font-size: 8px;
-        margin: auto;
-    }
+        .contenedor-usuarios {
 
-    .icon-google {
-        margin: auto;
-        width: 12px;
-    }
 
-    .ingreso-google button {
-        font-size: 8px;
-        margin: auto;
-        text-transform: uppercase;
-    }
+            .usuario-registrado {
 
+                .ingreso-facebook {
+
+                    .icon-facebook {
+                        margin: auto;
+                        width: 12px;
+
+                        button {
+                            font-size: 8px;
+                            margin: auto;
+                        }
+                    }
+
+                }
+
+                .ingreso-google {
+
+                    .icon-google {
+                        margin: auto;
+                        width: 12px;
+                    }
+
+                    button {
+                        font-size: 8px;
+                        margin: auto;
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+
+            .usuario-nuevo {
+
+                .boton-ingreso-nuevo button {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
 }

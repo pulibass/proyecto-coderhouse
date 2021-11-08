@@ -890,6 +890,253 @@ header label {
           box-sizing: border-box;
 }
 
+.main-productos {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1300px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.main-productos .titulos {
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.main-productos .titulos h2 {
+  text-decoration: underline;
+  color: #f11e1e;
+  font-weight: bold;
+}
+
+.main-productos .boton-navegacion {
+  width: 100%;
+  max-width: 1300px;
+  text-align: right;
+  z-index: 999;
+}
+
+.main-productos .boton-navegacion select {
+  width: 40%;
+  max-width: 300px;
+  text-align: left;
+  height: 30px;
+  text-decoration: underline;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 50;
+  z-index: 999;
+}
+
+.main-productos .contenedor-productos {
+  margin-top: 70px;
+}
+
+.main-productos .contenedor-productos .titulos-cubiertas {
+  color: #0da0e4;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.main-productos .contenedor-productos .titulos-amortiguadores {
+  color: #eeb108;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.main-productos .contenedor-productos .titulos-frenos {
+  color: #bdf008;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.main-productos .contenedor-productos .buton-icono {
+  width: 50%;
+  margin-top: 0px;
+}
+
+.main-productos .contenedor-productos .tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main-productos .contenedor-productos .tarjeta .tarjeta-contenida {
+  border: 4px solid #3d3d3d;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px #131212;
+          box-shadow: 0px 0px 20px #131212;
+}
+
+.main-productos .contenedor-productos .tarjeta .tarjeta-contenida:hover {
+  -webkit-transition: all 1s 0s ease, all 1s 0s ease;
+  transition: all 1s 0s ease, all 1s 0s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
+          box-shadow: 2px 5px 10px 5px #706f6f;
+}
+
+.main-productos .contenedor-productos .tarjeta .descripcion-productos {
+  font-size: 12px;
+}
+
+.main-productos .contenedor-productos .linea {
+  margin-top: 70px;
+}
+
+.main-productos .contenedor-productos .linea hr {
+  width: 60%;
+  margin: auto;
+  height: 3px;
+  background-color: #696767;
+}
+
+@media screen and (max-width: 768px) {
+  .main-productos .boton-navegacion select {
+    width: 40%;
+    max-width: 300px;
+    font-size: 15px;
+  }
+  .main-productos .contenedor-productos .titulos-cubiertas {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+  }
+  .main-productos .contenedor-productos .titulos-amortiguadores {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+  }
+  .main-productos .contenedor-productos .titulos-frenos {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-productos .boton-navegacion select {
+    width: 60%;
+    max-width: 400px;
+    font-size: 12px;
+  }
+  .main-productos .contenedor-productos .titulos-cubiertas {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  .main-productos .contenedor-productos .titulos-amortiguadores {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  .main-productos .contenedor-productos .titulos-frenos {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-ofertas {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1300px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-ofertas .titulos {
+  width: 100%;
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.main-ofertas .titulos h2 {
+  text-decoration: underline;
+  color: #f11e1e;
+  font-weight: bold;
+}
+
+.main-ofertas .contenedor-ofertas {
+  margin-top: 70px;
+}
+
+.main-ofertas .contenedor-ofertas .buton-icono {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.main-ofertas .contenedor-ofertas .tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main-ofertas .contenedor-ofertas .tarjeta .tarjeta-contenida {
+  border: 4px solid #3d3d3d;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px #131212;
+          box-shadow: 0px 0px 20px #131212;
+}
+
+.main-ofertas .contenedor-ofertas .tarjeta .tarjeta-contenida:hover {
+  -webkit-transition: all 1s 0s ease, all 1s 0s ease;
+  transition: all 1s 0s ease, all 1s 0s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
+          box-shadow: 2px 5px 10px 5px #706f6f;
+}
+
+.main-ofertas .contenedor-ofertas .tarjeta .descripcion-oferta {
+  font-size: 10px;
+}
+
+.main-ofertas .contenedor-ofertas .linea {
+  margin-top: 70px;
+}
+
+.main-ofertas .contenedor-ofertas .linea hr {
+  width: 60%;
+  margin: auto;
+  height: 3px;
+  background-color: #696767;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .main-nosotros {
   width: 90%;
   max-width: 1300px;
@@ -2220,23 +2467,20 @@ header label {
   margin: 15px;
 }
 
-.main-usuarios .contenedor-usuarios .nuevo-usuario label {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .nuevo-usuario label {
   font-weight: bold;
   margin: 5px auto;
 }
 
-.main-usuarios .contenedor-usuarios .nuevo-usuario input {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .nuevo-usuario input {
   width: 100%;
   margin: 5px auto;
   border-radius: 5px;
   height: 40px;
-}
-
-.main-usuarios .contenedor-usuarios .nuevo-usuario input {
   padding-left: 15px;
 }
 
-.main-usuarios .contenedor-usuarios .contenedor-fecha {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-fecha {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2249,7 +2493,7 @@ header label {
   margin-top: 20px auto;
 }
 
-.main-usuarios .contenedor-usuarios .titulo-fecha {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-fecha .titulo-fecha {
   width: 100%;
   text-align: center;
   display: -webkit-box;
@@ -2262,7 +2506,7 @@ header label {
   font-weight: bold;
 }
 
-.main-usuarios .contenedor-usuarios .contenedor-fecha input {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-fecha input {
   margin: 15px auto;
   width: 100%;
   text-align: center;
@@ -2272,7 +2516,7 @@ header label {
   border-radius: 5px;
 }
 
-.main-usuarios .contenedor-usuarios .contenedor-sexo {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-sexo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2290,33 +2534,33 @@ header label {
   font-weight: bold;
 }
 
-.main-usuarios .contenedor-usuarios .contenedor-sexo label {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-sexo label {
   width: 100%;
   text-align: center;
   font-size: 15px;
 }
 
-.main-usuarios .contenedor-usuarios .contenedor-sexo select {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-sexo select {
   width: 100%;
   text-align: center;
 }
 
-.main-usuarios .contenedor-usuarios .politicas-usuario {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .politicas-usuario {
   margin-top: 15px;
   width: 100%;
 }
 
-.main-usuarios .contenedor-usuarios .politicas-usuario h6 {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .politicas-usuario h6 {
   font-size: 11px;
 }
 
-.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo {
   width: 100%;
   margin-top: 15px;
   padding: 5px;
 }
 
-.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo button {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo button {
   width: 40%;
   background-color: #747575;
   color: #202020;
@@ -2329,14 +2573,14 @@ header label {
   border: #747575;
 }
 
-.main-usuarios .contenedor-usuarios .boton-ingreso-nuevo button:hover {
+.main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo button:hover {
   border: 1px solid #121213;
   background-color: #747575;
   color: #e9e8e8;
 }
 
 @media screen and (max-width: 768px) {
-  .contenedor-usuarios {
+  .main-usuarios .contenedor-usuarios {
     margin: 70px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2349,7 +2593,7 @@ header label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .usuario-registrado {
+  .main-usuarios .contenedor-usuarios .usuario-registrado {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2361,14 +2605,13 @@ header label {
     max-width: 400px;
     margin: 5px auto;
   }
-  .linea-divisoria {
-    background-color: #868585;
+  .main-usuarios .contenedor-usuarios .linea-divisoria {
     height: 2px;
     width: 200px;
     margin: auto;
     margin-top: 25px;
   }
-  .usuario-nuevo {
+  .main-usuarios .contenedor-usuarios .usuario-nuevo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2380,32 +2623,32 @@ header label {
     max-width: 400px;
     margin: 35px auto;
   }
-  .redes-contacto {
+  .main-usuarios .contenedor-usuarios .redes-contacto {
     margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .boton-ingreso-nuevo button {
-    font-size: 12px;
-    font-weight: bold;
-  }
-  .icon-facebook {
+  .main-usuarios .contenedor-usuarios .usuario-registrado .ingreso-facebook .icon-facebook {
     margin: auto;
     width: 12px;
   }
-  .ingreso-facebook button {
+  .main-usuarios .contenedor-usuarios .usuario-registrado .ingreso-facebook .icon-facebook button {
     font-size: 8px;
     margin: auto;
   }
-  .icon-google {
+  .main-usuarios .contenedor-usuarios .usuario-registrado .ingreso-google .icon-google {
     margin: auto;
     width: 12px;
   }
-  .ingreso-google button {
+  .main-usuarios .contenedor-usuarios .usuario-registrado .ingreso-google button {
     font-size: 8px;
     margin: auto;
     text-transform: uppercase;
+  }
+  .main-usuarios .contenedor-usuarios .usuario-nuevo .boton-ingreso-nuevo button {
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 
