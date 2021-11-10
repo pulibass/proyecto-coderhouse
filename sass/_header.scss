@@ -23,13 +23,13 @@ header {
     }
 
     .logo img {
-        margin-left: 15px;
+        margin-left: $margin-3;
         width: 200px;
         height: 60px;
     }
 
     nav {
-        width: 80%;
+        width: $width-3;
         display: flex;
         justify-content: right;
         flex-direction: row;
@@ -39,14 +39,14 @@ header {
             list-style: none;
             display: inline-block;
             position: relative;
-            margin: 15px 5px;
+            margin: $margin-3 $margin-1;
 
             a {
-                color: rgba(230, 231, 231, 0.945);
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                text-align: $center;
+                color: $secondary-color-4;
+                font-family: $font-primary-1;
+                text-align: center;
                 font-size: $font-size-2;
-                font-weight: $bold;
+                font-weight: bold;
                 letter-spacing: 2px;
                 text-decoration: none;
                 padding: $padding-2 $padding-6;
@@ -57,7 +57,7 @@ header {
         }
 
         .img-iconos {
-            margin-right: 5px;
+            margin-right: $margin-1;
             width: 16px;
             height: 16px;
         }
@@ -93,15 +93,15 @@ header {
 
         .logo {
             justify-content: space-between;
-            width: 100%;
+            width: $width;
         }
 
         nav {
             position: absolute;
-            width: 100%;
+            width: $width;
             display: flex;
             flex-direction: row;
-            justify-content: $center;
+            justify-content: center;
             margin-top: -200%;
             height: 60px;
             flex-wrap: wrap;
@@ -113,14 +113,14 @@ header {
                 list-style: none;
                 display: inline-block;
                 position: relative;
-                margin: 15px auto;
+                margin: $margin-3 auto;
 
                 a {
                     color: $secondary-color;
                     font-family: $font-primary-1;
-                    text-align: $center;
+                    text-align: center;
                     font-size: $font-size-2;
-                    font-weight: $bold;
+                    font-weight: bold;
                     letter-spacing: 2px;
                     text-decoration: none;
                     padding: $padding-2 $padding-6;
@@ -130,7 +130,7 @@ header {
             }
 
             .img-iconos {
-                margin-right: 5px;
+                margin-right: $margin-1;
                 width: 16px;
                 height: 16px;
             }
@@ -138,7 +138,7 @@ header {
 
             a {
                 text-align: left;
-                font-size: 5px;
+                font-size: $font-size-12;
             }
 
         }
@@ -188,12 +188,12 @@ header {
 
         .logo {
             justify-content: space-between;
-            width: 100%;
+            width: $width;
         }
 
         nav {
             position: absolute;
-            width: 100%;
+            width: $width;
             display: flex;
             flex-direction: column;
             justify-content: left;
@@ -205,9 +205,9 @@ header {
             background: linear-gradient(to right, $secondary-color-6, $secondary-color-5);
 
             ul {
-                width: 100%;
+                width: $width;
                 display: flex;
-                justify-content: $center;
+                justify-content: center;
                 margin: auto;
                 flex-direction: column;
 
@@ -215,14 +215,14 @@ header {
                 li {
                     margin: auto;
                     margin-left: -20px;
-                    margin-top: 15px;
-                    width: 100%;
+                    margin-top: $margin-3;
+                    width: $width;
                     border-bottom: 2px solid $secondary-color;
 
                     a {
                         font-size: $font-size-5;
                         letter-spacing: 10px;
-                        width: 50%;
+                        width: $width-9;
                         text-align: left;
                     }
 
@@ -246,7 +246,7 @@ header {
             }
 
             .img-iconos {
-                margin-right: 10px;
+                margin-right: $margin-2;
                 margin-top: 6px;
                 width: 16px;
                 height: 16px;
@@ -289,7 +289,7 @@ header {
 
 @media screen and (max-width: 500px) {
     .logo img {
-        margin-left: 5px;
+        margin-left: $margin-1;
         width: 150px;
         height: 60px;
     }

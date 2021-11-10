@@ -30,15 +30,15 @@
         .textos-nosotros {
             display: flex;
             flex-direction: row;
-            justify-content: $center;
-            align-items: $center;
+            justify-content: center;
+            align-items: center;
             z-index: 2;
             margin-top: -200px;
 
             .texto-logo {
-                width: $width-13;
+                width: 30%;
                 padding: $padding-4;
-                margin-top: $margin-13;
+                margin-top: 70px;
 
                 h4:nth-child(1) {
                     @include h4-nosotros;
@@ -62,7 +62,7 @@
 
                 h2 {
                     color: $primary-color;
-                    font-weight: $bold;
+                    font-weight: bold;
                     font-size: $font-size-9;
                     text-shadow: 1px 1px 2px $primary-color-8;
 
@@ -70,7 +70,7 @@
 
                 h5 {
                     color: $secondary-color-2;
-                    font-weight: $bold;
+                    font-weight: bold;
                     font-size: $font-size-4;
                     text-align: left;
                     text-shadow: 1px 1px 2px $primary-color-9;
@@ -107,12 +107,12 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                align-items: $center;
+                align-items: center;
                 z-index: 2;
                 margin-top: -180px;
 
                 .texto-logo {
-                    width: $width-13;
+                    width: 30%;
                     padding: $padding-4;
 
                     h4:nth-child(1) {
@@ -155,13 +155,13 @@
             .textos-nosotros {
                 display: flex;
                 flex-direction: row;
-                justify-content: $center;
-                align-items: $center;
+                justify-content: center;
+                align-items: center;
                 z-index: 2;
                 margin-top: -150px;
 
                 .texto-logo {
-                    width: $width-13;
+                    width: 30%;
                     padding: $padding-4;
                     margin-top: $margin-6;
 
@@ -201,8 +201,8 @@
             .textos-nosotros {
                 display: flex;
                 flex-direction: row;
-                justify-content: $center;
-                align-items: $center;
+                justify-content: center;
+                align-items: center;
                 z-index: 2;
                 margin-top: -150px;
 
@@ -242,8 +242,8 @@
             .textos-nosotros {
                 display: flex;
                 flex-direction: row;
-                justify-content: $center;
-                align-items: $center;
+                justify-content: center;
+                align-items: center;
                 z-index: 2;
                 margin-top: -180px;
             }

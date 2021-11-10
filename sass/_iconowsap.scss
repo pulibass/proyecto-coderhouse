@@ -28,9 +28,9 @@
 
 
     .texto-whatsapp {
-        background-color: rgba(0, 0, 0, 0.337);
+        background-color: $primary-color-7;
         margin-top: -38px;
-        margin-left: 50px;
+        margin-left: $margin-9;
         width: 120px;
         position: absolute;
         transition: 500ms all ease;
@@ -65,13 +65,13 @@
 
         .texto-whatsapp {
             margin-top: -29px;
-            margin-left: 35px;
+            margin-left: $margin-6;
             width: 80px;
 
             h5 {
                 font-size: 12px;
                 text-align: center;
-                margin-top: 5px;
+                margin-top: $margin-1;
             }
         }
     }

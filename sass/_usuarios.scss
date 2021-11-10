@@ -20,7 +20,7 @@
 
 
     .contenedor-usuarios {
-        margin: $margin-13 auto;
+        margin: 70px auto;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -45,7 +45,7 @@
                         color: $secondary-color-4;
                         text-transform: uppercase;
                         font-size: $font-size-3;
-                        font-weight: $bold;
+                        font-weight: bold;
                         border: 1px solid $secondary-color-9;
                         border-radius: 5px;
                     }
@@ -138,7 +138,7 @@
                 .nuevo-usuario {
 
                     label {
-                        font-weight: $bold;
+                        font-weight: bold;
                         margin: $margin-1 auto;
                     }
 
@@ -162,19 +162,19 @@
 
                     .titulo-fecha {
                         width: $width;
-                        text-align: $center;
+                        text-align: center;
                         display: flex;
                         flex-direction: column;
-                        font-weight: $bold;
+                        font-weight: bold;
                     }
 
                     input {
                         margin: $margin-3 auto;
                         width: $width;
-                        text-align: $center;
+                        text-align: center;
                         font-size: large;
                         letter-spacing: 5px;
-                        font-weight: $center;
+                        font-weight: center;
                         border-radius: 5px;
                     }
                 }
@@ -186,20 +186,20 @@
                     flex-wrap: wrap;
                     margin-top: $margin-4 auto;
                     width: $width;
-                    text-align: $center;
+                    text-align: center;
                     font-size: large;
                     letter-spacing: 5px;
-                    font-weight: $bold;
+                    font-weight: center;
 
                     label {
                         width: $width;
-                        text-align: $center;
+                        text-align: center;
                         font-size: $font-size-4;
                     }
 
                     select {
                         width: $width;
-                        text-align: $center;
+                        text-align: center;
                     }
                 }
 
@@ -225,7 +225,7 @@
                         color: $secondary-color-3;
                         text-transform: uppercase;
                         font-size: $font-size-3;
-                        font-weight: $bold;
+                        font-weight: bold;
                         border-radius: 5px;
                         background-color: $secondary-color-2;
                         color: $secondary-color;
@@ -250,9 +250,9 @@
     .main-usuarios {
 
         .contenedor-usuarios {
-            margin: $margin-13 auto;
+            margin: 70px auto;
             display: flex;
-            justify-content: $center;
+            justify-content: center;
             flex-direction: column;
 
             .usuario-registrado {
@@ -323,7 +323,7 @@
 
                 .boton-ingreso-nuevo button {
                     font-size: $font-size-2;
-                    font-weight: $bold;
+                    font-weight: bold;
                 }
             }
 

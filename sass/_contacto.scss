@@ -47,7 +47,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: $center;
+            justify-content: center;
 
             .parrafos {
                 width: $width;
@@ -73,7 +73,7 @@
                     margin-top: $margin-1;
                     font-size: $font-size-9;
                     font-style: italic;
-                    font-weight: $bold;
+                    font-weight: bold;
                     text-align: right;
                     font-family: $font-primary-1;
 
@@ -102,7 +102,7 @@
                         text-align: left;
                         width: $width;
                         font-size: $font-size-6;
-                        font-weight: $bold;
+                        font-weight: bold;
                         margin: $margin-1 auto;
                     }
 
@@ -126,7 +126,7 @@
                     margin: auto;
 
                     h3 {
-                        font-weight: $bold;
+                        font-weight: bold;
                         text-align: left;
                         width: $width;
                     }
@@ -145,7 +145,7 @@
                 width: $width-9;
                 margin: auto;
                 display: flex;
-                justify-content: $center;
+                justify-content: center;
 
                 form {
                     width: $width;
@@ -154,7 +154,7 @@
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    text-align: $center;
+                    text-align: center;
                     background: linear-gradient($secondary-color-17, $secondary-color-18, $secondary-color-19, $secondary-color-20);
                     font-family: sans-serif;
                     text-transform: uppercase;
@@ -163,9 +163,9 @@
 
                     .inputs-texts {
                         margin: $margin-1 auto;
-                        width: $width-13;
+                        width: 30%;
                         font-size: $font-size-4;
-                        font-weight: $bold;
+                        font-weight: bold;
 
                         input {
                             width: $width;
@@ -178,9 +178,9 @@
                         display: flex;
                         flex-direction: column;
                         margin: $margin-1 auto;
-                        width: $width-13;
+                        width: 30%;
                         font-size: $font-size-4;
-                        font-weight: $bold;
+                        font-weight: bold;
 
                         select {
                             height: 30px;
@@ -195,7 +195,7 @@
                         flex-direction: column;
                         justify-content: space-between;
                         font-size: $font-size-4;
-                        font-weight: $bold;
+                        font-weight: bold;
                         cursor: auto;
 
                         label {
@@ -241,7 +241,7 @@
                         button {
                             background-color: $secondary-color-9;
                             border: $margin solid $secondary-color-16;
-                            text-align: $center;
+                            text-align: center;
                             font-size: $font-size-5;
                             color: $secondary-color;
                             padding: $padding-1;
@@ -285,7 +285,7 @@
                     width: $width;
                     display: flex;
                     justify-content: center;
-                    align-items: $center;
+                    align-items: center;
                     flex-direction: column;
                     margin: $margin-1;
                     padding: $padding-1;
@@ -293,13 +293,13 @@
                     .info {
                         width: $width;
                         display: flex;
-                        justify-content: $center;
-                        text-align: $center;
+                        justify-content: center;
+                        text-align: center;
                         margin: $margin-1 auto;
 
                         h5 {
                             width: $width;
-                            text-align: $center;
+                            text-align: center;
                             font-size: $font-size-6;
                             margin: auto;
                         }
@@ -308,12 +308,12 @@
                             width: $width;
                             font-size: $font-size-4;
                             margin: auto;
-                            text-align: $center;
+                            text-align: center;
                         }
 
                         h4 {
                             width: $width;
-                            text-align: $center;
+                            text-align: center;
                             font-size: $font-size-4;
                             margin: auto;
                         }
@@ -325,14 +325,14 @@
 
                         h3 {
                             width: $width;
-                            text-align: $center
+                            text-align: center;
                         }
 
                         p {
                             width: $width;
                             font-size: $font-size-5;
                             margin: $margin-1 auto;
-                            text-align: $center;
+                            text-align: center;
                         }
                     }
 
@@ -343,7 +343,7 @@
                     max-width: 500px;
                     margin: auto;
                     display: flex;
-                    justify-content: $center;
+                    justify-content: center;
 
                     form {
                         width: $width;
@@ -383,7 +383,7 @@
 
                             button {
                                 width: $width-3;
-                                text-align: $center;
+                                text-align: center;
                                 font-size: $font-size-14;
                                 padding: $padding-1;
                                 cursor: pointer;
@@ -413,7 +413,7 @@
                         padding: $padding-5;
                         display: flex;
                         flex-direction: row;
-                        text-align: $center;
+                        text-align: center;
 
 
                         .select-radio {
@@ -471,7 +471,7 @@
 
                             button {
                                 width: $width;
-                                text-align: $center;
+                                text-align: center;
                                 font-size: $font-size-4;
                                 padding: $padding-1;
                                 margin: $margin-1;
@@ -515,10 +515,10 @@
                         margin: auto;
 
                         h5 {
-                            text-align: $center;
+                            text-align: center;
                             width: $width;
                             font-size: $font-size-7;
-                            font-weight: $bold;
+                            font-weight: bold;
                             margin: $margin-1 auto;
                         }
 
@@ -543,7 +543,7 @@
 
                         h3 {
                             width: $width;
-                            text-align: $center;
+                            text-align: center;
                         }
 
                         p {
@@ -558,7 +558,7 @@
                     width: $width;
                     margin: auto;
                     display: flex;
-                    justify-content: $center;
+                    justify-content: center;
 
                     form {
                         width: $width;
@@ -600,7 +600,7 @@
                             .punto-radio {
                                 display: flex;
                                 flex-direction: row;
-                                justify-content: $center;
+                                justify-content: center;
 
 
                                 label {
@@ -682,7 +682,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: $center;
+                justify-content: center;
 
                 .parrafos {
                     width: $width;
@@ -725,7 +725,7 @@
                         margin: auto;
 
                         h5 {
-                            text-align: $center;
+                            text-align: center;
                             width: $width;
                             font-size: $font-size-5;
                             margin: $margin-1 auto;
@@ -752,7 +752,7 @@
 
                         h3 {
                             width: $width;
-                            text-align: $center;
+                            text-align: center;
                         }
 
                         p {

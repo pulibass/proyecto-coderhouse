@@ -19,7 +19,7 @@
 @mixin titulos-principales-h2 {
     text-decoration: underline;
     color: $primary-color;
-    font-weight: $bold;
+    font-weight: bold;
 
 }
 
@@ -40,58 +40,58 @@
     border-radius: 0px 0px 10px 10px;
     display: flex;
     flex-direction: column;
-    align-self: $center;
-    justify-content: $center;
+    align-self: center;
+    justify-content: center;
 }
 
 @mixin h5-1-index {
     font-family: $font-primary;
-    font-weight: $bold;
+    font-weight: bold;
     font-size: $font-size-2;
     background-color: $secondary-color;
-    text-align: $center;
+    text-align: center;
 }
 
 @mixin h5-2-index {
     font-family: $font-primary;
     color: $secondary-color-2;
-    text-align: $center;
+    text-align: center;
     font-size: $font-size-1;
     letter-spacing: 3px;
-    text-align: $center;
-    font-weight: $bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 @mixin img4-index {
     display: flex;
-    justify-content: $center;
-    align-self: $center;
-    align-items: $center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     width: $width;
     height: 200px;
     margin: $margin-3 auto;
 }
 
 @mixin titulos-productos-desktop {
-    font-weight: $bold;
+    font-weight: bold;
     margin-left: $margin-4;
     font-size: $font-size-9;
 }
 
 @mixin titulos-productos-tablet {
     margin: auto;
-    text-align: $center;
+    text-align: center;
     font-size: $font-size-9;
 }
 
 @mixin titulos-productos-celular {
     margin: auto;
-    text-align: $center;
+    text-align: center;
     font-size: $font-size-7;
 }
 
 @mixin linea-hr {
-    width: $width-6;
+    width: 65%;
     margin: auto;
     height: 3px;
     background-color: $primary-color-3;
@@ -99,8 +99,8 @@
 
 @mixin tarjeta-productos-ofertas {
     display: flex;
-    justify-content: $center;
-    align-items: $center;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
@@ -125,7 +125,7 @@
 
 @mixin h2-footer {
     font-size: $font-size-9;
-    text-align: $center;
+    text-align: center;
     width: $width;
     margin: auto;
 }
@@ -134,7 +134,7 @@
     font-size: $font-size-9;
     text-align: right;
     font-style: italic;
-    font-weight: $bold;
+    font-weight: bold;
     text-shadow: 1px 1px 2px $secondary-color-2;
 
 }
@@ -175,7 +175,7 @@
 @mixin button-facebook-google {
     background: none;
     border: none;
-    text-align: $center;
+    text-align: center;
     font-weight: bold;
     font-size: $font-size-2;
     margin: auto;
@@ -193,6 +193,6 @@
     width: $width;
     display: flex;
     flex-direction: column;
-    justify-self: $center;
-    align-self: $center;
+    justify-self: center;
+    align-self: center;
 }

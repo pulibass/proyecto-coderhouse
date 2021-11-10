@@ -17,7 +17,7 @@ footer {
 
     .container-footer {
         display: flex;
-        justify-content: $center;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
@@ -36,7 +36,7 @@ footer {
                 color: $secondary-color-4;
                 padding: $padding-1;
                 font-size: $font-size-3;
-                text-align: $center;
+                text-align: center;
 
                 h2 {
                     @include h2-footer;
@@ -48,7 +48,7 @@ footer {
                 padding: $padding-1;
                 font-size: $font-size-4;
                 color: $secondary-color-4;
-                font-weight: $bold;
+                font-weight: bold;
                 margin: 20px auto;
             }
         }
@@ -58,7 +58,7 @@ footer {
             width: 30%;
             margin: 10px;
             padding: $padding-3;
-            text-align: $center;
+            text-align: center;
             color: $secondary-color-4;
             list-style: none;
             border-bottom: 1px solid $secondary-color-4;
@@ -68,7 +68,7 @@ footer {
                 color: $secondary-color-4;
                 padding: $padding-1;
                 font-size: $font-size-3;
-                text-align: $center;
+                text-align: center;
 
                 h2 {
                     @include h2-footer;
@@ -96,7 +96,7 @@ footer {
             padding: $padding-3;
             display: flex;
             flex-direction: column;
-            justify-content: $center;
+            justify-content: center;
             width: 30%;
             margin: 10px;
             border-bottom: 1px solid $secondary-color-4;
@@ -106,7 +106,7 @@ footer {
                 color: $secondary-color-4;
                 padding: $padding-1;
                 font-size: $font-size-3;
-                text-align: $center;
+                text-align: center;
 
                 h2 {
                     @include h2-footer;
@@ -117,11 +117,11 @@ footer {
             .texto-redes {
                 color: $secondary-color-4;
                 width: 100%;
-                text-align: $center;
+                text-align: center;
                 margin: auto;
 
                 h5:nth-child(2) {
-                    font-weight: $bold;
+                    font-weight: bold;
                 }
             }
 
@@ -129,7 +129,7 @@ footer {
                 margin-top: 10px;
                 display: flex;
                 width: 100%;
-                justify-content: $center;
+                justify-content: center;
 
                 .icon-redes {
                     width: 30px;
@@ -143,7 +143,7 @@ footer {
                 display: flex;
                 flex-direction: row;
                 align-items: baseline;
-                justify-content: $center;
+                justify-content: center;
                 width: 100%;
 
                 img:nth-child(1) {
@@ -179,9 +179,9 @@ footer {
 
             h5 {
                 margin: auto;
-                text-align: $center;
+                text-align: center;
                 font-family: $font-primary;
-                font-weight: $bold;
+                font-weight: bold;
 
             }
 
@@ -200,11 +200,11 @@ footer {
             color: $secondary-color-4;
             padding: $padding-1;
             font-size: $font-size-3;
-            text-align: $center;
+            text-align: center;
 
             h2 {
                 font-size: $font-size-9;
-                text-align: $center;
+                text-align: center;
                 width: 100%;
                 margin: auto;
             }
@@ -240,10 +240,10 @@ footer {
             border-bottom: 1px solid $secondary-color-4;
             color: $secondary-color-4;
             padding: $padding-1;
-            text-align: $center;
+            text-align: center;
 
             h2 {
-                text-align: $center;
+                text-align: center;
                 width: 100%;
                 margin: auto;
                 font-size: $font-size-12;
@@ -275,10 +275,10 @@ footer {
 
         .logos-autos h5 {
             margin: auto;
-            text-align: $center;
+            text-align: center;
             font-family: $font-primary;
             font-size: $font-size-1;
-            font-weight: $center;
+            font-weight: bold;
         }
     }
 
@@ -292,7 +292,7 @@ footer {
         .container-footer {
             display: flex;
             flex-direction: column;
-            justify-content: $center;
+            justify-content: center;
 
             .descripcion-footer {
                 display: flex;
@@ -307,7 +307,7 @@ footer {
                     color: $secondary-color-4;
                     padding: $padding-1;
                     font-size: $font-size-3;
-                    text-align: $center;
+                    text-align: center;
 
                     h2 {
                         @include h2-footer;
@@ -317,7 +317,7 @@ footer {
                 h3 {
                     font-size: $font-size-5;
                     margin: 15px auto;
-                    text-align: $center;
+                    text-align: center;
                 }
 
 
@@ -338,7 +338,7 @@ footer {
                     color: $secondary-color-4;
                     padding: $padding-1;
                     font-size: $font-size-3;
-                    text-align: $center;
+                    text-align: center;
 
                     h2 {
                         @include h2-footer;
@@ -348,7 +348,7 @@ footer {
                 ul {
                     margin: auto;
                     width: 100%;
-                    text-align: $center;
+                    text-align: center;
 
                     li {
                         font-size: $font-size-5;
@@ -363,7 +363,7 @@ footer {
 
             .dataweb-redes {
                 display: flex;
-                justify-content: $center;
+                justify-content: center;
                 flex-direction: column;
                 width: 100%;
                 max-width: 500px;
@@ -376,7 +376,7 @@ footer {
                     color: $secondary-color-4;
                     padding: $padding-1;
                     font-size: $font-size-3;
-                    text-align: $center;
+                    text-align: center;
 
                     h2 {
                         @include h2-footer;
