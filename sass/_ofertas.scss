@@ -40,7 +40,7 @@
             }
 
             .descripcion-oferta {
-                font-size: 10px;
+                font-size: $font-size-1;
             }
         }
 
@@ -52,7 +52,7 @@
                 width: 60%;
                 margin: auto;
                 height: 3px;
-                background-color: rgb(105, 103, 103);
+                background-color: $primary-color-6;
             }
         }
 

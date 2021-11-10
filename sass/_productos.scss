@@ -30,7 +30,7 @@
             text-align: left;
             height: 30px;
             text-decoration: underline;
-            font-size: 20px;
+            font-size: $font-size-5;
             text-transform: uppercase;
             font-weight: 50;
             z-index: 999;
@@ -41,18 +41,18 @@
         margin-top: 70px;
 
         .titulos-cubiertas {
-            color: rgb(13, 160, 228);
+            color: $secondary-color-5;
             @include titulos-productos-desktop;
 
         }
 
         .titulos-amortiguadores {
-            color: rgb(238, 177, 8);
+            color: $secondary-color-10;
             @include titulos-productos-desktop;
         }
 
         .titulos-frenos {
-            color: rgb(189, 240, 8);
+            color: $secondary-color-11;
             @include titulos-productos-desktop;
 
         }
@@ -99,7 +99,7 @@
             select {
                 width: 40%;
                 max-width: 300px;
-                font-size: 15px;
+                font-size: $font-size-4;
             }
         }
 
@@ -130,7 +130,7 @@
             select {
                 width: 60%;
                 max-width: 400px;
-                font-size: 12px;
+                font-size: $font-size-2;
             }
         }
 

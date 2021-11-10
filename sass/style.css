@@ -938,21 +938,21 @@ header label {
 }
 
 .main-productos .contenedor-productos .titulos-cubiertas {
-  color: #0da0e4;
+  color: #0575E6;
   font-weight: bold;
   margin-left: 20px;
   font-size: 40px;
 }
 
 .main-productos .contenedor-productos .titulos-amortiguadores {
-  color: #eeb108;
+  color: #FAB400;
   font-weight: bold;
   margin-left: 20px;
   font-size: 40px;
 }
 
 .main-productos .contenedor-productos .titulos-frenos {
-  color: #bdf008;
+  color: #DBD50B;
   font-weight: bold;
   margin-left: 20px;
   font-size: 40px;
@@ -1134,7 +1134,7 @@ header label {
   width: 60%;
   margin: auto;
   height: 3px;
-  background-color: #696767;
+  background-color: rgba(167, 166, 166, 0.74);
 }
 
 * {
@@ -1205,7 +1205,7 @@ header label {
   font-style: italic;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
-  color: #eceaea;
+  color: white;
 }
 
 .main-nosotros .contenedor-nosotros .textos-nosotros .texto-logo h4:nth-child(2) {
@@ -1234,7 +1234,7 @@ header label {
 }
 
 .main-nosotros .contenedor-nosotros .textos-nosotros .textos-descripcion h5 {
-  color: #0a0a0a;
+  color: #000000;
   font-weight: bold;
   font-size: 15px;
   text-align: left;
