@@ -9,10 +9,10 @@ header {
     @include setup;
     height: 60px;
     display: flex;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
-    background: #0575E6;
-    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-    background: linear-gradient(to right, #021B79, #0575E6);
+    box-shadow: 10px 5px 5px $primary-color-7;
+    background: $secondary-color-5;
+    background: -webkit-linear-gradient(to right, $secondary-color-6, $secondary-color-5);
+    background: linear-gradient(to right, $secondary-color-6, $secondary-color-5);
     position: sticky;
     top: 0;
     z-index: 3;
@@ -44,12 +44,12 @@ header {
             a {
                 color: rgba(230, 231, 231, 0.945);
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                text-align: center;
-                font-size: 12px;
-                font-weight: bold;
+                text-align: $center;
+                font-size: $font-size-2;
+                font-weight: $bold;
                 letter-spacing: 2px;
                 text-decoration: none;
-                padding: 10px 12px;
+                padding: $padding-2 $padding-6;
                 display: flex;
                 flex-direction: row;
                 position: relative;
@@ -63,13 +63,13 @@ header {
         }
 
         a:hover {
-            background: #000428;
-            background: -webkit-linear-gradient(to right, #004e92, #000428);
-            background: linear-gradient(to right, #004e92, #000428);
+            background: $secondary-color-7;
+            background: -webkit-linear-gradient(to right, $secondary-color-8, $secondary-color-7);
+            background: linear-gradient(to right, $secondary-color-8, $secondary-color-7);
             border-radius: 10px;
             transition: 1s;
-            color: white;
-            box-shadow: 1px 0px 0px 2px #018bb9;
+            color: $secondary-color;
+            box-shadow: 1px 0px 0px 2px $secondary-color-9;
             transform: scale(1.1);
         }
     }
@@ -101,13 +101,13 @@ header {
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: $center;
             margin-top: -200%;
             height: 60px;
             flex-wrap: wrap;
-            background: #0575E6;
-            background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-            background: linear-gradient(to right, #021B79, #0575E6);
+            background: $secondary-color-5;
+            background: -webkit-linear-gradient(to right, $secondary-color-6, $secondary-color-5);
+            background: linear-gradient(to right, $secondary-color-6, $secondary-color-5);
 
             li {
                 list-style: none;
@@ -116,14 +116,14 @@ header {
                 margin: 15px auto;
 
                 a {
-                    color: rgba(230, 231, 231, 0.945);
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    text-align: center;
-                    font-size: 12px;
-                    font-weight: bold;
+                    color: $secondary-color;
+                    font-family: $font-primary-1;
+                    text-align: $center;
+                    font-size: $font-size-2;
+                    font-weight: $bold;
                     letter-spacing: 2px;
                     text-decoration: none;
-                    padding: 10px 12px;
+                    padding: $padding-2 $padding-6;
                     display: flex;
                     flex-direction: row;
                 }
@@ -200,14 +200,14 @@ header {
             margin-top: -200%;
             height: 485px;
             flex-wrap: wrap;
-            background: #0575E6;
-            background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-            background: linear-gradient(to right, #021B79, #0575E6);
+            background: $secondary-color-5;
+            background: -webkit-linear-gradient(to right, $secondary-color-6, $secondary-color-5);
+            background: linear-gradient(to right, $secondary-color-6, $secondary-color-5);
 
             ul {
                 width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: $center;
                 margin: auto;
                 flex-direction: column;
 
@@ -217,10 +217,10 @@ header {
                     margin-left: -20px;
                     margin-top: 15px;
                     width: 100%;
-                    border-bottom: 2px solid white;
+                    border-bottom: 2px solid $secondary-color;
 
                     a {
-                        font-size: 20px;
+                        font-size: $font-size-5;
                         letter-spacing: 10px;
                         width: 50%;
                         text-align: left;
@@ -233,7 +233,7 @@ header {
             a:hover {
                 border-radius: none;
                 transition: none;
-                color: white;
+                color: $secondary-color;
                 border-bottom: none;
                 cursor: pointer;
                 background: none;

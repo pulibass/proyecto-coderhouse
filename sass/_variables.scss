@@ -5,6 +5,8 @@ $primary-color-3:rgb(128, 127, 127);
 $primary-color-4:#000000fa;
 $primary-color-5:rgb(255, 255, 255);
 $primary-color-6:rgba(167, 166, 166, 0.74);
+$primary-color-7:rgba(0, 0, 0, 0.637);
+
 
 
 
@@ -13,10 +15,25 @@ $secondary-color-1: #FBFF00;
 $secondary-color-2: #000000;
 $secondary-color-3:#434343;
 $secondary-color-4:#f3f3f3;
+$secondary-color-5:#0575E6;
+$secondary-color-6:#021B79;
+$secondary-color-7:#000428;
+$secondary-color-8:#004e92;
+$secondary-color-9:#018bb9;
+
+
+
 
 
 
 $font-primary:sans-serif;
+$font-primary-1:'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
 
 
 
@@ -43,3 +60,4 @@ $padding-2:10px;
 $padding-3:15px;
 $padding-4:20px;
 $padding-5:25px;
+$padding-6:12px;

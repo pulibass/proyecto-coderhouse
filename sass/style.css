@@ -90,7 +90,7 @@ header nav a:hover {
   border-radius: 10px;
   -webkit-transition: 1s;
   transition: 1s;
-  color: white;
+  color: #d5d5d8;
   -webkit-box-shadow: 1px 0px 0px 2px #018bb9;
           box-shadow: 1px 0px 0px 2px #018bb9;
   -webkit-transform: scale(1.1);
@@ -149,8 +149,8 @@ header label {
     margin: 15px auto;
   }
   header nav li a {
-    color: rgba(230, 231, 231, 0.945);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d5d5d8;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
@@ -261,7 +261,7 @@ header label {
     margin-left: -20px;
     margin-top: 15px;
     width: 100%;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #d5d5d8;
   }
   header nav ul li a {
     font-size: 20px;
@@ -273,7 +273,7 @@ header label {
     border-radius: none;
     -webkit-transition: none;
     transition: none;
-    color: white;
+    color: #d5d5d8;
     border-bottom: none;
     cursor: pointer;
     background: none;
