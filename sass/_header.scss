@@ -6,9 +6,7 @@
 }
 
 header {
-    margin: auto;
-    width: 100%;
-    max-width: 1400px;
+    @include setup;
     height: 60px;
     display: flex;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);

@@ -6,8 +6,7 @@
 }
 
 .main-contacto {
-    margin: 20px auto;
-    width: 90%;
+    @include main;
 
 
 
@@ -96,11 +95,7 @@
                 padding: 20px;
 
                 .info {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-self: center;
-                    align-self: center;
+                    @include info-cv-contacto;
                     margin: 100px auto;
 
                     h5 {
@@ -127,13 +122,8 @@
 
 
                 .cv {
-                    width: 100%;
+                    @include info-cv-contacto;
                     margin: auto;
-                    display: flex;
-                    flex-direction: column;
-                    justify-self: center;
-                    align-self: center;
-                    align-items: center;
 
                     h3 {
                         font-weight: bold;
@@ -281,9 +271,7 @@
 @media screen and (max-width:1024px) {
 
     .main-contacto {
-        margin: 20PX auto;
-        width: 90%;
-        max-width: 900px;
+        @include main;
 
         .container-contacto {
             margin: auto;
@@ -523,11 +511,7 @@
                     padding: 20px;
 
                     .info {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-self: center;
-                        align-self: center;
+                        @include info-cv-contacto;
                         margin: auto;
 
                         h5 {
@@ -553,13 +537,9 @@
 
 
                     .cv {
-                        width: 100%;
+                        @include info-cv-contacto;
                         margin: auto;
-                        display: flex;
-                        flex-direction: column;
-                        justify-self: center;
-                        align-self: center;
-                        align-items: center;
+
 
                         h3 {
                             width: 100%;
@@ -741,11 +721,7 @@
                     padding: 20px;
 
                     .info {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-self: center;
-                        align-self: center;
+                        @include info-cv-contacto;
                         margin: auto;
 
                         h5 {
@@ -770,13 +746,9 @@
 
 
                     .cv {
-                        width: 100%;
+                        @include info-cv-contacto;
                         margin: auto;
-                        display: flex;
-                        flex-direction: column;
-                        justify-self: center;
-                        align-self: center;
-                        align-items: center;
+
 
                         h3 {
                             width: 100%;
