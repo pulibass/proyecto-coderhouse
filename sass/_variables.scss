@@ -1,3 +1,4 @@
+/*colores primarios*/
 $primary-color:rgb(241, 30, 30);
 $primary-color-1:rgba(0, 0, 0, 0.979);
 $primary-color-2:rgb(33, 34, 34);
@@ -8,11 +9,12 @@ $primary-color-6:rgba(167, 166, 166, 0.74);
 $primary-color-7:rgba(0, 0, 0, 0.637);
 $primary-color-8:rgb(19, 18, 18);
 $primary-color-9:rgb(204, 201, 201);
+$primary-color-10:rgba(109, 107, 107, 0.521);
 
 
 
 
-
+/*colores secundarios*/
 $secondary-color: #d5d5d8;
 $secondary-color-1: #FBFF00;
 $secondary-color-2: #000000;
@@ -25,12 +27,19 @@ $secondary-color-8:#004e92;
 $secondary-color-9:#018bb9;
 $secondary-color-10:#FAB400;
 $secondary-color-11:#DBD50B;
+$secondary-color-12:#228bd1;
+$secondary-color-13:#005B96;
+$secondary-color-14:#F02513;
+$secondary-color-15:#ee4738;
+$secondary-color-16:#747575;
+$secondary-color-17:#334257;
+$secondary-color-18:#476072;
+$secondary-color-19:#548CA8;
+$secondary-color-20:#548CA8;
 
 
 
-
-
-
+/*fuentes*/
 $font-primary:sans-serif;
 $font-primary-1:'Lucida Sans',
 'Lucida Sans Regular',
@@ -39,9 +48,11 @@ $font-primary-1:'Lucida Sans',
 Geneva,
 Verdana,
 sans-serif;
+$font-primary-2:'Bebas Neue',
+cursive;
 
 
-
+/*tamaño de fuentes*/
 $font-size: 8px;
 $font-size-1: 10px;
 $font-size-2: 12px;
@@ -55,14 +66,77 @@ $font-size-9: 40px;
 $font-size-10: 45px;
 $font-size-11: 50px;
 $font-size-12:5px;
+$font-size-13:33px;
+$font-size-14:18px;
 
 
 $bold:bold;
 $center:center;
 
+
+/*padding*/
 $padding-1:5px;
 $padding-2:10px;
 $padding-3:15px;
 $padding-4:20px;
 $padding-5:25px;
 $padding-6:12px;
+$padding-7:8px;
+
+
+/*width*/
+$width:100%;
+$width-1:90%;
+$width-2:85%;
+$width-3:80%;
+$width-4:75%;
+$width-5:70%;
+$width-6:65%;
+$width-7:60%;
+$width-8:55%;
+$width-9:50%;
+$width-10:45%;
+$width-11:40%;
+$width-12:35%;
+$width-13:30%;
+$width-14:25%;
+$width-15:20%;
+$width-16:15%;
+$width-17:10%;
+$width-18:5%;
+$width-19:1%;
+
+/*max-width*/
+$max-width-1:1400px;
+$max-width-2:1300px;
+$max-width-3:1100px;
+$max-width-4:1000px;
+$max-width-5:900px;
+$max-width-6:800px;
+$max-width-7:500px;
+$max-width-8:400px;
+$max-width-9:200px;
+
+
+/*margin*/
+$margin:2px;
+$margin-1:5px;
+$margin-2:10px;
+$margin-3:15px;
+$margin-4:20px;
+$margin-4:25px;
+$margin-5:30px;
+$margin-6:35px;
+$margin-7:40px;
+$margin-8:45px;
+$margin-9:50px;
+$margin-10:55px;
+$margin-11:60px;
+$margin-12:65px;
+$margin-13:70px;
+$margin-14:75px;
+$margin-15:80px;
+$margin-16:85px;
+$margin-17:90px;
+$margin-18:95px;
+$margin-19:100px;

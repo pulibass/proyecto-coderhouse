@@ -1,4 +1,36 @@
 @charset "UTF-8";
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -329,6 +361,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -396,6 +444,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -405,7 +469,7 @@ header label {
 
 .main-index {
   width: 90%;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 1300px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -561,8 +625,8 @@ header label {
   width: 100%;
   margin: 5px auto;
   height: 70px;
-  background-color: #fafafa;
-  border: 3px solid white;
+  background-color: #d5d5d8;
+  border: 3px solid #d5d5d8;
   border-radius: 0px 0px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,13 +646,13 @@ header label {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 12px;
-  background-color: #fcf6f6;
+  background-color: #d5d5d8;
   text-align: center;
 }
 
 .main-index .container-grid-index .grid-producto-index .descripcion-producto h5:nth-child(2) {
   font-family: sans-serif;
-  color: #070707;
+  color: #000000;
   text-align: center;
   font-size: 10px;
   letter-spacing: 3px;
@@ -658,8 +722,8 @@ header label {
     width: 100%;
     margin: 5px auto;
     height: 70px;
-    background-color: #fafafa;
-    border: 3px solid white;
+    background-color: #d5d5d8;
+    border: 3px solid #d5d5d8;
     border-radius: 0px 0px 10px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -678,12 +742,12 @@ header label {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 12px;
-    background-color: #fcf6f6;
+    background-color: #d5d5d8;
     text-align: center;
   }
   .main-index .container-grid-index .grid-producto-index .descripcion-producto h5:nth-child(2) {
     font-family: sans-serif;
-    color: #070707;
+    color: #000000;
     text-align: center;
     font-size: 10px;
     letter-spacing: 3px;
@@ -805,8 +869,8 @@ header label {
     width: 100%;
     margin: 5px auto;
     height: 70px;
-    background-color: #fafafa;
-    border: 3px solid white;
+    background-color: #d5d5d8;
+    border: 3px solid #d5d5d8;
     border-radius: 0px 0px 10px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -885,6 +949,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -894,7 +974,7 @@ header label {
 
 .main-productos {
   width: 90%;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 1300px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -940,21 +1020,21 @@ header label {
 .main-productos .contenedor-productos .titulos-cubiertas {
   color: #0575E6;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 40px;
 }
 
 .main-productos .contenedor-productos .titulos-amortiguadores {
   color: #FAB400;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 40px;
 }
 
 .main-productos .contenedor-productos .titulos-frenos {
   color: #DBD50B;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 40px;
 }
 
@@ -977,10 +1057,10 @@ header label {
 }
 
 .main-productos .contenedor-productos .tarjeta .tarjeta-contenida {
-  border: 4px solid #3d3d3d;
+  border: 4px solid #807f7f;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px #131212;
-          box-shadow: 0px 0px 20px #131212;
+  -webkit-box-shadow: 0px 0px 20px #212222;
+          box-shadow: 0px 0px 20px #212222;
 }
 
 .main-productos .contenedor-productos .tarjeta .tarjeta-contenida:hover {
@@ -989,8 +1069,8 @@ header label {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
-  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
-          box-shadow: 2px 5px 10px 5px #706f6f;
+  -webkit-box-shadow: 2px 5px 10px 5px rgba(109, 107, 107, 0.521);
+          box-shadow: 2px 5px 10px 5px rgba(109, 107, 107, 0.521);
 }
 
 .main-productos .contenedor-productos .tarjeta .descripcion-productos {
@@ -1002,10 +1082,10 @@ header label {
 }
 
 .main-productos .contenedor-productos .linea hr {
-  width: 60%;
+  width: 65%;
   margin: auto;
   height: 3px;
-  background-color: #696767;
+  background-color: #807f7f;
 }
 
 @media screen and (max-width: 768px) {
@@ -1054,6 +1134,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -1063,7 +1159,7 @@ header label {
 
 .main-ofertas {
   width: 90%;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 1300px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -1106,10 +1202,10 @@ header label {
 }
 
 .main-ofertas .contenedor-ofertas .tarjeta .tarjeta-contenida {
-  border: 4px solid #3d3d3d;
+  border: 4px solid #807f7f;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px #131212;
-          box-shadow: 0px 0px 20px #131212;
+  -webkit-box-shadow: 0px 0px 20px #212222;
+          box-shadow: 0px 0px 20px #212222;
 }
 
 .main-ofertas .contenedor-ofertas .tarjeta .tarjeta-contenida:hover {
@@ -1118,8 +1214,8 @@ header label {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
-  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
-          box-shadow: 2px 5px 10px 5px #706f6f;
+  -webkit-box-shadow: 2px 5px 10px 5px rgba(109, 107, 107, 0.521);
+          box-shadow: 2px 5px 10px 5px rgba(109, 107, 107, 0.521);
 }
 
 .main-ofertas .contenedor-ofertas .tarjeta .descripcion-oferta {
@@ -1137,6 +1233,22 @@ header label {
   background-color: rgba(167, 166, 166, 0.74);
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -1204,7 +1316,7 @@ header label {
   text-align: right;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #000000;
   color: white;
 }
 
@@ -1213,7 +1325,7 @@ header label {
   text-align: right;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #000000;
   color: #f11e1e;
 }
 
@@ -1397,6 +1509,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -1406,7 +1534,7 @@ header label {
 
 .main-contacto {
   width: 90%;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 1300px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -1441,9 +1569,9 @@ header label {
 .main-contacto .container-contacto .ubicacion-contacto iframe {
   width: 100%;
   height: 250px;
-  margin-top: 20px;
-  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
-          box-shadow: 2px 5px 10px 5px #706f6f;
+  margin-top: 25px;
+  -webkit-box-shadow: 2px 5px 10px 5px #747575;
+          box-shadow: 2px 5px 10px 5px #747575;
 }
 
 .main-contacto .container-contacto .contenedor-contacto {
@@ -1475,7 +1603,7 @@ header label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .parrafos .p1 {
@@ -1495,13 +1623,13 @@ header label {
   font-style: italic;
   font-weight: bold;
   text-align: right;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .parrafos .p4 span {
   text-align: right;
   margin-left: 100px;
-  color: brown;
+  color: #F02513;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .sucursal-info {
@@ -1542,7 +1670,7 @@ header label {
 .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h3 {
   width: 100%;
   font-size: 15px;
-  margin: 5px auto;
+  margin: 2px auto;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
@@ -1595,7 +1723,7 @@ header label {
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form {
   width: 100%;
   padding: 25px;
-  color: #efedf1;
+  color: #d5d5d8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1606,12 +1734,12 @@ header label {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#334257), color-stop(#476072), color-stop(#548CA8), to(#476072));
-  background: linear-gradient(#334257, #476072, #548CA8, #476072);
+  background: -webkit-gradient(linear, left top, left bottom, from(#334257), color-stop(#476072), color-stop(#548CA8), to(#548CA8));
+  background: linear-gradient(#334257, #476072, #548CA8, #548CA8);
   font-family: sans-serif;
   text-transform: uppercase;
-  -webkit-box-shadow: 2px 5px 10px 5px #706f6f;
-          box-shadow: 2px 5px 10px 5px #706f6f;
+  -webkit-box-shadow: 2px 5px 10px 5px #747575;
+          box-shadow: 2px 5px 10px 5px #747575;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts {
@@ -1707,27 +1835,27 @@ header label {
 }
 
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
-  background-color: #35a3c5;
-  border: 2px solid gray;
+  background-color: #018bb9;
+  border: 2px solid #747575;
   text-align: center;
   font-size: 20px;
-  color: white;
+  color: #d5d5d8;
   padding: 5px;
   cursor: pointer;
   margin: 5px;
 }
 
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button:hover {
-  background-color: #959899;
-  border: 2px solid #050505;
+  background-color: rgba(167, 166, 166, 0.74);
+  border: 2px solid #000000;
   cursor: pointer;
-  color: black;
+  color: #000000;
 }
 
 @media screen and (max-width: 1024px) {
   .main-contacto {
     width: 90%;
-    margin: 20px auto;
+    margin: 25px auto;
     max-width: 1300px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -1784,7 +1912,7 @@ header label {
   .main-contacto .container-contacto .contenedor-contacto .sucursal-info .info h4 {
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     margin: auto;
   }
   .main-contacto .container-contacto .contenedor-contacto .sucursal-info .cv {
@@ -1952,7 +2080,7 @@ header label {
   .main-contacto .container-contacto .contenedor-contacto .ubicacion-contacto iframe {
     width: 100%;
     height: 200px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .main-contacto .container-contacto .contenedor-contacto .sucursal-info {
     width: 100%;
@@ -2136,7 +2264,7 @@ header label {
   .main-contacto .container-contacto .ubicacion-contacto iframe {
     width: 100%;
     height: 150px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .main-contacto .container-contacto .contenedor-contacto {
     width: 100%;
@@ -2262,10 +2390,26 @@ header label {
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
     width: 60%;
     margin: 5px;
-    font-size: 8px;
+    font-size: 30px;
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;
@@ -2275,7 +2419,7 @@ header label {
 
 .main-usuarios {
   width: 90%;
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 1300px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -2321,7 +2465,7 @@ header label {
   max-width: 400px;
   border-radius: 15px;
   margin: 15px;
-  border: 1px solid #e9e5e5;
+  border: 1px solid white;
   padding: 15px;
   -webkit-box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
           box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
@@ -2339,12 +2483,12 @@ header label {
 
 .main-usuarios .contenedor-usuarios .usuario-registrado form .boton-ingreso button {
   width: 40%;
-  background-color: #005B96;
+  background-color: #004e92;
   color: #f6f7f8;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  border: 1px solid #2BA0FF;
+  border: 1px solid #018bb9;
   border-radius: 5px;
 }
 
@@ -2395,11 +2539,11 @@ header label {
   font-size: 12px;
   margin: auto;
   text-transform: uppercase;
-  color: #ececf3;
+  color: #d5d5d8;
 }
 
 .main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-facebook .icon-facebook {
-  color: #ececf3;
+  color: #d5d5d8;
   margin: auto;
 }
 
@@ -2424,11 +2568,11 @@ header label {
   font-size: 12px;
   margin: auto;
   text-transform: uppercase;
-  color: #ececf3;
+  color: #d5d5d8;
 }
 
 .main-usuarios .contenedor-usuarios .usuario-registrado form .redes-contacto .ingreso-google .icon-google {
-  color: #ececf3;
+  color: #d5d5d8;
   margin: auto;
 }
 
@@ -2437,7 +2581,7 @@ header label {
 }
 
 .main-usuarios .contenedor-usuarios .linea-divisoria {
-  background-color: #868585;
+  background-color: #807f7f;
   margin-top: 40px;
   height: 500px;
   width: 1px;
@@ -2455,7 +2599,7 @@ header label {
   max-width: 400px;
   border-radius: 15px;
   margin: 15px;
-  border: 1px solid #e9e5e5;
+  border: 1px solid white;
   padding: 15px;
   -webkit-box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
           box-shadow: 2px 10px 5px 2px rgba(109, 107, 107, 0.521);
@@ -2506,7 +2650,7 @@ header label {
   text-align: center;
   font-size: large;
   letter-spacing: 5px;
-  font-weight: bold;
+  font-weight: center;
   border-radius: 5px;
 }
 
@@ -2545,7 +2689,7 @@ header label {
 }
 
 .main-usuarios .contenedor-usuarios .usuario-nuevo form .politicas-usuario h6 {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo {
@@ -2557,20 +2701,20 @@ header label {
 .main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo button {
   width: 40%;
   background-color: #747575;
-  color: #202020;
+  color: #434343;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   border-radius: 5px;
-  background-color: #080808;
-  color: #f6f7f8;
-  border: #747575;
+  background-color: #000000;
+  color: #d5d5d8;
+  border: rgba(167, 166, 166, 0.74);
 }
 
 .main-usuarios .contenedor-usuarios .usuario-nuevo form .boton-ingreso-nuevo button:hover {
-  border: 1px solid #121213;
+  border: 1px solid #000000;
   background-color: #747575;
-  color: #e9e8e8;
+  color: #d5d5d8;
 }
 
 @media screen and (max-width: 768px) {
@@ -2646,6 +2790,22 @@ header label {
   }
 }
 
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
 * {
   margin: 0;
   padding: 0;

@@ -41,17 +41,17 @@
 
                     button {
                         width: 40%;
-                        background-color: #005B96;
+                        background-color: $secondary-color-8;
                         color: #f6f7f8;
                         text-transform: uppercase;
-                        font-size: 14px;
-                        font-weight: bold;
-                        border: 1px solid #2BA0FF;
+                        font-size: $font-size-3;
+                        font-weight: $bold;
+                        border: 1px solid $secondary-color-9;
                         border-radius: 5px;
                     }
 
                     button:hover {
-                        background-color: #228bd1;
+                        background-color: $secondary-color-12;
                     }
                 }
 
@@ -60,7 +60,7 @@
                     position: relative;
                     width: 25px;
                     margin-top: -100px;
-                    padding-left: 15px;
+                    padding-left: $padding-3;
                 }
 
                 .form-floating label {
@@ -71,49 +71,49 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
-                    padding: 15px;
+                    padding: $padding-3;
                     margin-top: 100px;
 
                     .ingreso-facebook {
                         @include ingreso-facebook-google;
-                        background-color: #005B96;
+                        background-color: $secondary-color-13;
 
 
                         button {
                             @include button-facebook-google;
-                            color: rgb(236, 236, 243);
+                            color: $secondary-color;
 
                         }
 
                         .icon-facebook {
-                            color: rgb(236, 236, 243);
+                            color: $secondary-color;
                             margin: auto;
                         }
                     }
 
                     .ingreso-facebook:hover {
-                        background-color: #228bd1;
+                        background-color: $secondary-color-12;
                     }
 
 
                     .ingreso-google {
                         @include ingreso-facebook-google;
-                        background-color: #F02513;
+                        background-color: $secondary-color-14;
 
 
                         button {
                             @include button-facebook-google;
-                            color: rgb(236, 236, 243);
+                            color: $secondary-color;
                         }
 
                         .icon-google {
-                            color: rgb(236, 236, 243);
+                            color: $secondary-color;
                             margin: auto;
                         }
                     }
 
                     .ingreso-google:hover {
-                        background-color: #ee4738;
+                        background-color: $secondary-color-15;
                     }
 
                 }
@@ -124,7 +124,7 @@
 
 
         .linea-divisoria {
-            background-color: rgb(134, 133, 133);
+            background-color: $primary-color-3;
             margin-top: 40px;
             height: 500px;
             width: 1px;
@@ -138,7 +138,7 @@
                 .nuevo-usuario {
 
                     label {
-                        font-weight: bold;
+                        font-weight: $bold;
                         margin: 5px auto;
                     }
 
@@ -147,7 +147,7 @@
                         margin: 5px auto;
                         border-radius: 5px;
                         height: 40px;
-                        padding-left: 15px;
+                        padding-left: $padding-3;
 
                     }
 
@@ -162,19 +162,19 @@
 
                     .titulo-fecha {
                         width: 100%;
-                        text-align: center;
+                        text-align: $center;
                         display: flex;
                         flex-direction: column;
-                        font-weight: bold;
+                        font-weight: $bold;
                     }
 
                     input {
                         margin: 15px auto;
                         width: 100%;
-                        text-align: center;
+                        text-align: $center;
                         font-size: large;
                         letter-spacing: 5px;
-                        font-weight: bold;
+                        font-weight: $center;
                         border-radius: 5px;
                     }
                 }
@@ -186,20 +186,20 @@
                     flex-wrap: wrap;
                     margin-top: 20px auto;
                     width: 100%;
-                    text-align: center;
+                    text-align: $center;
                     font-size: large;
                     letter-spacing: 5px;
-                    font-weight: bold;
+                    font-weight: $bold;
 
                     label {
                         width: 100%;
-                        text-align: center;
-                        font-size: 15px;
+                        text-align: $center;
+                        font-size: $font-size-4;
                     }
 
                     select {
                         width: 100%;
-                        text-align: center;
+                        text-align: $center;
                     }
                 }
 
@@ -209,8 +209,7 @@
                     width: 100%;
 
                     h6 {
-                        font-size: 11px;
-
+                        font-size: $font-size-1;
                     }
                 }
 
@@ -218,25 +217,25 @@
                 .boton-ingreso-nuevo {
                     width: 100%;
                     margin-top: 15px;
-                    padding: 5px;
+                    padding: $padding-1;
 
                     button {
                         width: 40%;
-                        background-color: #747575;
-                        color: #202020;
+                        background-color: $secondary-color-16;
+                        color: $secondary-color-3;
                         text-transform: uppercase;
-                        font-size: 14px;
-                        font-weight: bold;
+                        font-size: $font-size-3;
+                        font-weight: $bold;
                         border-radius: 5px;
-                        background-color: #080808;
-                        color: #f6f7f8;
-                        border: #747575;
+                        background-color: $secondary-color-2;
+                        color: $secondary-color;
+                        border: $primary-color-6;
                     }
 
                     button:hover {
-                        border: 1px solid #121213;
-                        background-color: #747575;
-                        color: #e9e8e8;
+                        border: 1px solid $secondary-color-2;
+                        background-color: $secondary-color-16;
+                        color: $secondary-color;
 
                     }
                 }
@@ -253,7 +252,7 @@
         .contenedor-usuarios {
             margin: 70px auto;
             display: flex;
-            justify-content: center;
+            justify-content: $center;
             flex-direction: column;
 
             .usuario-registrado {
@@ -297,7 +296,7 @@
                         width: 12px;
 
                         button {
-                            font-size: 8px;
+                            font-size: $font-size;
                             margin: auto;
                         }
                     }
@@ -312,7 +311,7 @@
                     }
 
                     button {
-                        font-size: 8px;
+                        font-size: $font-size;
                         margin: auto;
                         text-transform: uppercase;
                     }
@@ -323,8 +322,8 @@
             .usuario-nuevo {
 
                 .boton-ingreso-nuevo button {
-                    font-size: 12px;
-                    font-weight: bold;
+                    font-size: $font-size-2;
+                    font-weight: $bold;
                 }
             }
 
