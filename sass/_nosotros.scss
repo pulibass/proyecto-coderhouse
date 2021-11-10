@@ -6,9 +6,7 @@
 }
 
 .main-nosotros {
-    width: 90%;
-    max-width: 1300px;
-    margin: 20px auto;
+    @include main;
 
     .titulos {
         @include titulos-principales;
@@ -20,13 +18,13 @@
     }
 
     .contenedor-nosotros {
-        width: 100%;
-        max-width: 1300px;
+        width: $width;
+        max-width: $max-width-2;
         margin: auto;
 
         .foto-local {
-            width: 100%;
-            max-width: 1300px;
+            width: $width;
+            max-width: $max-width-2;
         }
 
         .textos-nosotros {
@@ -38,9 +36,9 @@
             margin-top: -200px;
 
             .texto-logo {
-                width: 30%;
+                width: $width-13;
                 padding: $padding-4;
-                margin-top: 70px;
+                margin-top: $margin-13;
 
                 h4:nth-child(1) {
                     @include h4-nosotros;
@@ -55,10 +53,10 @@
             }
 
             .textos-descripcion {
-                margin-top: 15px;
-                margin-left: 30px;
-                width: 80%;
-                max-width: 1300px;
+                margin-top: $margin-3;
+                margin-left: $margin-5;
+                width: $width-3;
+                max-width: $max-width-2;
                 text-align: right;
                 padding: $padding-4;
 
@@ -83,13 +81,13 @@
         }
 
         .fotos-local {
-            margin: 50px auto;
-            width: 100%;
-            max-width: 1100px;
+            margin: $margin-9 auto;
+            width: $width;
+            max-width: $max-width-3;
 
             img {
-                width: 100%;
-                max-width: 1100px;
+                width: $width;
+                max-width: $max-width-3;
                 object-fit: cover;
                 z-index: 1;
             }
@@ -114,7 +112,7 @@
                 margin-top: -180px;
 
                 .texto-logo {
-                    width: 30%;
+                    width: $width-13;
                     padding: $padding-4;
 
                     h4:nth-child(1) {
@@ -128,10 +126,10 @@
                 }
 
                 .textos-descripcion {
-                    margin-top: 15px;
-                    margin-left: 30px;
-                    width: 90%;
-                    max-width: 1300px;
+                    margin-top: $margin-3;
+                    margin-left: $margin-5;
+                    width: $width-1;
+                    max-width: $max-width-2;
                     text-align: right;
                     padding: $padding-4;
 
@@ -163,9 +161,9 @@
                 margin-top: -150px;
 
                 .texto-logo {
-                    width: 30%;
+                    width: $width-13;
                     padding: $padding-4;
-                    margin-top: 35px;
+                    margin-top: $margin-6;
 
                     h4:nth-child(1) {
                         @include h4-nosotros-1024px;
@@ -179,7 +177,7 @@
                 }
 
                 .textos-descripcion {
-                    margin-top: 15px;
+                    margin-top: $margin-3;
 
                     h2 {
                         font-size: $font-size-4;

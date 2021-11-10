@@ -20,7 +20,7 @@
 
 
     .contenedor-usuarios {
-        margin: 70px auto;
+        margin: $margin-13 auto;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -31,18 +31,18 @@
             form {
 
                 .olvido-contraseña {
-                    width: 100%;
+                    width: $width;
                     text-align: right;
                 }
 
                 .boton-ingreso {
-                    width: 100%;
-                    margin-top: 15px;
+                    width: $width;
+                    margin-top: $margin-3;
 
                     button {
-                        width: 40%;
+                        width: $width-11;
                         background-color: $secondary-color-8;
-                        color: #f6f7f8;
+                        color: $secondary-color-4;
                         text-transform: uppercase;
                         font-size: $font-size-3;
                         font-weight: $bold;
@@ -72,7 +72,7 @@
                     flex-direction: column;
                     justify-content: space-evenly;
                     padding: $padding-3;
-                    margin-top: 100px;
+                    margin-top: $margin-19;
 
                     .ingreso-facebook {
                         @include ingreso-facebook-google;
@@ -125,7 +125,7 @@
 
         .linea-divisoria {
             background-color: $primary-color-3;
-            margin-top: 40px;
+            margin-top: $margin-7;
             height: 500px;
             width: 1px;
         }
@@ -139,12 +139,12 @@
 
                     label {
                         font-weight: $bold;
-                        margin: 5px auto;
+                        margin: $margin-1 auto;
                     }
 
                     input {
-                        width: 100%;
-                        margin: 5px auto;
+                        width: $width;
+                        margin: $margin-1 auto;
                         border-radius: 5px;
                         height: 40px;
                         padding-left: $padding-3;
@@ -158,10 +158,10 @@
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    margin-top: 20px auto;
+                    margin-top: $margin-4 auto;
 
                     .titulo-fecha {
-                        width: 100%;
+                        width: $width;
                         text-align: $center;
                         display: flex;
                         flex-direction: column;
@@ -169,8 +169,8 @@
                     }
 
                     input {
-                        margin: 15px auto;
-                        width: 100%;
+                        margin: $margin-3 auto;
+                        width: $width;
                         text-align: $center;
                         font-size: large;
                         letter-spacing: 5px;
@@ -184,29 +184,29 @@
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    margin-top: 20px auto;
-                    width: 100%;
+                    margin-top: $margin-4 auto;
+                    width: $width;
                     text-align: $center;
                     font-size: large;
                     letter-spacing: 5px;
                     font-weight: $bold;
 
                     label {
-                        width: 100%;
+                        width: $width;
                         text-align: $center;
                         font-size: $font-size-4;
                     }
 
                     select {
-                        width: 100%;
+                        width: $width;
                         text-align: $center;
                     }
                 }
 
 
                 .politicas-usuario {
-                    margin-top: 15px;
-                    width: 100%;
+                    margin-top: $margin-3;
+                    width: $width;
 
                     h6 {
                         font-size: $font-size-1;
@@ -215,12 +215,12 @@
 
 
                 .boton-ingreso-nuevo {
-                    width: 100%;
-                    margin-top: 15px;
+                    width: $width;
+                    margin-top: $margin-3;
                     padding: $padding-1;
 
                     button {
-                        width: 40%;
+                        width: $width-11;
                         background-color: $secondary-color-16;
                         color: $secondary-color-3;
                         text-transform: uppercase;
@@ -250,30 +250,30 @@
     .main-usuarios {
 
         .contenedor-usuarios {
-            margin: 70px auto;
+            margin: $margin-13 auto;
             display: flex;
             justify-content: $center;
             flex-direction: column;
 
             .usuario-registrado {
                 @include usuarios-768px;
-                margin: 5px auto;
+                margin: $margin-1 auto;
             }
 
             .linea-divisoria {
                 height: 2px;
                 width: 200px;
                 margin: auto;
-                margin-top: 25px;
+                margin-top: $margin-4;
             }
 
             .usuario-nuevo {
                 @include usuarios-768px;
-                margin: 35px auto;
+                margin: $margin-6 auto;
             }
 
             .redes-contacto {
-                margin-top: 5px;
+                margin-top: $margin-1;
             }
         }
     }

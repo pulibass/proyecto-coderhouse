@@ -1258,8 +1258,10 @@ header label {
 
 .main-nosotros {
   width: 90%;
+  margin: 25px auto;
   max-width: 1300px;
-  margin: 20px auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .main-nosotros .titulos {
@@ -2484,7 +2486,7 @@ header label {
 .main-usuarios .contenedor-usuarios .usuario-registrado form .boton-ingreso button {
   width: 40%;
   background-color: #004e92;
-  color: #f6f7f8;
+  color: #f3f3f3;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
@@ -2628,7 +2630,7 @@ header label {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 20px auto;
+  margin-top: 25px auto;
 }
 
 .main-usuarios .contenedor-usuarios .usuario-nuevo form .contenedor-fecha .titulo-fecha {
@@ -2664,7 +2666,7 @@ header label {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 20px auto;
+  margin-top: 25px auto;
   width: 100%;
   text-align: center;
   font-size: large;

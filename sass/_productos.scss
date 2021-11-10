@@ -19,14 +19,14 @@
 
 
     .boton-navegacion {
-        width: 100%;
-        max-width: 1300px;
+        width: $width;
+        max-width: $max-width-2;
         text-align: right;
         z-index: 999;
 
         select {
-            width: 40%;
-            max-width: 300px;
+            width: $width-11;
+            max-width: $max-width-10;
             text-align: left;
             height: 30px;
             text-decoration: underline;
@@ -38,7 +38,7 @@
     }
 
     .contenedor-productos {
-        margin-top: 70px;
+        margin-top: $margin-13;
 
         .titulos-cubiertas {
             color: $secondary-color-5;
@@ -58,7 +58,7 @@
         }
 
         .buton-icono {
-            width: 50%;
+            width: $width-9;
             margin-top: 0px;
         }
 
@@ -74,12 +74,12 @@
             }
 
             .descripcion-productos {
-                font-size: 12px;
+                font-size: $font-size-2;
             }
         }
 
         .linea {
-            margin-top: 70px;
+            margin-top: $margin-13;
 
             hr {
                 @include linea-hr;
@@ -97,8 +97,8 @@
         .boton-navegacion {
 
             select {
-                width: 40%;
-                max-width: 300px;
+                width: $width-11;
+                max-width: $max-width-10;
                 font-size: $font-size-4;
             }
         }
@@ -128,8 +128,8 @@
         .boton-navegacion {
 
             select {
-                width: 60%;
-                max-width: 400px;
+                width: $width-7;
+                max-width: $max-width-8;
                 font-size: $font-size-2;
             }
         }

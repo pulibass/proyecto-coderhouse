@@ -21,10 +21,10 @@
 
 
     .contenedor-ofertas {
-        margin-top: 70px;
+        margin-top: $margin-13;
 
         .buton-icono {
-            width: 100%;
+            width: $width;
             margin-top: 0px;
         }
 
@@ -46,10 +46,10 @@
 
 
         .linea {
-            margin-top: 70px;
+            margin-top: $margin-13;
 
             hr {
-                width: 60%;
+                width: $width-7;
                 margin: auto;
                 height: 3px;
                 background-color: $primary-color-6;
