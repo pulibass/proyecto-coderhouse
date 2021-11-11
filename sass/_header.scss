@@ -34,6 +34,7 @@ header {
         justify-content: right;
         flex-direction: row;
         z-index: 5;
+        margin-right: 43px;
 
         li {
             list-style: none;
@@ -72,9 +73,35 @@ header {
             box-shadow: 1px 0px 0px 2px $secondary-color-9;
             transform: scale(1.1);
         }
+
+
+
+
+
     }
 
+    .cart {
+        margin-top: 15px;
+        margin-right: 5px;
+        right: 0;
+        z-index: 3;
+        list-style: none;
+        position: absolute;
 
+        a {
+            color: $secondary-color-4
+        }
+
+        i:hover {
+            background: none;
+            border: none;
+            border-radius: none;
+            box-shadow: none;
+            transition: 1s;
+            transform: scale(1.1);
+
+        }
+    }
 
     #checkbtn {
         display: none;
@@ -141,6 +168,29 @@ header {
                 font-size: $font-size-12;
             }
 
+        }
+
+        .cart {
+            margin-top: 10px;
+            margin-right: 90px;
+            right: 0;
+            z-index: 3;
+            list-style: none;
+            position: absolute;
+
+            a {
+                color: $secondary-color-4
+            }
+
+            i:hover {
+                background: none;
+                border: none;
+                border-radius: none;
+                box-shadow: none;
+                transition: 1s;
+                transform: scale(1.1);
+
+            }
         }
 
 

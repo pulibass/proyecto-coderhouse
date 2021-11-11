@@ -81,6 +81,7 @@ header nav {
       -ms-flex-direction: row;
           flex-direction: row;
   z-index: 5;
+  margin-right: 43px;
 }
 
 header nav li {
@@ -125,6 +126,31 @@ header nav a:hover {
   color: #d5d5d8;
   -webkit-box-shadow: 1px 0px 0px 2px #018bb9;
           box-shadow: 1px 0px 0px 2px #018bb9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .cart {
+  margin-top: 15px;
+  margin-right: 5px;
+  right: 0;
+  z-index: 3;
+  list-style: none;
+  position: absolute;
+}
+
+header .cart a {
+  color: #f3f3f3;
+}
+
+header .cart i:hover {
+  background: none;
+  border: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -205,6 +231,28 @@ header label {
   header nav a {
     text-align: left;
     font-size: 5px;
+  }
+  header .cart {
+    margin-top: 10px;
+    margin-right: 90px;
+    right: 0;
+    z-index: 3;
+    list-style: none;
+    position: absolute;
+  }
+  header .cart a {
+    color: #f3f3f3;
+  }
+  header .cart i:hover {
+    background: none;
+    border: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   header #checkbtn {
     display: none;
@@ -2815,6 +2863,139 @@ header label {
           box-sizing: border-box;
 }
 
+.main-cart {
+  width: 90%;
+  margin: 25px auto;
+  max-width: 1300px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-cart .img-not-found {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.main-cart .img-not-found img {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  position: absolute;
+}
+
+.main-cart .img-not-found a {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  background-color: red;
+  width: 20%;
+  left: 450px;
+  right: 0;
+  background-color: #0575E6;
+  opacity: 0.7;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(109, 107, 107, 0.521);
+          box-shadow: 2px 2px 5px 1px rgba(109, 107, 107, 0.521);
+  color: #f3f3f3;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-cart .img-not-found a a:hover {
+  background-color: #ee4738;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-cart {
+    width: 90%;
+    margin: 25px auto;
+    max-width: 1300px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .main-cart .img-not-found {
+    margin: 100px auto;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .main-cart .img-not-found img {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-cart {
+    width: 90%;
+    margin: 25px auto;
+    max-width: 1300px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .main-cart .img-not-found {
+    margin: 200px auto;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .main-cart .img-not-found img {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-cart {
+    width: 90%;
+    margin: 25px auto;
+    max-width: 1300px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .main-cart .img-not-found {
+    margin: 250px auto;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .main-cart .img-not-found img {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+/*colores primarios*/
+/*colores secundarios*/
+/*fuentes*/
+/*tamaño de fuentes*/
+/*padding*/
+/*width*/
+/*max-width*/
+/*margin*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 footer {
   margin: auto;
   width: 100%;
@@ -3239,6 +3420,7 @@ body[data-aos-duration='4000'] [data-aos],
 [data-aos][data-aos][data-aos-duration='4000'] {
   -webkit-transition-duration: 4000ms;
           transition-duration: 4000ms;
+  background-color: #f3f3f3;
 }
 
 html {
