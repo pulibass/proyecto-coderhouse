@@ -2875,42 +2875,24 @@ header label {
   width: 100%;
   max-width: 1400px;
   margin: 0px auto;
+  z-index: 1;
 }
 
 .main-cart .img-not-found img {
   width: 100%;
   max-width: 1400px;
   margin: auto;
-  position: absolute;
 }
 
-.main-cart .img-not-found a {
+.main-cart .volver-inicio {
+  width: 100%;
   margin: auto;
+  z-index: 2;
   text-align: center;
-  position: relative;
-  background-color: red;
-  width: 20%;
-  left: 450px;
-  right: 0;
-  background-color: #0575E6;
-  opacity: 0.7;
-  text-align: center;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px 1px rgba(109, 107, 107, 0.521);
-          box-shadow: 2px 2px 5px 1px rgba(109, 107, 107, 0.521);
-  color: #f3f3f3;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
 }
 
-.main-cart .img-not-found a a:hover {
-  background-color: #ee4738;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  opacity: 1;
+.main-cart .volver-inicio a {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
