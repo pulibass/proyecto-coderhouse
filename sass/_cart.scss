@@ -7,18 +7,88 @@
 }
 
 .main-cart {
-    @include main;
+    width: 100%;
+    max-width: 1400px;
+    bottom: 0;
+
+    .contenedor-vuelta {
+        left: 5;
+        position: relative;
+        z-index: 3;
+
+        .enlace {
+            top: 15px;
+            position: relative;
+            z-index: 3;
+            width: 4%;
+            background-color: $primary-color-5;
+
+
+            a {
+                margin-left: 20px;
+
+            }
+
+
+            .icono {
+                z-index: 3;
+                border: none;
+                background: none;
+            }
+
+            .icono:hover {
+                transition: 5s ease;
+                transform: rotateX(360deg);
+            }
+        }
+
+        .titulo-volver {
+            margin-top: -40px;
+            margin-left: -100%;
+            width: 20%;
+            z-index: 1;
+
+            h5 {
+                font-family: $font-primary-1;
+                font-weight: bold;
+                color: $secondary-color-14;
+                text-shadow: 2px 2px 2px $secondary-color;
+                text-transform: uppercase;
+
+
+            }
+        }
+
+    }
+
+    .contenedor-vuelta:hover>.titulo-volver {
+        margin-left: 60px;
+        position: absolute;
+        transition: 800ms all ease-in;
+        display: flex;
+    }
+
+
 
     .img-not-found {
         width: $width;
         max-width: $max-width-1;
-        margin: 0px auto;
-        z-index: 1;
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-size: cover;
+
+
 
         img {
-            width: $width;
-            max-width: $max-width-1;
+            width: 100%;
+            max-width: 1400px;
+            height: 100%;
             margin: auto;
+            background-size: cover;
         }
 
 
@@ -27,16 +97,7 @@
 
     }
 
-    .volver-inicio {
-        width: 100%;
-        margin: auto;
-        z-index: 2;
-        text-align: center;
 
-        a {
-            text-align: center;
-        }
-    }
 
 
 
@@ -45,42 +106,154 @@
 
 @media screen and (max-width: 1024px) {
     .main-cart {
-        @include main;
 
 
-        .img-not-found {
-            margin: 100px auto;
-            width: $width;
-            max-width: $max-width-1;
+        .contenedor-vuelta {
+            left: 5;
+            position: relative;
+            z-index: 3;
 
-            img {
-                width: $width;
-                max-width: $max-width-1;
-                margin: auto;
+            .enlace {
+                top: 15px;
+                position: relative;
+                z-index: 3;
+                width: 4%;
+                background-color: $primary-color-5;
+
+
+                a {
+                    margin-left: 20px;
+
+                }
+
+
+                .icono {
+                    z-index: 3;
+                    border: none;
+                    background: none;
+                }
+
+                .icono:hover {
+                    transition: 5s ease;
+                    transform: rotateX(360deg);
+                }
+            }
+
+            .titulo-volver {
+                margin-top: -40px;
+                margin-left: -100%;
+                width: 30%;
+                z-index: 1;
+
+
+                h5 {
+                    font-family: $font-primary-1;
+                    font-weight: bold;
+                    color: $secondary-color-14;
+                    text-shadow: 2px 2px 2px $secondary-color;
+                    text-transform: uppercase;
+
+
+                }
             }
 
         }
 
+        .img-not-found {
+            top: 50px;
+            left: 0;
+            right: 0;
+
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     .main-cart {
-        @include main;
+
+        .contenedor-vuelta {
+            left: 5;
+            position: relative;
+            z-index: 3;
+
+            .enlace {
+                top: 15px;
+                position: relative;
+                z-index: 3;
+                width: 4%;
+                background-color: $primary-color-5;
 
 
-        .img-not-found {
-            margin: 200px auto;
-            width: $width;
-            max-width: $max-width-1;
+                .icono {
 
-            img {
-                width: $width;
-                max-width: $max-width-1;
-                margin: auto;
+                    font-size: 30px;
+                }
+
+                .icono:hover {
+                    transition: none;
+                    transform: none;
+                }
+            }
+
+            .titulo-volver {
+                display: none;
+
+                h5 {
+                    display: none;
+                }
+
             }
 
         }
+
+        .img-not-found {
+            top: 100px;
+            left: 0;
+            right: 0;
+
+        }
+
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .main-cart {
+
+        .contenedor-vuelta {
+            left: 0;
+
+            .enlace {
+                left: 0;
+
+                .icono {
+                    font-size: 20px;
+
+                }
+            }
+
+            .titulo-volver {
+                display: none;
+
+                h5 {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .img-not-found {
+            top: 180px;
+            left: 0;
+            right: 0;
+
+        }
+
+
 
     }
 
@@ -88,21 +261,26 @@
 
 @media screen and (max-width: 450px) {
     .main-cart {
-        @include main;
 
+        .contenedor-vuelta {
 
-        .img-not-found {
-            margin: 250px auto;
-            width: $width;
-            max-width: $max-width-1;
+            .enlace {
 
-            img {
-                width: $width;
-                max-width: $max-width-1;
-                margin: auto;
+                .icono {
+                    font-size: 15px;
+
+                }
             }
 
         }
+
+        .img-not-found {
+            top: 200px;
+            left: 0;
+            right: 0;
+
+        }
+
 
     }
 
