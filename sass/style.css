@@ -2901,10 +2901,11 @@ header label {
 }
 
 .main-cart .contenedor-vuelta .titulo-volver {
-  margin-top: -40px;
+  top: 15px;
   margin-left: -100%;
   width: 20%;
   z-index: 1;
+  position: absolute;
 }
 
 .main-cart .contenedor-vuelta .titulo-volver h5 {
@@ -2973,10 +2974,11 @@ header label {
             transform: rotateX(360deg);
   }
   .main-cart .contenedor-vuelta .titulo-volver {
-    margin-top: -40px;
+    top: 15px;
     margin-left: -100%;
-    width: 30%;
+    width: 20%;
     z-index: 1;
+    position: absolute;
   }
   .main-cart .contenedor-vuelta .titulo-volver h5 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
