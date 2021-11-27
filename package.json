@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "description": "https://whimsical.com/pulibass-neumaticos-FX4chpJWsCmUkuJ7egCCM8",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulibass/proyecto-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pulibass/proyecto-coderhouse/issues"
+  },
+  "homepage": "https://github.com/pulibass/proyecto-coderhouse#readme"
+}
