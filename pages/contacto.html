@@ -17,6 +17,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logos/LOGO2.ico" type="image/x-icon">
+    <meta name="description"
+        content="Neumaticos mas comprados en Córdoba, Mecanica General. somos distribuidores oficial Pirelli">
+    <meta name="keywords" content="neumaticos, amortiguadores, frenos, mecanica en general">
 
     <title>NEUMATICOS PULIBASS</title>
 
@@ -165,20 +168,20 @@
                             <div>
                                 <label for="nombre">Nombre</label>
                             </div>
-                            <input type="text" id="nombre" required placeholder="ingrese nombre">
+                            <input type="text" id="nombre" name="nombre" required placeholder="ingrese nombre">
                         </div>
 
                         <div class="inputs-texts">
                             <div>
                                 <label for="apellido">Apellido</label>
                             </div>
-                            <input type="text" id="apellido" required placeholder="ingrese apellido">
+                            <input type="text" id="apellido" name="apellido" required placeholder="ingrese apellido">
                         </div>
 
                         <div class="inputs-select-radio">
                             <label for="ciudad">Ciudad</label>
                             <select name="ciudad" id="ciudad" required>
-                                <option>Seleccione</option>
+                                <option selected></option>
                                 <option>Alta Gracia</option>
                                 <option>Córdoba</option>
                                 <option>Cruz del Eje</option>
@@ -194,44 +197,44 @@
                             <div>
                                 <label for="email">Email</label>
                             </div>
-                            <input type="text" id="email" required placeholder="mail@mail.com">
+                            <input type="text" id="email" name="email" required placeholder="mail@mail.com">
                         </div>
 
                         <div class="inputs-texts">
                             <div>
                                 <label for="telefono">Telefono</label>
                             </div>
-                            <input type="text" id="telefono" required placeholder="ej: 351 2222222">
+                            <input type="text" id="telefono" name="telefono" required placeholder="ej: 351 2222222">
                         </div>
 
                         <div class="inputs-select-radio">
                             <label for="producto">producto</label>
                             <select name="producto" id="producto" required>
-                                <option>Seleccione</option>
-                                <option>Cubiertas</option>
-                                <option>Amortiguadores</option>
-                                <option>Frenos</option>
-                                <option>Mecanica General</option>
+                                <option selected></option>
+                                <option value="cubiertas">Cubiertas</option>
+                                <option value="amortiguadores">Amortiguadores</option>
+                                <option value="frenos">Frenos</option>
+                                <option value="mecanica">Mecanica General</option>
                             </select>
                         </div>
 
                         <div class="select-radio">
-                            <label for="contactar">Desea ser contactado por</label>
+                            <label>Desea ser contactado por</label>
                             <div class="punto-radio">
-                                <input type="radio" name="contactar" id="telefono" value="telefono" required>
-                                <label for="">telefono</label>
-                                <input type="radio" name="contactar" id="telefono" value="telefono" required>
-                                <label for="">whatsapp</label>
+                                <input type="radio" name="tel" id="tel" value="tel" required>
+                                <label for="tel">telefono</label>
+                                <input type="radio" name="whatsapp" id="whatsapp" value="whatsapp" required>
+                                <label for="whatsapp">whatsapp</label>
                             </div>
                         </div>
 
                         <div class="select-radio">
-                            <label for="cliente">Es cliente</label>
+                            <label>Es cliente</label>
                             <div class="punto-radio">
                                 <label for="si">si</label>
-                                <input type="radio" name="cliente" id="si" required>
+                                <input type="radio" name="si" id="si" required>
                                 <label for="no">no</label>
-                                <input type="radio" name="cliente" id="no" required>
+                                <input type="radio" name="no" id="no" required>
                             </div>
                         </div>
 
@@ -334,17 +337,18 @@
                 <!--FOOTER LOGOS DE AUTOS-->
 
                 <div class="marcas-autos">
-                    <img src="../img/logos/FIAT LOGO.png" alt="logo-fiat">
-                    <img src="../img/logos/RENAULT LOGO.png" alt="logo-renault">
-                    <img src="../img/logos/CITROEN LOGO.png" alt="logo-citroen">
-                    <img src="../img/logos/BMW LOGO.jpg" alt="logo-bmw">
-                    <img src="../img/logos/AUDI LOGO.jpg" alt="logo-audi">
+                    <img src="../img/logos/FIAT-LOGO.png" alt="logo-fiat">
+                    <img src="../img/logos/RENAULT-LOGO.png" alt="logo-renault">
+                    <img src="../img/logos/CITROEN-LOGO.png" alt="logo-citroen">
+                    <img src="../img/logos/BMW-LOGO.jpg" alt="logo-bmw">
+                    <img src="../img/logos/AUDI-LOGO.jpg" alt="logo-audi">
                 </div>
 
                 <h5>copyright © Eduardo Ahumada Diseño Web</h5>
 
             </div>
             <!--FIN FOOTER-->
+        </div>
 
     </footer>
 

@@ -858,6 +858,10 @@ header label {
 .main-productos .contenedor-productos .tarjeta .descripcion-productos {
   font-size: 12px;
 }
+.main-productos .contenedor-productos .tarjeta .logo-ahora12 {
+  width: 80px;
+  height: 80px;
+}
 .main-productos .contenedor-productos .linea {
   margin-top: 70px;
 }
@@ -979,6 +983,10 @@ header label {
 }
 .main-ofertas .contenedor-ofertas .tarjeta .descripcion-oferta {
   font-size: 10px;
+}
+.main-ofertas .contenedor-ofertas .tarjeta .logo-ahora12 {
+  width: 80px;
+  height: 80px;
 }
 .main-ofertas .contenedor-ofertas .linea {
   margin-top: 70px;
