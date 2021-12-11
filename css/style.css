@@ -40,7 +40,7 @@
 header {
   margin: auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   height: 60px;
   display: flex;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
@@ -421,7 +421,7 @@ header label {
 .main-index {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
   display: grid;
@@ -780,7 +780,7 @@ header label {
 .main-productos {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -789,7 +789,7 @@ header label {
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-productos .titulos h2 {
   text-decoration: underline;
@@ -798,7 +798,7 @@ header label {
 }
 .main-productos .boton-navegacion {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
   text-align: right;
   z-index: 999;
 }
@@ -941,7 +941,7 @@ header label {
 .main-ofertas {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -950,7 +950,7 @@ header label {
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-ofertas .titulos h2 {
   text-decoration: underline;
@@ -1023,7 +1023,7 @@ header label {
 .main-nosotros {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -1032,7 +1032,7 @@ header label {
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-nosotros .titulos h2 {
   text-decoration: underline;
@@ -1041,12 +1041,12 @@ header label {
 }
 .main-nosotros .contenedor-nosotros {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
   margin: auto;
 }
 .main-nosotros .contenedor-nosotros .foto-local {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-nosotros .contenedor-nosotros .textos-nosotros {
   display: flex;
@@ -1081,7 +1081,7 @@ header label {
   margin-top: 15px;
   margin-left: 30px;
   width: 80%;
-  max-width: 1300px;
+  max-width: 1500px;
   text-align: right;
   padding: 20px;
 }
@@ -1135,7 +1135,7 @@ header label {
     margin-top: 15px;
     margin-left: 30px;
     width: 90%;
-    max-width: 1300px;
+    max-width: 1500px;
     text-align: right;
     padding: 20px;
   }
@@ -1237,7 +1237,7 @@ header label {
 .main-contacto {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -1246,7 +1246,7 @@ header label {
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-contacto .titulos h2 {
   text-decoration: underline;
@@ -1459,7 +1459,7 @@ header label {
   .main-contacto {
     width: 90%;
     margin: 25px auto;
-    max-width: 1300px;
+    max-width: 1500px;
     overflow: hidden;
     scroll-behavior: smooth;
   }
@@ -1884,7 +1884,7 @@ header label {
 .main-usuarios {
   width: 90%;
   margin: 25px auto;
-  max-width: 1300px;
+  max-width: 1500px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -1893,7 +1893,7 @@ header label {
   font-family: sans-serif;
   width: 100%;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 .main-usuarios .titulos h2 {
   text-decoration: underline;
@@ -2231,7 +2231,7 @@ header label {
 }
 .main-cart .img-not-found {
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: auto;
   position: absolute;
   top: 0px;
@@ -2382,7 +2382,7 @@ header label {
 footer {
   margin: auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin-top: 70px;
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
