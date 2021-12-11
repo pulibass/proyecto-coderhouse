@@ -1439,8 +1439,8 @@ header label {
   display: flex;
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
-  background-color: #018bb9;
-  border: 2px solid #747575;
+  background-color: #004e92;
+  border: 2px solid #004e92;
   text-align: center;
   font-size: 20px;
   color: #d5d5d8;
@@ -1449,10 +1449,10 @@ header label {
   margin: 5px;
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button:hover {
-  background-color: rgba(167, 166, 166, 0.74);
-  border: 2px solid #000000;
+  background-color: #018bb9;
+  border: 2px solid #018bb9;
   cursor: pointer;
-  color: #000000;
+  color: #d5d5d8;
 }
 
 @media screen and (max-width: 1024px) {
