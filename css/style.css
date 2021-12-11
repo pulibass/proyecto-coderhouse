@@ -433,7 +433,10 @@ header label {
   grid-template-rows: 1 minmax(100%);
 }
 .main-index .titulos-index h1 {
+  text-decoration: underline;
   color: #f11e1e;
+  font-weight: bold;
+  font-size: 30px;
 }
 .main-index .container-grid-index {
   display: grid;
@@ -791,10 +794,11 @@ header label {
   margin: auto;
   max-width: 1500px;
 }
-.main-productos .titulos h2 {
+.main-productos .titulos h1 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
+  font-size: 30px;
 }
 .main-productos .boton-navegacion {
   width: 100%;
@@ -952,10 +956,11 @@ header label {
   margin: auto;
   max-width: 1500px;
 }
-.main-ofertas .titulos h2 {
+.main-ofertas .titulos h1 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
+  font-size: 30px;
 }
 .main-ofertas .contenedor-ofertas {
   margin-top: 70px;
@@ -1034,10 +1039,11 @@ header label {
   margin: auto;
   max-width: 1500px;
 }
-.main-nosotros .titulos h2 {
+.main-nosotros .titulos h1 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
+  font-size: 30px;
 }
 .main-nosotros .contenedor-nosotros {
   width: 100%;
@@ -1248,10 +1254,11 @@ header label {
   margin: auto;
   max-width: 1500px;
 }
-.main-contacto .titulos h2 {
+.main-contacto .titulos h1 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
+  font-size: 30px;
 }
 .main-contacto .container-contacto {
   width: 90%;
@@ -1895,10 +1902,11 @@ header label {
   margin: auto;
   max-width: 1500px;
 }
-.main-usuarios .titulos h2 {
+.main-usuarios .titulos h1 {
   text-decoration: underline;
   color: #f11e1e;
   font-weight: bold;
+  font-size: 30px;
 }
 .main-usuarios .contenedor-usuarios {
   margin: 70px auto;

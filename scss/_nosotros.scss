@@ -11,8 +11,8 @@
     .titulos {
         @include titulos-principales;
 
-        h2 {
-            @include titulos-principales-h2;
+        h1 {
+            @include titulos-principales-h1;
         }
 
     }

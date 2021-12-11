@@ -16,10 +16,11 @@
     max-width: $max-width-2;
 }
 
-@mixin titulos-principales-h2 {
+@mixin titulos-principales-h1 {
     text-decoration: underline;
     color: $primary-color;
     font-weight: bold;
+    font-size: 30px;
 
 }
 
