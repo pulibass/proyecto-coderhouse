@@ -12,7 +12,6 @@
     display: grid;
     grid-template-rows: 3 minmax($width);
 
-
     .titulos-index {
         font-family: $font-primary;
         grid-template-columns: 12fr;

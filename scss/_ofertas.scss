@@ -23,10 +23,7 @@
     .contenedor-ofertas {
         margin-top: 70px;
 
-        .buton-icono {
-            width: $width;
-            margin-top: 0px;
-        }
+
 
         .tarjeta {
             @include tarjeta-productos-ofertas;
@@ -43,10 +40,21 @@
                 font-size: $font-size-1;
             }
 
-            .logo-ahora12 {
-                width: 80px;
-                height: 80px;
+            .buton-icono {
+                width: $width;
+                margin-top: 0px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .logo-ahora12 {
+                    margin-top: 15px;
+                    width: 100px;
+                    height: 80px;
+                }
             }
+
         }
 
 

@@ -43,7 +43,7 @@ header {
   max-width: 2000px;
   height: 60px;
   display: flex;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.637);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.637);
   background: #0575E6;
   background: -webkit-linear-gradient(to right, #021B79, #0575E6);
   background: linear-gradient(to right, #021B79, #0575E6);
@@ -313,10 +313,27 @@ header label {
   }
 }
 @media screen and (max-width: 500px) {
-  .logo img {
-    margin-left: 5px;
-    width: 150px;
-    height: 60px;
+  header .logo img {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 120px;
+    height: 40px;
+  }
+  header .cart {
+    margin-right: 60px;
+    right: 0;
+  }
+  header .cart i {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  header .menu-hamb i {
+    margin-top: 8px;
+    font-size: 25px;
+  }
+  header .cruz-boton i {
+    margin-top: 8px;
+    font-size: 25px;
   }
 }
 /*colores primarios*/
@@ -437,6 +454,11 @@ header label {
   color: #f11e1e;
   font-weight: bold;
   font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main-index .titulos-index h1 {
+    font-size: 20px;
+  }
 }
 .main-index .container-grid-index {
   display: grid;
@@ -800,6 +822,11 @@ header label {
   font-weight: bold;
   font-size: 30px;
 }
+@media screen and (max-width: 500px) {
+  .main-productos .titulos h1 {
+    font-size: 20px;
+  }
+}
 .main-productos .boton-navegacion {
   width: 100%;
   max-width: 1500px;
@@ -962,12 +989,13 @@ header label {
   font-weight: bold;
   font-size: 30px;
 }
+@media screen and (max-width: 500px) {
+  .main-ofertas .titulos h1 {
+    font-size: 20px;
+  }
+}
 .main-ofertas .contenedor-ofertas {
   margin-top: 70px;
-}
-.main-ofertas .contenedor-ofertas .buton-icono {
-  width: 100%;
-  margin-top: 0px;
 }
 .main-ofertas .contenedor-ofertas .tarjeta {
   display: flex;
@@ -989,8 +1017,17 @@ header label {
 .main-ofertas .contenedor-ofertas .tarjeta .descripcion-oferta {
   font-size: 10px;
 }
-.main-ofertas .contenedor-ofertas .tarjeta .logo-ahora12 {
-  width: 80px;
+.main-ofertas .contenedor-ofertas .tarjeta .buton-icono {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-ofertas .contenedor-ofertas .tarjeta .buton-icono .logo-ahora12 {
+  margin-top: 15px;
+  width: 100px;
   height: 80px;
 }
 .main-ofertas .contenedor-ofertas .linea {
@@ -1044,6 +1081,11 @@ header label {
   color: #f11e1e;
   font-weight: bold;
   font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main-nosotros .titulos h1 {
+    font-size: 20px;
+  }
 }
 .main-nosotros .contenedor-nosotros {
   width: 100%;
@@ -1259,6 +1301,11 @@ header label {
   color: #f11e1e;
   font-weight: bold;
   font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main-contacto .titulos h1 {
+    font-size: 20px;
+  }
 }
 .main-contacto .container-contacto {
   width: 90%;
@@ -1861,9 +1908,9 @@ header label {
     justify-content: space-around;
   }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
-    width: 60%;
+    width: 200px;
     margin: 5px;
-    font-size: 30px;
+    font-size: 10px;
   }
 }
 /*colores primarios*/
@@ -1907,6 +1954,11 @@ header label {
   color: #f11e1e;
   font-weight: bold;
   font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  .main-usuarios .titulos h1 {
+    font-size: 20px;
+  }
 }
 .main-usuarios .contenedor-usuarios {
   margin: 70px auto;

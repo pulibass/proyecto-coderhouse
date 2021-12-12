@@ -9,7 +9,7 @@ header {
     @include setup;
     height: 60px;
     display: flex;
-    box-shadow: 10px 5px 5px $primary-color-7;
+    box-shadow: 0px 5px 5px $primary-color-7;
     background: $secondary-color-5;
     background: -webkit-linear-gradient(to right, $secondary-color-6, $secondary-color-5);
     background: linear-gradient(to right, $secondary-color-6, $secondary-color-5);
@@ -338,9 +338,43 @@ header {
 
 
 @media screen and (max-width: 500px) {
-    .logo img {
-        margin-left: $margin-1;
-        width: 150px;
-        height: 60px;
+    header {
+
+        .logo img {
+            margin-top: 10px;
+            margin-left: 0;
+            width: 120px;
+            height: 40px;
+        }
+
+        .cart {
+            margin-right: 60px;
+            right: 0;
+
+
+            i {
+                margin-top: 10px;
+                font-size: 20px;
+
+            }
+
+        }
+
+        .menu-hamb {
+            i {
+                margin-top: 8px;
+                font-size: 25px;
+
+            }
+        }
+
+        .cruz-boton {
+            i {
+                margin-top: 8px;
+                font-size: 25px;
+
+            }
+
+        }
     }
 }
