@@ -74,6 +74,12 @@ header {
             transform: scale(1.1);
         }
 
+        .active {
+            text-decoration: underline 2px $secondary-color-1;
+            background-color: $secondary-color-7;
+            border-radius: 5px;
+        }
+
 
 
 
