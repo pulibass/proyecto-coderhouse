@@ -1,0 +1,1 @@
+const btnAddToCart = document.querySelectorAll()
