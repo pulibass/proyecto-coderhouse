@@ -23,33 +23,127 @@
 
 <body>
 
+    <header>
+
+        <!--LOGO-->
+        <a class="logo" href="../index.html"><img src="../img/logos/LOGO.png" alt="lOGO PAGINA"></a>
+
+        <!--MENU HAMBURGUESA INICIO-->
+        <input type="checkbox" id="checkbtn">
+        <label class="menu-hamb" for="checkbtn">
+            <i class="fas fa-bars fa-2x"></i>
+        </label>
+
+        <label class="cruz-boton" for="checkbtn">
+            <i class="far fa-times-circle fa-2x"></i>
+        </label>
+        <!--MENU HAMBURGUESA FIN-->
+
+        <nav>
+            <!--NAV INICIO-->
+            <ul>
+                <li>
+                    <a href="../index.html"><img class="img-iconos" src="../img/iconos/home.png"
+                            alt="icono-home">Inicio</a></li>
+                <li>
+                    <a href="../pages/productos.html"><img class="img-iconos" src="../img/iconos/producto.png"
+                            alt="icono-producto">Productos</a>
+                <li>
+                    <a href="../pages/ofertas.html"><img class="img-iconos" src="../img/iconos/descuento.png"
+                            alt="icono-descuento">Ofertas</a>
+                </li>
+                <li>
+                    <a href="../pages/nosotros.html"><img class="img-iconos" src="../img/iconos/nosotros.png"
+                            alt="icono-nosotros">Nosotros</a></li>
+                <li>
+                    <a href="../pages/contacto.html"><img class="img-iconos" src="../img/iconos/email.png"
+                            alt="icono-email">Contacto</a></li>
+                <li>
+                    <a href="../pages/usuario.html"><img class="img-iconos" src="../img/iconos/usuario2.png"
+                            alt="avatar-icono">Usuario</a>
+                </li>
+            </ul>
+            <!--NAV FIN-->
+        </nav>
+        <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x img-iconos"></i></a>
+        </div>
+    </header>
+
+    <div class="contenedor-whatsapp">
+        <!--ICONO FLOTANTE WHATSAPP-->
+
+        <a href="https://api.whatsapp.com/send?phone=5493512646228" target="_blank">
+            <img src="../img/iconos/whatsapp-png.png" alt="whatsapp">
+        </a>
+        <div class="texto-whatsapp">
+            <h5>Escribinos!</h5>
+        </div>
+    </div>
+
+
     <main class="main-cart">
 
-
-        <div class="contenedor-vuelta">
-
-            <div class="enlace">
-                <a href="../index.html">
-                    <i class="fas fa-2x fa-fast-backward icono"></i>
-                </a>
-            </div>
-
-            <div class="titulo-volver">
-                <h5>Volver al Inicio</h5>
-            </div>
+        <div data-aos="flip-left" class="titulos">
+            <h1>Mi Carrito</h1>
         </div>
 
-
-
-
-        <div class="img-not-found">
-            <img src="../img/cart/error-404.jpg" alt="error-404">
-
+        <div class="carrito">
+            <h2>Carrito</h2>
+            <div class="titulos">
+                <div class="titulo-carrito">
+                    <p>Producto</p>
+                </div>
+                <div class="titulo-carrito">
+                    <p>Precio</p>
+                </div>
+                <div class="titulo-carrito">
+                    <p>Cantidad</p>
+                </div>
+            </div>
+            <div class="contenedor-productos">
+                <div class="carro-compras">
+                    <div class="producto">
+                        <div class="imagen-carro">
+                            <div class="imagen">
+                                <img src="../img/amortiguadores/amortiguador-4.jpg">
+                                <!-- <img src=${imagen} alt=""> -->
+                            </div>
+                            <div class="title-producto">
+                                <h2>${titulo}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="precio">
+                        <div class="price">
+                            <p>${precio}</p>
+                        </div>
+                    </div>
+                    <div class="cantidad">
+                        <div class="button-cantidad">
+                            <div class="btn-number">
+                                <input type="number" value="number">
+                            </div>
+                            <div class="btn-delete">
+                                <button><img src="../img/iconos/rectangle-xmark-solid.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
+        <div class="compra">
+            <div class="total">
+                <h4>Total: $</h4>
+            </div>
+            <div class="boton-comprar">
+                <button id="comprar">comprar</button>
+            </div>
+        </div>
     </main>
+
+    <script src="cart.js"></script>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
