@@ -2394,7 +2394,6 @@ header label {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #000;
 }
 .main-cart .carrito .contenedor-productos .carro-compras {
   width: 100%;
