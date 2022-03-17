@@ -180,7 +180,7 @@ function agregarAlCarro() {
                          <input type = "number"value = "number" >
                       </div>
                       <div class = "btn-delete" >
-                        <button><img src = "/img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
+                        <button><img src = "../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
                    </div> 
               </div>`;
