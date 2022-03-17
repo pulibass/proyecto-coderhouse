@@ -1,4 +1,4 @@
-const btnCompra = document.querySelectorAll('#btn-compra'); //con este propiedad selecciono todos los botones de compra
+/* const btnCompra = document.querySelectorAll('#btn-compra'); //con este propiedad selecciono todos los botones de compra
 btnCompra.forEach((añadirAlCarro) => { // uso la variable con un foreach(paso el parametro click creo una funcion flecha que se va a llamr añadirAlCarro
     añadirAlCarro.addEventListener('click', añadirAlCarroClick); //creo un evento click y le paso la funcion que se va a llamar añadirAlCarroClick
 
@@ -63,4 +63,129 @@ function añadirElTotal() {
         total += parseInt(precio.textContent); //le digo que la variable total va a sumar el precio de los productos
     })
     console.log(precioProductos)
+} */
+
+class Productos {
+  constructor(id, title, subTitle, price) {
+    this.id = id;
+    this.title = title;
+    this.subTitle = subTitle;
+    this.price = price;
+  }
 }
+
+const productos = [{
+    id: "cubierta1",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "CINTURATO P1",
+    subTitle: "175/65R14 82T",
+    price: "25.680"
+  },
+  {
+    id: "cubierta2",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "FORMULA ENERGY",
+    subTitle: "175/65R14 82T",
+    price: "13.890"
+  },
+  {
+    id: "cubierta3",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "P400 EVO",
+    subTitle: "175/65R14 82T",
+    price: "18.560"
+  },
+  {
+    id: "cubierta4",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "CHRONO",
+    subTitle: "175/65R14 90T",
+    price: "19.530"
+  },
+  {
+    id: "cubierta5",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "CINTURATO P1",
+    subTitle: "175/70R14 84T",
+    price: "24.570"
+  },
+  {
+    id: "cubierta6",
+    img: "../img/cubiertas/rueda-pirelli.jpg",
+    title: "XL SCORPION ATR",
+    subTitle: "175/70R14 88H",
+    price: "32.920"
+  },
+]
+let productosAgregados = [];
+
+function mostrarProductos() {
+  const card = document.getElementById('card');
+
+  for (const productosCard of productos) {
+    const contentCard = document.createElement('div');
+    contentCard.setAttribute('class', 'tarjeta-contenido')
+    contentCard.innerHTML = ` 
+                <div class="imagen"><img id="img-producto" src="${productosCard.img}" alt=""></div>
+                <h2 class="title-producto">${productosCard.title}<span>${productosCard.subTitle}</span></h2>
+                <div class="seccion2">
+                    <p class="precio-producto">${productosCard.price}</p>
+                    <button id="${productosCard.id}">Agregar</button>
+                </div>`;
+
+    card.appendChild(contentCard);
+    let btnCompra = document.getElementById(`${productosCard.id}`);
+    btnCompra.onclick = () => {
+      productosAgregados.push(productosCard)
+      console.log(productosAgregados)
+      agregarAlCarro()
+
+    };
+  }
+}
+
+
+
+function agregarAlCarro() {
+
+  const contenedorCarro = document.getElementById('contenedorCarro')
+  contenedorCarro.innerHTML = '';
+
+  for (const carro of productosAgregados) {
+
+    let añadiendoAlCarro = document.createElement('div');
+    añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
+    añadiendoAlCarro.innerHTML =
+      `
+
+              <div class = "producto">
+                  <div class="imagen-carro">
+                    <div class="imagen">
+                      <img src = ${carro.img} alt = "" >
+                    </div> 
+                     <div class = "title-producto">
+                      <h2>${carro.title}</h2>
+                      <h2>${carro.subTitle}</h2>
+                    </div> 
+                  </div> 
+              </div> 
+              <div class = "precio" >
+                  <div class = "price">
+                      <p>${carro.price}</p> 
+                 </div> 
+              </div> 
+              <div class = "cantidad">
+                    <div class = "button-cantidad" >
+                      <div class = "btn-number" >
+                         <input type = "number"value = "number" >
+                      </div>
+                      <div class = "btn-delete" >
+                        <button><img src = "/img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
+                      </div> 
+                   </div> 
+              </div>`;
+
+    contenedorCarro.appendChild(añadiendoAlCarro);
+  }
+}
+mostrarProductos()
