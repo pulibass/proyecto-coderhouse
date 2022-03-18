@@ -156,31 +156,28 @@ function agregarAlCarro() {
     let añadiendoAlCarro = document.createElement('div');
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
     añadiendoAlCarro.innerHTML =
-      `
-
-              <div class = "producto">
+      `       <div class="producto-carro">
                   <div class="imagen-carro">
-                    <div class="imagen">
-                      <img src = ${carro.img} alt = "" >
+                    <div div class="imagen-cart">
+                      <img src=${carro.img} alt = "" >
                     </div> 
-                     <div class = "title-producto">
-                      <h2>${carro.title}</h2>
-                      <h2>${carro.subTitle}</h2>
+                     <div class="title-producto-carro">
+                      <h2>${carro.title}<span>${carro.subTitle}</span></h2>
                     </div> 
                   </div> 
               </div> 
-              <div class = "precio" >
-                  <div class = "price">
-                      <p>${carro.price}</p> 
+              <div class="precio-carro">
+                  <div class="price-carro">
+                      <p>$ ${carro.price}</p> 
                  </div> 
               </div> 
-              <div class = "cantidad">
-                    <div class = "button-cantidad" >
-                      <div class = "btn-number" >
-                         <input type = "number"value = "number" >
+              <div class="cantidad-carro">
+                    <div class="button-cantidad">
+                      <div class="btn-number">
+                         <input type="number"value = "number">
                       </div>
-                      <div class = "btn-delete" >
-                        <button><img src = "../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
+                      <div class="btn-delete">
+                        <button><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
                    </div> 
               </div>`;
