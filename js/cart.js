@@ -116,6 +116,90 @@ const productos = [{
     subTitle: "175/70R14 88H",
     price: "32.920"
   },
+  {
+    id: "amortiguador1",
+    img: "../img/amortiguadores/amortiguador-1.jpg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "CHEVROLET CORSA",
+    price: "18.560"
+  },
+  {
+    id: "amortiguador2",
+    img: "../img/amortiguadores/amortiguador-2.jpg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "FIAT SIENA, PALIO",
+    price: "15.650"
+  },
+  {
+    id: "amortiguador3",
+    img: "../img/amortiguadores/amortiguador-3.jpg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "FORD FIESTA",
+    price: "20.210"
+  },
+  {
+    id: "amortiguador4",
+    img: "../img/amortiguadores/amortiguador-4.jpg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "RENAULT CLIO",
+    price: "19.860"
+  },
+  {
+    id: "amortiguador5",
+    img: "../img/amortiguadores/amortiguador-5.jpeg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "VOLSKWAGEN GOL",
+    price: "19.520"
+  },
+  {
+    id: "amortiguador6",
+    img: "../img/amortiguadores/amortiguador-6.jpeg",
+    title: "AMORTIGUADORES DELANTEROS",
+    subTitle: "PEUGEOT PARTNER",
+    price: "20.185"
+  },
+  {
+    id: "freno1",
+    img: "../img/frenos/freno-1.jpeg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "CHEVROLET AGILE, CELTA Y PRISMA, FRASLE",
+    price: "22.680"
+  },
+  {
+    id: "freno2",
+    img: "../img/frenos/freno-2.jpeg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "FIAT ADVENTURE Y PALIO, FRASLE",
+    price: "19.890"
+  },
+  {
+    id: "freno3",
+    img: "../img/frenos/freno-3.jpg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "VOLSKWAGEN BORA, FOX Y POLO, FRASLE",
+    price: "22.350"
+  },
+  {
+    id: "freno4",
+    img: "../img/frenos/freno-4.jpeg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "FORD ECO SPORT, FRASLE",
+    price: "23.190"
+  },
+  {
+    id: "freno5",
+    img: "../img/frenos/freno-5.jpeg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "FIAT TORO Y CHRONO, FRASLE",
+    price: "21.250"
+  },
+  {
+    id: "freno6",
+    img: "../img/frenos/freno-6.jpeg",
+    title: "PASTILLAS DE FRENOS",
+    subTitle: "CHEVROLET SONIC, CRUZE, FRASLE",
+    price: "23.850"
+  },
 ]
 let productosAgregados = [];
 
@@ -129,9 +213,15 @@ function mostrarProductos() {
                 <div class="imagen"><img id="img-producto" src="${productosCard.img}" alt=""></div>
                 <h2 class="title-producto">${productosCard.title}<span>${productosCard.subTitle}</span></h2>
                 <div class="seccion2">
-                    <p class="precio-producto">${productosCard.price}</p>
+                    <p class="precio-producto"> $ ${productosCard.price}</p>
                     <button id="${productosCard.id}">Agregar</button>
-                </div>`;
+                </div>
+                
+                <div class="linea">
+                <hr>
+
+                </div>
+                `;
 
     card.appendChild(contentCard);
     let btnCompra = document.getElementById(`${productosCard.id}`);
