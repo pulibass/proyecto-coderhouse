@@ -66,11 +66,15 @@ function añadirElTotal() {
 } */
 
 class Productos {
-  constructor(id, title, subTitle, price) {
+  constructor(id, title, subTitle, price, cantidad) {
     this.id = id;
     this.title = title;
     this.subTitle = subTitle;
     this.price = price;
+    this.cantidad = 1;
+    this.precioTotal = function () {
+      totalProductos = this.price * this.cantidad
+    }
   }
 }
 
@@ -79,133 +83,132 @@ const productos = [{
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "CINTURATO P1",
     subTitle: "175/65R14 82T",
-    price: "25.680"
+    price: 25680
   },
   {
     id: "cubierta2",
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "FORMULA ENERGY",
     subTitle: "175/65R14 82T",
-    price: "13.890"
+    price: 13890
   },
   {
     id: "cubierta3",
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "P400 EVO",
     subTitle: "175/65R14 82T",
-    price: "18.560"
+    price: 18560
   },
   {
     id: "cubierta4",
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "CHRONO",
     subTitle: "175/65R14 90T",
-    price: "19.530"
+    price: 19530
   },
   {
     id: "cubierta5",
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "CINTURATO P1",
     subTitle: "175/70R14 84T",
-    price: "24.570"
+    price: 24570
   },
   {
     id: "cubierta6",
     img: "../img/cubiertas/rueda-pirelli.jpg",
     title: "XL SCORPION ATR",
     subTitle: "175/70R14 88H",
-    price: "32.920"
+    price: 32920
   },
   {
     id: "amortiguador1",
     img: "../img/amortiguadores/amortiguador-1.jpg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "CHEVROLET CORSA",
-    price: "18.560"
+    price: 18560
   },
   {
     id: "amortiguador2",
     img: "../img/amortiguadores/amortiguador-2.jpg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "FIAT SIENA, PALIO",
-    price: "15.650"
+    price: 15650
   },
   {
     id: "amortiguador3",
     img: "../img/amortiguadores/amortiguador-3.jpg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "FORD FIESTA",
-    price: "20.210"
+    price: 20210
   },
   {
     id: "amortiguador4",
     img: "../img/amortiguadores/amortiguador-4.jpg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "RENAULT CLIO",
-    price: "19.860"
+    price: 19860
   },
   {
     id: "amortiguador5",
     img: "../img/amortiguadores/amortiguador-5.jpeg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "VOLSKWAGEN GOL",
-    price: "19.520"
+    price: 19520
   },
   {
     id: "amortiguador6",
     img: "../img/amortiguadores/amortiguador-6.jpeg",
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "PEUGEOT PARTNER",
-    price: "20.185"
+    price: 20185
   },
   {
     id: "freno1",
     img: "../img/frenos/freno-1.jpeg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "CHEVROLET AGILE, CELTA Y PRISMA, FRASLE",
-    price: "22.680"
+    price: 22680
   },
   {
     id: "freno2",
     img: "../img/frenos/freno-2.jpeg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "FIAT ADVENTURE Y PALIO, FRASLE",
-    price: "19.890"
+    price: 19890
   },
   {
     id: "freno3",
     img: "../img/frenos/freno-3.jpg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "VOLSKWAGEN BORA, FOX Y POLO, FRASLE",
-    price: "22.350"
+    price: 22350
   },
   {
     id: "freno4",
     img: "../img/frenos/freno-4.jpeg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "FORD ECO SPORT, FRASLE",
-    price: "23.190"
+    price: 23190
   },
   {
     id: "freno5",
     img: "../img/frenos/freno-5.jpeg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "FIAT TORO Y CHRONO, FRASLE",
-    price: "21.250"
+    price: 21250
   },
   {
     id: "freno6",
     img: "../img/frenos/freno-6.jpeg",
     title: "PASTILLAS DE FRENOS",
     subTitle: "CHEVROLET SONIC, CRUZE, FRASLE",
-    price: "23.850"
+    price: 23850
   },
 ]
 let productosAgregados = [];
 
 function mostrarProductos() {
   const card = document.getElementById('card');
-
   for (const productosCard of productos) {
     const contentCard = document.createElement('div');
     contentCard.setAttribute('class', 'tarjeta-contenido')
@@ -222,27 +225,20 @@ function mostrarProductos() {
 
                 </div>
                 `;
-
     card.appendChild(contentCard);
     let btnCompra = document.getElementById(`${productosCard.id}`);
     btnCompra.onclick = () => {
       productosAgregados.push(productosCard)
       console.log(productosAgregados)
       agregarAlCarro()
-
     };
   }
 }
 
-
-
 function agregarAlCarro() {
-
   const contenedorCarro = document.getElementById('contenedorCarro')
   contenedorCarro.innerHTML = '';
-
   for (const carro of productosAgregados) {
-
     let añadiendoAlCarro = document.createElement('div');
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
     añadiendoAlCarro.innerHTML =
@@ -273,6 +269,40 @@ function agregarAlCarro() {
               </div>`;
 
     contenedorCarro.appendChild(añadiendoAlCarro);
+    sumaProductos()
   }
 }
 mostrarProductos()
+
+function sumaProductos() {
+  let totalProducto = [];
+  for (const compraProductos of productosAgregados) {
+    const compra = document.getElementById('compra');
+    totalProducto.push(compraProductos.price);
+    console.log(totalProducto)
+    const total = document.createElement('span');
+    total.innerHTML = `${totalProducto}.`;
+    compra.appendChild(total);
+  }
+  /* let totalProducto = [];
+
+
+  for (const compraProductos of productosAgregados) {
+    let suma = 0;
+    const compra = document.getElementById('compra');
+    totalProducto.push(compraProductos.price);
+    for (i = 0; i < totalProducto.length; i++) {
+      suma += totalProducto[i];
+      const total = document.createElement('span');
+      total.innerHTML = `${suma}`;
+      compra.appendChild(total);
+
+    }
+  } */
+
+}
+
+const botonCompraFinalizada = document.getElementById('comprar');
+botonCompraFinalizada.onclick = () => {
+  alert("gracias por su compra")
+};
