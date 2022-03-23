@@ -141,20 +141,11 @@
 
 
 @media screen and (max-width:768px) {
-    .main-productos {
-
-        .boton-navegacion {
-
-            select {
-                width: $width-11;
-                max-width: $max-width-10;
-                font-size: $font-size-4;
-            }
-        }
+    .main-ofertas {
 
         .contenedor-ofertas {
 
-            
+
 
             .container-cards {
                 width: 100%;
@@ -263,4 +254,3 @@
         }
     }
 }
-

@@ -71,7 +71,8 @@ const productos = [{
     title: "CINTURATO P1",
     subTitle: "175/65R14 82T",
     price: 25680,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "cubierta2",
@@ -79,7 +80,8 @@ const productos = [{
     title: "FORMULA ENERGY",
     subTitle: "175/65R14 82T",
     price: 13890,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "cubierta3",
@@ -87,7 +89,8 @@ const productos = [{
     title: "P400 EVO",
     subTitle: "175/65R14 82T",
     price: 18560,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "cubierta4",
@@ -95,7 +98,8 @@ const productos = [{
     title: "CHRONO",
     subTitle: "175/65R14 90T",
     price: 19530,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "cubierta5",
@@ -103,7 +107,8 @@ const productos = [{
     title: "CINTURATO P1",
     subTitle: "175/70R14 84T",
     price: 24570,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "cubierta6",
@@ -111,7 +116,8 @@ const productos = [{
     title: "XL SCORPION ATR",
     subTitle: "175/70R14 88H",
     price: 32920,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador1",
@@ -119,7 +125,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "CHEVROLET CORSA",
     price: 18560,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador2",
@@ -127,7 +134,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "FIAT SIENA, PALIO",
     price: 15650,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador3",
@@ -135,7 +143,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "FORD FIESTA",
     price: 20210,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador4",
@@ -143,7 +152,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "RENAULT CLIO",
     price: 19860,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador5",
@@ -151,7 +161,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "VOLSKWAGEN GOL",
     price: 19520,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "amortiguador6",
@@ -159,7 +170,8 @@ const productos = [{
     title: "AMORTIGUADORES DELANTEROS",
     subTitle: "PEUGEOT PARTNER",
     price: 20185,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno1",
@@ -167,7 +179,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "CHEVROLET AGILE, CELTA Y PRISMA, FRASLE",
     price: 22680,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno2",
@@ -175,7 +188,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "FIAT ADVENTURE Y PALIO, FRASLE",
     price: 19890,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno3",
@@ -183,7 +197,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "VOLSKWAGEN BORA, FOX Y POLO, FRASLE",
     price: 22350,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno4",
@@ -191,7 +206,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "FORD ECO SPORT, FRASLE",
     price: 23190,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno5",
@@ -199,7 +215,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "FIAT TORO Y CHRONO, FRASLE",
     price: 21250,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "freno6",
@@ -207,7 +224,8 @@ const productos = [{
     title: "PASTILLAS DE FRENOS",
     subTitle: "CHEVROLET SONIC, CRUZE, FRASLE",
     price: 23850,
-    producto: true
+    producto: true,
+    cantidad: 1
   },
   {
     id: "oferta1",
@@ -215,7 +233,8 @@ const productos = [{
     title: "SERVICE FOCUS 2.0 o 1.6",
     subTitle: "CAMBIO DE ACEITE 5W30 Y FILTROS",
     price: 8.550,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta2",
@@ -223,7 +242,8 @@ const productos = [{
     title: "SERVICE AMAROK 2.0",
     subTitle: "CAMBIO DE ACEITE 5W40 Y FILTROS",
     price: 7560,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta3",
@@ -231,7 +251,8 @@ const productos = [{
     title: "SERVICE ONIX 1.6",
     subTitle: "CAMBIO DE ACEITE 5W30 Y FILTROS",
     price: 8.550,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta4",
@@ -239,7 +260,8 @@ const productos = [{
     title: " CAMBIO DE AMORTIGUADORES TRASEROS",
     subTitle: "FIAT PALIO, SIENA",
     price: 9580,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta5",
@@ -247,7 +269,8 @@ const productos = [{
     title: " CAMBIO DE AMORTIGUADORES TRASEROS",
     subTitle: "CHEVROLET CORSA",
     price: 11350,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta6",
@@ -255,7 +278,8 @@ const productos = [{
     title: "CAMBIO DE AMORTIGUADORES DELANTEROS",
     subTitle: "RENAULT CLIO",
     price: 9280,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta7",
@@ -263,7 +287,8 @@ const productos = [{
     title: "BATERIA BOSCH S4",
     subTitle: "PARA VEHICULOS PARTICULARES",
     price: 16200,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta8",
@@ -271,7 +296,8 @@ const productos = [{
     title: "BATERIA MATEO 12X55",
     subTitle: "EXCLUSIVO PARA TAXIS, REMISES",
     price: 11520,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
   {
     id: "oferta9",
@@ -279,7 +305,8 @@ const productos = [{
     title: "BATERIA MOURA 12X40",
     subTitle: "PARA CAMIONETAS 4X4 Y CAMIONES",
     price: 23580,
-    producto: false
+    producto: false,
+    cantidad: 1
   },
 ]
 let productosAgregados = [];
@@ -330,15 +357,18 @@ function mostrarProductos() {
     card.appendChild(contentCard);
     let btnCompra = document.getElementById(`${productosCard.id}`);
     btnCompra.onclick = () => {
-      productosAgregados.push(productosCard)
-      agregarAlCarro()
+      productosAgregados.push(productosCard);
+      agregarAlCarro();
+
     };
+
   }
 }
 
 function agregarAlCarro() {
   const contenedorCarro = document.getElementById('contenedorCarro');
   contenedorCarro.innerHTML = '';
+
   for (const carro of productosAgregados) {
     let añadiendoAlCarro = document.createElement('div');
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
@@ -361,7 +391,7 @@ function agregarAlCarro() {
               <div class="cantidad-carro">
                     <div class="button-cantidad">
                       <div class="btn-number">
-                         <input type="number"value = "number">
+                         <input id="btnSuma" type="number"value="${carro.cantidad}">
                       </div>
                       <div class="btn-delete">
                         <button id="btn-delete"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
@@ -372,37 +402,68 @@ function agregarAlCarro() {
     contenedorCarro.appendChild(añadiendoAlCarro);
     const btnDelete = document.getElementById('btn-delete');
     btnDelete.onclick = () => {
-      console.log("producto eliminado")
-    }
-    if (btnDelete == "true") {
-      contenedorCarro.innerHTML = '';
+      contenedorCarro.removeChild(añadiendoAlCarro);
+      productosAgregados.splice(productosAgregados.indexOf(carro), 1);
+      sumaProductos();
 
+      agregarAlCarro();
     }
+
     sumaProductos()
+
   }
 }
 mostrarProductos()
+let suma;
+const compra = document.getElementById('compra');
+const total = document.createElement('span');
+total.setAttribute('class', 'total');
 
 function sumaProductos() {
+  suma = 0;
   /*   let totales = productosAgregados.reduce((acumulador, item) => acumulador + item.price, 0) */
-  let suma = 0;
   for (const iterator of productosAgregados) {
-    suma += iterator.price
+    suma += iterator.price;
+    sumaProductosAgregadosCarro()
+
   }
-  const compra = document.getElementById('compra');
-  const total = document.createElement('span');
   total.innerHTML = "";
   compra.innerHTML = "";
   total.innerHTML = `Total $ ${suma}`;
   compra.appendChild(total);
 
-
 };
 
 
+let sumaProductosAgregados;
+let cantidad = 1;
+
+function sumaProductosAgregadosCarro() {
+  const btnSumaProducto = document.getElementById('btnSuma');
+  btnSumaProducto.onclick = () => {
+    cantidad++;
+    btnSumaProducto.value = cantidad;
+    sumaProductosAgregados = suma * cantidad;
+    total.innerHTML = "";
+    compra.innerHTML = "";
+    total.innerHTML = `Total $ ${sumaProductosAgregados}`;
+    compra.appendChild(total);
+    console.log(sumaProductosAgregados);
+
+  }
+
+}
 
 
-const botonCompraFinalizada = document.getElementById('comprar');
-botonCompraFinalizada.onclick = () => {
-  alert("gracias por su compra")
-};
+
+let botonCompraFinalizada = document.getElementById('comprar');
+botonCompraFinalizada.addEventListener('click', () => {
+  alert("Compra finalizada");
+  productosAgregados = [];
+  agregarAlCarro();
+  sumaProductos();
+  sumaProductosAgregadosCarro();
+  suma = 0;
+  sumaProductosAgregados = 0;
+
+});
