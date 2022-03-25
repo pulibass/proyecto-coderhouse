@@ -24,13 +24,13 @@ function pageUser() {
 }
 
 const guardoDatos = () => {
-    localStorage.setItem("inputUserName", inputUserName);
-    localStorage.setItem("inputUserPassword", inputUserPassword);
+    localStorage.setItem("inputUserName", JSON.stringify(inputUserName));
+    localStorage.setItem("inputUserPassword", JSON.stringify(inputUserPassword));
 }
 
 const recuperarDatos = () => {
-    inputUserName = localStorage.getItem("inputUserName");
-    inputUserPassword = localStorage.getItem("inputUserPassword");
+    JSON.parse(localStorage.getItem("inputUserName"));
+    JSON.parse(localStorage.getItem("inputUserPassword"));
 
 }
 
