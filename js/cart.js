@@ -190,7 +190,7 @@ const productos = [{
   {
     id: "oferta4",
     img: "../img/ofertas/oferta-4.jpeg",
-    title: " CAMBIO DE AMORTIGUADORES TRASEROS",
+    title: "AMORTIGUADORES TRASEROS",
     subTitle: "FIAT PALIO, SIENA",
     price: 9580,
     producto: false,
@@ -199,7 +199,7 @@ const productos = [{
   {
     id: "oferta5",
     img: "../img/ofertas/oferta-5.jpg",
-    title: " CAMBIO DE AMORTIGUADORES TRASEROS",
+    title: "AMORTIGUADORES TRASEROS",
     subTitle: "CHEVROLET CORSA",
     price: 11350,
     producto: false,
@@ -208,7 +208,7 @@ const productos = [{
   {
     id: "oferta6",
     img: "../img/ofertas/oferta-6.jpg",
-    title: "CAMBIO DE AMORTIGUADORES DELANTEROS",
+    title: "AMORTIGUADORES TRASEROS",
     subTitle: "RENAULT CLIO",
     price: 9280,
     producto: false,
