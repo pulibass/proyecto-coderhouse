@@ -288,7 +288,15 @@ function mostrarProductosOferta() {
 
         productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         console.log(productosCard);
-        alert("Se agrego al carrito"); //Modal 
+        /* alert("Se agrego al carrito"); //Modal  */
+        Swal.fire({
+          title: 'Producto Agregado al Carrito',
+          text: `${productosCard.title}: $${productosCard.price}`,
+          imageUrl: `${productosCard.img}`,
+          imageWidth: 200,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+        })
       };
     }
   }
@@ -322,8 +330,15 @@ function mostrarProductos() {
 
         productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         console.log(productosCard);
-        alert("Se agrego al carrito"); //Modal 
-
+        /* alert("Se agrego al carrito"); //Modal  */
+        Swal.fire({
+          title: 'Producto Agregado al Carrito',
+          text: `${productosCard.title}: $${productosCard.price}`,
+          imageUrl: `${productosCard.img}`,
+          imageWidth: 200,
+          imageHeight: 200,
+          imageAlt: 'Custom image',
+        })
       };
     }
   }

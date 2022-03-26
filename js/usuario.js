@@ -15,8 +15,18 @@ function pageUser() {
     console.log(inputUserPassword)
 
     if (inputUserName != "admin" && inputUserPassword != "admin") {
-        swal("bienvenido", inputUserName, "success");
+        Swal.fire(
+            `Bienvenido ${inputUserName}`,
+            'estamos felices de tenerte de vuelta',
+            'success'
+        )
     } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'no tiene permisos de administrador',
+            footer: 'intente nuevamente'
+        })
         swal("no tiene permisos para esta operacion", "error");
 
     }
@@ -44,4 +54,3 @@ const limpiarLocalStorage = () => {
 
 
 recuperarDatos();
-
