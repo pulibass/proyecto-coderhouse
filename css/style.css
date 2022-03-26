@@ -852,20 +852,8 @@ header label {
 .main-productos .contenedor-productos {
   margin-top: 70px;
 }
-.main-productos .contenedor-productos .titulos-cubiertas {
+.main-productos .contenedor-productos .titulo-producto-oferta {
   color: #0575E6;
-  font-weight: bold;
-  margin-left: 25px;
-  font-size: 40px;
-}
-.main-productos .contenedor-productos .titulos-amortiguadores {
-  color: #FAB400;
-  font-weight: bold;
-  margin-left: 25px;
-  font-size: 40px;
-}
-.main-productos .contenedor-productos .titulos-frenos {
-  color: #DBD50B;
   font-weight: bold;
   margin-left: 25px;
   font-size: 40px;
@@ -977,17 +965,7 @@ header label {
     max-width: 300px;
     font-size: 15px;
   }
-  .main-productos .contenedor-productos .titulos-cubiertas {
-    margin: auto;
-    text-align: center;
-    font-size: 40px;
-  }
-  .main-productos .contenedor-productos .titulos-amortiguadores {
-    margin: auto;
-    text-align: center;
-    font-size: 40px;
-  }
-  .main-productos .contenedor-productos .titulos-frenos {
+  .main-productos .contenedor-productos .titulo-producto-oferta {
     margin: auto;
     text-align: center;
     font-size: 40px;
@@ -1088,17 +1066,7 @@ header label {
     max-width: 400px;
     font-size: 12px;
   }
-  .main-productos .contenedor-productos .titulos-cubiertas {
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-  }
-  .main-productos .contenedor-productos .titulos-amortiguadores {
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-  }
-  .main-productos .contenedor-productos .titulos-frenos {
+  .main-productos .contenedor-productos .titulo-producto-oferta {
     margin: auto;
     text-align: center;
     font-size: 30px;

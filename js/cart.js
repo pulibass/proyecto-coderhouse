@@ -250,8 +250,10 @@ function cambioProductos() {
   card.innerHTML = '';
   if (selectElement === 'oferta') {
     mostrarProductosOferta()
+
   } else {
     mostrarProductos()
+
   }
 }
 
@@ -276,13 +278,7 @@ function mostrarProductosOferta() {
                 </div>
                 `;
 
-      /*   card.appendChild(contentCard);
-        let btnCompra = document.getElementById(`${productosCard.id}`);
 
-        btnCompra.onclick = () => {
-
-          alert("Oferta")
-          productosAgregados.push(productosCard); */
       card.appendChild(contentCard);
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
@@ -369,13 +365,15 @@ function mostrarCarrito() {
                    </div> 
               </div>`;
     contenedorCarro.appendChild(añadiendoAlCarro);
-    const btnDelete = document.getElementById('btn-delete');
+    console.log(carro);
+    console.log(contenedorCarro);
 
+
+    let btnDelete = document.getElementById('btn-delete');
     btnDelete.onclick = () => {
       contenedorCarro.removeChild(añadiendoAlCarro);
       productosAgregados.splice(productosAgregados.indexOf(carro), 1);
     }
-
   }
   sumaProductos();
 }
@@ -383,8 +381,14 @@ function mostrarCarrito() {
 window.onload = (e) => {
   if (e.target.baseURI.includes("oferta")) {
     mostrarProductosOferta();
+    tituloOfertas();
+
+
   } else if (e.target.baseURI.includes("productos")) {
     mostrarProductos();
+    tituloProductos();
+
+
   } else if (e.target.baseURI.includes("cart")) {
     mostrarCarrito();
   } else {
@@ -413,7 +417,26 @@ let botonCompraFinalizada = document.getElementById('comprar');
 botonCompraFinalizada.addEventListener('click', () => {
   alert("Compra finalizada");
   productosAgregados = [];
+  contenedorCarro.innerHTML = '';
   suma = 0;
-
-  sumaProductos(suma);
+  sumaProductos();
+  localStorage.removeItem("array");
 });
+
+function tituloProductos() {
+  const titulosProductos = document.getElementById('titulosProductos');
+  const tituloH3 = document.createElement('h3');
+  tituloH3.setAttribute('class', 'titulo-producto-oferta');
+  tituloH3.innerHTML = "PRODUCTOS";
+  titulosProductos.appendChild(tituloH3);
+
+
+}
+
+function tituloOfertas() {
+  const titulosProductos = document.getElementById('titulosProductos');
+  const tituloH3 = document.createElement('h3');
+  tituloH3.setAttribute('class', 'titulo-producto-oferta');
+  tituloH3.innerHTML = "OFERTAS";
+  titulosProductos.appendChild(tituloH3);
+}

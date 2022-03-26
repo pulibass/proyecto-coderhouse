@@ -42,22 +42,13 @@
 
 
 
-        .titulos-cubiertas {
+        .titulo-producto-oferta {
             color: $secondary-color-5;
             @include titulos-productos-desktop;
 
         }
 
-        .titulos-amortiguadores {
-            color: $secondary-color-10;
-            @include titulos-productos-desktop;
-        }
-
-        .titulos-frenos {
-            color: $secondary-color-11;
-            @include titulos-productos-desktop;
-
-        }
+        
 
         .container-cards {
             width: 100%;
@@ -192,19 +183,10 @@
 
         .contenedor-productos {
 
-            .titulos-cubiertas {
+            .titulo-producto-oferta {
                 @include titulos-productos-tablet;
             }
 
-            .titulos-amortiguadores {
-                @include titulos-productos-tablet;
-
-            }
-
-            .titulos-frenos {
-                @include titulos-productos-tablet;
-
-            }
 
             .container-cards {
                 width: 100%;
@@ -328,18 +310,8 @@
 
         .contenedor-productos {
 
-            .titulos-cubiertas {
+            .titulo-producto-oferta {
                 @include titulos-productos-celular;
-            }
-
-            .titulos-amortiguadores {
-                @include titulos-productos-celular;
-
-            }
-
-            .titulos-frenos {
-                @include titulos-productos-celular;
-
             }
         }
     }
