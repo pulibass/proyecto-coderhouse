@@ -165,7 +165,7 @@ const productos = [{
     img: "../img/ofertas/oferta-1.jpeg",
     title: "SERVICE FOCUS 2.0 o 1.6",
     subTitle: "CAMBIO DE ACEITE 5W30 Y FILTROS",
-    price: 8.550,
+    price: 8700,
     producto: false,
     cantidad: 1
   },
@@ -183,7 +183,7 @@ const productos = [{
     img: "../img/ofertas/oferta-3.jpeg",
     title: "SERVICE ONIX 1.6",
     subTitle: "CAMBIO DE ACEITE 5W30 Y FILTROS",
-    price: 8.550,
+    price: 8550,
     producto: false,
     cantidad: 1
   },
@@ -276,12 +276,23 @@ function mostrarProductosOferta() {
                 </div>
                 `;
 
+      /*   card.appendChild(contentCard);
+        let btnCompra = document.getElementById(`${productosCard.id}`);
+
+        btnCompra.onclick = () => {
+
+          alert("Oferta")
+          productosAgregados.push(productosCard); */
       card.appendChild(contentCard);
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
-        alert("Oferta")
+        console.log(productosCard);
         productosAgregados.push(productosCard);
-        agregarAlCarro();
+        window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+
+        productosAgregados = JSON.parse(window.localStorage.getItem("array"));
+        console.log(productosCard);
+        alert("Se agrego al carrito"); //Modal 
       };
     }
   }
@@ -310,9 +321,10 @@ function mostrarProductos() {
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
         console.log(productosCard);
-        productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         productosAgregados.push(productosCard);
         window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+
+        productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         console.log(productosCard);
         alert("Se agrego al carrito"); //Modal 
 
@@ -362,9 +374,6 @@ function mostrarCarrito() {
     btnDelete.onclick = () => {
       contenedorCarro.removeChild(añadiendoAlCarro);
       productosAgregados.splice(productosAgregados.indexOf(carro), 1);
-      //sumaProductos();
-
-      //agregarAlCarro();
     }
 
   }
@@ -383,8 +392,8 @@ window.onload = (e) => {
   }
 }
 
-function sumaProductos() {
-  let suma = 0;
+function sumaProductos(suma) {
+  suma = 0;
   const compra = document.getElementById('compra');
   const total = document.createElement('span');
   total.setAttribute('class', 'total');
@@ -404,10 +413,7 @@ let botonCompraFinalizada = document.getElementById('comprar');
 botonCompraFinalizada.addEventListener('click', () => {
   alert("Compra finalizada");
   productosAgregados = [];
-  agregarAlCarro();
-  sumaProductos();
-  sumaProductosAgregadosCarro();
   suma = 0;
-  sumaProductosAgregados = 0;
 
+  sumaProductos(suma);
 });

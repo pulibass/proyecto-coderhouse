@@ -17,15 +17,19 @@
 
 
     .titulos {
-        @include titulos-principales;
+        font-family: sans-serif;
+        width: $width;
+        margin: 15px auto;
+        max-width: $max-width-2;
 
         h1 {
             @include titulos-principales-h1;
+
         }
 
     }
 
-    .container-cards {
+    /* .container-cards {
         width: 100%;
         border: hidden;
         display: flex;
@@ -130,7 +134,7 @@
             }
         }
     }
-
+ */
 
     .carrito {
         width: 100%;
@@ -138,7 +142,7 @@
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 0px;
 
         h2 {
             font-size: 20px;
@@ -378,17 +382,7 @@
         flex-direction: column;
         align-items: center;
 
-
-        .titulos {
-            @include titulos-principales;
-
-            h1 {
-                @include titulos-principales-h1;
-            }
-
-        }
-
-        .container-cards {
+        /* .container-cards {
             width: 100%;
             border: hidden;
             display: flex;
@@ -491,7 +485,7 @@
 
                 }
             }
-        }
+        } */
 
         .carrito {
             width: 100%;
