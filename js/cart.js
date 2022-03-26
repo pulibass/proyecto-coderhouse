@@ -244,13 +244,23 @@ const productos = [{
 ]
 let productosAgregados = [];
 
-function mostrarProductos() {
+function cambioProductos() {
+  let selectElement = document.querySelector('#selectProducts').value;
+  const card = document.getElementById('card');
+  card.innerHTML = '';
+  if (selectElement === 'oferta') {
+    mostrarProductosOferta()
+  } else {
+    mostrarProductos()
+  }
+}
+
+function mostrarProductosOferta() {
   const card = document.getElementById('card');
   for (const productosCard of productos) {
-
-    const contentCard = document.createElement('div');
-    contentCard.setAttribute('class', 'tarjeta-contenido')
-    if (productosCard.producto) {
+    if (!productosCard.producto) {
+      const contentCard = document.createElement('div');
+      contentCard.setAttribute('class', 'tarjeta-contenido');
       //si esta de oferta
       contentCard.innerHTML = ` 
                 <div class="imagen"><img id="img-producto" src="${productosCard.img}" alt=""></div>
@@ -266,16 +276,29 @@ function mostrarProductos() {
                 </div>
                 `;
 
+      card.appendChild(contentCard);
+      let btnCompra = document.getElementById(`${productosCard.id}`);
+      btnCompra.onclick = () => {
+        alert("Oferta")
+        productosAgregados.push(productosCard);
+        agregarAlCarro();
+      };
+    }
+  }
+}
 
-    } else {
-      //sino esta de oferta
-
+function mostrarProductos() {
+  const card = document.getElementById('card');
+  for (const productosCard of productos) {
+    if (productosCard.producto) {
+      const contentCard = document.createElement('div');
+      contentCard.setAttribute('class', 'tarjeta-contenido');
       contentCard.innerHTML = ` 
                 <div class="imagen"><img id="img-producto" src="${productosCard.img}" alt=""></div>
                 <h2 class="title-producto">${productosCard.title}<span>${productosCard.subTitle}</span></h2>
                 <div class="seccion2">
                     <p class="precio-producto"> $ ${productosCard.price}</p>
-                    <button id="${productosCard.id}">Agregar</button>
+                    <button  id="${productosCard.id}">Agregar</button>
                 </div>
                 
                 <div class="linea">
@@ -283,24 +306,26 @@ function mostrarProductos() {
 
                 </div>
                 `;
+      card.appendChild(contentCard);
+      let btnCompra = document.getElementById(`${productosCard.id}`);
+      btnCompra.onclick = () => {
+        console.log(productosCard);
+        productosAgregados = JSON.parse(window.localStorage.getItem("array"));
+        productosAgregados.push(productosCard);
+        window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+        console.log(productosCard);
+        alert("Se agrego al carrito"); //Modal 
+
+      };
     }
-
-
-
-    card.appendChild(contentCard);
-    let btnCompra = document.getElementById(`${productosCard.id}`);
-    btnCompra.onclick = () => {
-      productosAgregados.push(productosCard);
-      agregarAlCarro();
-
-    };
-
   }
 }
 
-function agregarAlCarro() {
+function mostrarCarrito() {
   const contenedorCarro = document.getElementById('contenedorCarro');
   contenedorCarro.innerHTML = '';
+  productosAgregados = JSON.parse(window.localStorage.getItem("array"));
+
 
   for (const carro of productosAgregados) {
     let añadiendoAlCarro = document.createElement('div');
@@ -331,62 +356,48 @@ function agregarAlCarro() {
                       </div> 
                    </div> 
               </div>`;
-
     contenedorCarro.appendChild(añadiendoAlCarro);
     const btnDelete = document.getElementById('btn-delete');
+
     btnDelete.onclick = () => {
       contenedorCarro.removeChild(añadiendoAlCarro);
       productosAgregados.splice(productosAgregados.indexOf(carro), 1);
-      sumaProductos();
+      //sumaProductos();
 
-      agregarAlCarro();
+      //agregarAlCarro();
     }
 
-    sumaProductos()
+  }
+  sumaProductos();
+}
 
+window.onload = (e) => {
+  if (e.target.baseURI.includes("oferta")) {
+    mostrarProductosOferta();
+  } else if (e.target.baseURI.includes("productos")) {
+    mostrarProductos();
+  } else if (e.target.baseURI.includes("cart")) {
+    mostrarCarrito();
+  } else {
+    alert("No se reconoce esa Url")
   }
 }
-mostrarProductos()
-let suma;
-const compra = document.getElementById('compra');
-const total = document.createElement('span');
-total.setAttribute('class', 'total');
 
 function sumaProductos() {
-  suma = 0;
+  let suma = 0;
+  const compra = document.getElementById('compra');
+  const total = document.createElement('span');
+  total.setAttribute('class', 'total');
   /*   let totales = productosAgregados.reduce((acumulador, item) => acumulador + item.price, 0) */
   for (const iterator of productosAgregados) {
     suma += iterator.price;
-    sumaProductosAgregadosCarro()
-
   }
   total.innerHTML = "";
   compra.innerHTML = "";
   total.innerHTML = `Total $ ${suma}`;
   compra.appendChild(total);
 
-};
-
-
-let sumaProductosAgregados;
-let cantidad = 1;
-
-function sumaProductosAgregadosCarro() {
-  const btnSumaProducto = document.getElementById('btnSuma');
-  btnSumaProducto.onclick = () => {
-    cantidad++;
-    btnSumaProducto.value = cantidad;
-    sumaProductosAgregados = suma * cantidad;
-    total.innerHTML = "";
-    compra.innerHTML = "";
-    total.innerHTML = `Total $ ${sumaProductosAgregados}`;
-    compra.appendChild(total);
-    console.log(sumaProductosAgregados);
-
-  }
-
 }
-
 
 
 let botonCompraFinalizada = document.getElementById('comprar');
