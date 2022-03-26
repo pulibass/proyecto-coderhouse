@@ -2881,7 +2881,7 @@ header label {
   .main-cart .carrito .compra .boton-comprar {
     display: flex;
     justify-content: right;
-    width: 50%;
+    width: 40%;
     padding: 5px;
   }
   .main-cart .carrito .compra .boton-comprar button {
