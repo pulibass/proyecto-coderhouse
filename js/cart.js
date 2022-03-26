@@ -430,7 +430,13 @@ function sumaProductos(suma) {
 
 let botonCompraFinalizada = document.getElementById('comprar');
 botonCompraFinalizada.addEventListener('click', () => {
-  alert("Compra finalizada");
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'compra finalizada con exito',
+    showConfirmButton: false,
+    timer: 1500
+  })
   productosAgregados = [];
   contenedorCarro.innerHTML = '';
   suma = 0;
