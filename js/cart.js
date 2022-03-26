@@ -430,13 +430,27 @@ function sumaProductos(suma) {
 
 let botonCompraFinalizada = document.getElementById('comprar');
 botonCompraFinalizada.addEventListener('click', () => {
-  Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: 'compra finalizada con exito',
-    showConfirmButton: false,
-    timer: 1500
-  })
+  if (productosAgregados.length > 0) {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'compra finalizada con exito',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  } else {
+    Swal.fire({
+      title: 'No hay productos en el carro',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
+
+
   productosAgregados = [];
   contenedorCarro.innerHTML = '';
   suma = 0;
