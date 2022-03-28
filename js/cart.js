@@ -263,7 +263,6 @@ function mostrarProductosOferta() {
     if (!productosCard.producto) {
       const contentCard = document.createElement('div');
       contentCard.setAttribute('class', 'tarjeta-contenido');
-      //si esta de oferta
       contentCard.innerHTML = ` 
                 <div class="imagen"><img id="img-producto" src="${productosCard.img}" alt=""></div>
                 <h2 class="title-producto">${productosCard.title}<span>${productosCard.subTitle}</span></h2>
@@ -288,7 +287,6 @@ function mostrarProductosOferta() {
 
         productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         console.log(productosCard);
-        /* alert("Se agrego al carrito"); //Modal  */
         Swal.fire({
           title: 'Producto Agregado al Carrito',
           text: `${productosCard.title}: $${productosCard.price}`,
@@ -330,7 +328,6 @@ function mostrarProductos() {
 
         productosAgregados = JSON.parse(window.localStorage.getItem("array"));
         console.log(productosCard);
-        /* alert("Se agrego al carrito"); //Modal  */
         Swal.fire({
           title: 'Producto Agregado al Carrito',
           text: `${productosCard.title}: $${productosCard.price}`,
@@ -349,9 +346,13 @@ function mostrarCarrito() {
   contenedorCarro.innerHTML = '';
   productosAgregados = JSON.parse(window.localStorage.getItem("array"));
 
+  if (productosAgregados.hasOwnProperty(productos.id)) {
+    productos.cantidad = productosAgregados[productos.id].cantidad + 1;
+  }
 
   for (const carro of productosAgregados) {
-    let añadiendoAlCarro = document.createElement('div');
+    añadiendoAlCarro = document.createElement('div');
+
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
     añadiendoAlCarro.innerHTML =
       `       <div class="producto-carro">
@@ -372,7 +373,7 @@ function mostrarCarrito() {
               <div class="cantidad-carro">
                     <div class="button-cantidad">
                       <div class="btn-number">
-                         <input id="btnSuma" type="number"value="${carro.cantidad}">
+                      <input type="number" value="${carro.cantidad}" min="1" max="10" id="btn">
                       </div>
                       <div class="btn-delete">
                         <button id="btn-delete"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
@@ -383,15 +384,25 @@ function mostrarCarrito() {
     console.log(carro);
     console.log(contenedorCarro);
 
-
     let btnDelete = document.getElementById('btn-delete');
     btnDelete.onclick = () => {
-      contenedorCarro.removeChild(añadiendoAlCarro);
-      productosAgregados.splice(productosAgregados.indexOf(carro), 1);
+
+      for (let i = 0; i < productosAgregados.length; i++) {
+        if (productosAgregados[i].id == carro.id) {
+          productosAgregados.splice(i, 1);
+          window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+          mostrarCarrito();
+        }
+      }
+      sumaProductos();
     }
+
   }
+
   sumaProductos();
 }
+
+
 
 window.onload = (e) => {
   if (e.target.baseURI.includes("oferta")) {
@@ -425,11 +436,14 @@ function sumaProductos(suma) {
   total.innerHTML = `Total $ ${suma}`;
   compra.appendChild(total);
 
+
 }
 
 
 let botonCompraFinalizada = document.getElementById('comprar');
 botonCompraFinalizada.addEventListener('click', () => {
+  productosAgregados = [];
+  contenedorCarro.innerHTML = '';
   if (productosAgregados.length > 0) {
     Swal.fire({
       position: 'top-end',
@@ -455,7 +469,8 @@ botonCompraFinalizada.addEventListener('click', () => {
   contenedorCarro.innerHTML = '';
   suma = 0;
   sumaProductos();
-  localStorage.removeItem("array");
+  window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+
 });
 
 function tituloProductos() {
