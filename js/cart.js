@@ -241,7 +241,8 @@ const productos = [{
     producto: false,
     cantidad: 1
   },
-]
+];
+
 let productosAgregados = [];
 
 function cambioProductos() {
@@ -250,12 +251,13 @@ function cambioProductos() {
   card.innerHTML = '';
   if (selectElement === 'oferta') {
     mostrarProductosOferta()
-
+    tituloOfertas()
   } else {
     mostrarProductos()
+    tituloProductos()
 
   }
-}
+};
 
 function mostrarProductosOferta() {
   const card = document.getElementById('card');
@@ -277,7 +279,6 @@ function mostrarProductosOferta() {
                 </div>
                 `;
 
-
       card.appendChild(contentCard);
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
@@ -298,7 +299,7 @@ function mostrarProductosOferta() {
       };
     }
   }
-}
+};
 
 function mostrarProductos() {
   const card = document.getElementById('card');
@@ -313,7 +314,6 @@ function mostrarProductos() {
                     <p class="precio-producto"> $ ${productosCard.price}</p>
                     <button  id="${productosCard.id}">Agregar</button>
                 </div>
-                
                 <div class="linea">
                 <hr>
 
@@ -323,11 +323,23 @@ function mostrarProductos() {
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
         console.log(productosCard);
-        productosAgregados.push(productosCard);
+
+        productosAgregados = obtenerProductos();
+        let findIndex = productosAgregados.findIndex(e => e.id === productosCard.id)
+
+        if (findIndex >= 0) {
+          let element = productosAgregados[findIndex];
+          element.cantidad++;
+          productosAgregados[findIndex] = element;
+
+        } else {
+
+          productosAgregados.push(productosCard);
+
+          console.log(productosCard);
+        }
         window.localStorage.setItem("array", JSON.stringify(productosAgregados));
 
-        productosAgregados = JSON.parse(window.localStorage.getItem("array"));
-        console.log(productosCard);
         Swal.fire({
           title: 'Producto Agregado al Carrito',
           text: `${productosCard.title}: $${productosCard.price}`,
@@ -337,23 +349,31 @@ function mostrarProductos() {
           imageAlt: 'Custom image',
         })
       };
-    }
+    };
+  };
+};
+
+
+function obtenerProductos() {
+  let productos = JSON.parse(window.localStorage.getItem("array"));
+  if (!productos) {
+    productos = [];
   }
+
+  return productos;
+
 }
+
 
 function mostrarCarrito() {
   const contenedorCarro = document.getElementById('contenedorCarro');
   contenedorCarro.innerHTML = '';
   productosAgregados = JSON.parse(window.localStorage.getItem("array"));
-
-  if (productosAgregados.hasOwnProperty(productos.id)) {
-    productos.cantidad = productosAgregados[productos.id].cantidad + 1;
-  }
-
   for (const carro of productosAgregados) {
     añadiendoAlCarro = document.createElement('div');
 
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
+
     añadiendoAlCarro.innerHTML =
       `       <div class="producto-carro">
                   <div class="imagen-carro">
@@ -372,119 +392,115 @@ function mostrarCarrito() {
               </div> 
               <div class="cantidad-carro">
                     <div class="button-cantidad">
-                      <div class="btn-number">
-                      <input type="number" value="${carro.cantidad}" min="1" max="10" id="btn">
+                      <div id="numberCantidad" class="btn-number">
+                      <p>${carro.cantidad}</p>
                       </div>
                       <div class="btn-delete">
-                        <button id="btn-delete"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
+                        <button id="btn-delete${carro.id}"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
                    </div> 
               </div>`;
+
     contenedorCarro.appendChild(añadiendoAlCarro);
     console.log(carro);
     console.log(contenedorCarro);
 
-    let btnDelete = document.getElementById('btn-delete');
+
+    let idBtn = "btn-delete" + carro.id;
+    let btnDelete = document.getElementById(idBtn);
     btnDelete.onclick = () => {
 
+      productosAgregados = obtenerProductos();
       for (let i = 0; i < productosAgregados.length; i++) {
         if (productosAgregados[i].id == carro.id) {
           productosAgregados.splice(i, 1);
           window.localStorage.setItem("array", JSON.stringify(productosAgregados));
           mostrarCarrito();
-        }
-      }
+        };
+      };
       sumaProductos();
-    }
-
-  }
-
+    };
+  };
   sumaProductos();
-}
-
-
+};
 
 window.onload = (e) => {
   if (e.target.baseURI.includes("oferta")) {
     mostrarProductosOferta();
     tituloOfertas();
 
-
   } else if (e.target.baseURI.includes("productos")) {
     mostrarProductos();
     tituloProductos();
-
-
   } else if (e.target.baseURI.includes("cart")) {
     mostrarCarrito();
   } else {
     alert("No se reconoce esa Url")
-  }
-}
+  };
+};
 
-function sumaProductos(suma) {
-  suma = 0;
+function sumaProductos() {
+  let suma = 0;
   const compra = document.getElementById('compra');
   const total = document.createElement('span');
   total.setAttribute('class', 'total');
   /*   let totales = productosAgregados.reduce((acumulador, item) => acumulador + item.price, 0) */
+
+  productosAgregados = obtenerProductos();
   for (const iterator of productosAgregados) {
-    suma += iterator.price;
-  }
+    suma += iterator.price * iterator.cantidad;
+  };
   total.innerHTML = "";
   compra.innerHTML = "";
   total.innerHTML = `Total $ ${suma}`;
   compra.appendChild(total);
-
-
-}
-
+};
 
 let botonCompraFinalizada = document.getElementById('comprar');
-botonCompraFinalizada.addEventListener('click', () => {
-  productosAgregados = [];
-  contenedorCarro.innerHTML = '';
-  if (productosAgregados.length > 0) {
-    Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      title: 'compra finalizada con exito',
-      showConfirmButton: false,
-      timer: 1500
-    })
-  } else {
-    Swal.fire({
-      title: 'No hay productos en el carro',
-      showClass: {
-        popup: 'animate__animated animate__fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
-  }
 
-
-  productosAgregados = [];
-  contenedorCarro.innerHTML = '';
-  suma = 0;
-  sumaProductos();
-  window.localStorage.setItem("array", JSON.stringify(productosAgregados));
-
-});
+if (botonCompraFinalizada) {
+  botonCompraFinalizada.addEventListener('click', () => {
+    contenedorCarro.innerHTML = '';
+    if (productosAgregados.length > 0) {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'compra finalizada con exito',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      productosAgregados = [];
+      window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+    } else {
+      Swal.fire({
+        title: 'No hay productos en el carro',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+    };
+    productosAgregados = [];
+    contenedorCarro.innerHTML = '';
+    suma = 0;
+    sumaProductos();
+  });
+}
 
 function tituloProductos() {
   const titulosProductos = document.getElementById('titulosProductos');
+  titulosProductos.innerHTML = '';
   const tituloH3 = document.createElement('h3');
   tituloH3.setAttribute('class', 'titulo-producto-oferta');
   tituloH3.innerHTML = "PRODUCTOS";
   titulosProductos.appendChild(tituloH3);
-
-
-}
+};
 
 function tituloOfertas() {
   const titulosProductos = document.getElementById('titulosProductos');
+  titulosProductos.innerHTML = '';
   const tituloH3 = document.createElement('h3');
   tituloH3.setAttribute('class', 'titulo-producto-oferta');
   tituloH3.innerHTML = "OFERTAS";
