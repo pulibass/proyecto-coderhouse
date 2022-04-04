@@ -1473,7 +1473,7 @@ header label {
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-texts {
   margin: 5px auto;
-  width: 30%;
+  width: 40%;
   font-size: 15px;
   font-weight: bold;
 }
@@ -1485,7 +1485,7 @@ header label {
   display: flex;
   flex-direction: column;
   margin: 5px auto;
-  width: 30%;
+  width: 40%;
   font-size: 15px;
   font-weight: bold;
 }
@@ -1493,28 +1493,13 @@ header label {
   height: 30px;
   cursor: pointer;
 }
-.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
-  display: flex;
-  margin: 15px auto;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: auto;
-}
-.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
-  margin: 5px;
-}
-.main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
-  margin: 5px;
-  cursor: pointer;
-}
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
-  width: 80%;
-  font-size: 20px;
+  width: 90%;
+  font-size: 15px;
+  font-weight: bold;
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario textarea {
   height: 200px;
@@ -1533,20 +1518,63 @@ header label {
   display: flex;
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button {
-  background-color: #004e92;
-  border: 2px solid #004e92;
+  background-color: #edde9c;
+  border: hidden;
   text-align: center;
-  font-size: 20px;
-  color: #d5d5d8;
+  font-size: 13px;
+  color: #444444;
   padding: 5px;
   cursor: pointer;
   margin: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .main-contacto .container-contacto .contenedor-contacto .contacto-section form .button button:hover {
   background-color: #018bb9;
   border: 2px solid #018bb9;
   cursor: pointer;
   color: #d5d5d8;
+  text-shadow: none;
+}
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .contenedor-load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .contenedor-load .lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .contenedor-load .lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.main-contacto .container-contacto .contenedor-contacto .contacto-section form .contenedor-load .lds-ripple div div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1624,21 +1652,6 @@ header label {
     width: 100%;
     margin: auto;
   }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
-    display: flex;
-    margin: 15px auto;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 15px;
-    cursor: auto;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
-    margin: 15px;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
-    margin: 5px;
-    cursor: pointer;
-  }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .terminos {
     margin: 5px auto;
     width: 100%;
@@ -1672,27 +1685,11 @@ header label {
     flex-direction: row;
     text-align: center;
   }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
-    width: 100%;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 15px;
-    cursor: auto;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio label {
-    margin: 5px auto;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio input {
-    cursor: pointer;
-    margin: 5px auto;
-  }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-    width: 100%;
+    width: 90%;
     font-size: 20px;
   }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario textarea {
@@ -1802,26 +1799,6 @@ header label {
   }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .inputs-select-radio select {
     height: 30px;
-    cursor: pointer;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio {
-    width: 100%;
-    display: flex;
-    margin: 2px auto;
-    flex-direction: column;
-    font-size: 13px;
-    cursor: auto;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio label {
-    margin: 5px;
-  }
-  .main-contacto .container-contacto .contenedor-contacto .contacto-section form .select-radio .punto-radio input {
-    margin: 5px;
     cursor: pointer;
   }
   .main-contacto .container-contacto .contenedor-contacto .contacto-section form .comentario {

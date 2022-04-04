@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pulibass/proyecto-coderhouse/issues"
   },
-  "homepage": "https://github.com/pulibass/proyecto-coderhouse#readme"
+  "homepage": "https://github.com/pulibass/proyecto-coderhouse#readme",
+  "dependencies": {
+    "@emailjs/browser": "^3.5.0"
+  }
 }

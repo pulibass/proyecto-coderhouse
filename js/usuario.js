@@ -2,7 +2,6 @@ const btnIngresar = document.getElementById("btn-ingresar")
 
 btnIngresar.addEventListener('click', () => {
     pageUser(inputUserName, inputUserPassword);
-    guardoDatos()
 
 });
 let inputUserName;
@@ -28,29 +27,5 @@ function pageUser() {
             footer: 'intente nuevamente'
         })
         swal("no tiene permisos para esta operacion", "error");
-
-    }
-    guardoDatos();
-}
-
-const guardoDatos = () => {
-    localStorage.setItem("inputUserName", JSON.stringify(inputUserName));
-    localStorage.setItem("inputUserPassword", JSON.stringify(inputUserPassword));
-}
-
-const recuperarDatos = () => {
-    JSON.parse(localStorage.getItem("inputUserName"));
-    JSON.parse(localStorage.getItem("inputUserPassword"));
-
-}
-
-const limpiarLocalStorage = () => {
-    const resp = confirm("¿Realmente deseas eliminar los datos del LS?");
-    if (resp) {
-        localStorage.clear();
-        console.log("se han eliminado los datos");
     }
 }
-
-
-recuperarDatos();

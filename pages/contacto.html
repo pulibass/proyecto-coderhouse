@@ -22,11 +22,20 @@
 
     <title>NEUMATICOS PULIBASS - CONTACTO</title>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("kdM1n1KInQEz-W1na");
+        })();
+    </script>
+
 </head>
 
 <body>
 
     <header>
+
 
         <!--LOGO-->
         <a class="logo" href="../index.html"><img src="../img/logos/LOGO.png" alt="lOGO PAGINA"></a>
@@ -151,7 +160,8 @@
 
                     <!--INICIO FORMULARIO CONTACTO-->
 
-                    <form data-aos="fade-right" action="https://formsubmit.co/edu24689@gmail.com" method="POST">
+                    <!--  <form data-aos="fade-right" action="https://formsubmit.co/edu24689@gmail.com" method="POST"> -->
+                    <form onsubmit="cargar(event)" data-aos="fade-right" id="formularioContact">
                         <div class="inputs-texts">
                             <div>
                                 <label for="nombre">Nombre</label>
@@ -164,21 +174,6 @@
                                 <label for="apellido">Apellido</label>
                             </div>
                             <input type="text" id="apellido" name="apellido" required placeholder="ingrese apellido">
-                        </div>
-
-                        <div class="inputs-select-radio">
-                            <label for="ciudad">Ciudad</label>
-                            <select name="ciudad" id="ciudad" required>
-                                <option label="Seleccione" selected></option>
-                                <option value="alta-gracia">Alta Gracia</option>
-                                <option value="cordoba">Córdoba</option>
-                                <option value="cruz-del-eje">Cruz del Eje</option>
-                                <option value="la-calera">La Calera</option>
-                                <option value="rio-cuarto">Rio Cuarto</option>
-                                <option value="villa-allende">Villa Allende</option>
-                                <option value="villa-carlos-paz">Villa Carlos Paz</option>
-                                <option value="villa-maria">Villa Maria</option>
-                            </select>
                         </div>
 
                         <div class="inputs-texts">
@@ -196,6 +191,23 @@
                         </div>
 
                         <div class="inputs-select-radio">
+                            <label for="ciudad">Ciudad</label>
+                            <select name="ciudad" id="ciudad" required>
+                                <option label="Seleccione" selected></option>
+                                <option value="alta-gracia">Alta Gracia</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="cruz-del-eje">Cruz del Eje</option>
+                                <option value="la-calera">La Calera</option>
+                                <option value="rio-cuarto">Rio Cuarto</option>
+                                <option value="villa-allende">Villa Allende</option>
+                                <option value="villa-carlos-paz">Villa Carlos Paz</option>
+                                <option value="villa-maria">Villa Maria</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="inputs-select-radio">
                             <label for="producto">producto</label>
                             <select name="producto" id="producto" required>
                                 <option label="Seleccione" selected></option>
@@ -206,30 +218,10 @@
                             </select>
                         </div>
 
-                        <div class="select-radio">
-                            <label>Desea ser contactado por</label>
-                            <div class="punto-radio">
-                                <input type="radio" name="tel" id="tel" value="tel">
-                                <label for="tel">telefono</label>
-                                <input type="radio" name="whatsapp" id="whatsapp" value="whatsapp">
-                                <label for="whatsapp">whatsapp</label>
-                            </div>
-                        </div>
-
-                        <div class="select-radio">
-                            <label>Es cliente</label>
-                            <div class="punto-radio">
-                                <label for="si">si</label>
-                                <input type="radio" name="si" id="si">
-                                <label for="no">no</label>
-                                <input type="radio" name="no" id="no">
-                            </div>
-                        </div>
-
                         <div class="comentario">
-                            <label for="comentario">Escribe un comentario</label>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10" style="resize: none;"
-                                placeholder="Escriba aqui su comentario" required> </textarea>
+                            <label for="comentario">Dejanos tu pregunta</label>
+                            <textarea name="comentario" id="comentario" placeholder="Escriba aqui su comentario"
+                                cols="30" rows="10" style="resize: none;" required> </textarea>
                         </div>
 
                         <div class="terminos">
@@ -238,8 +230,15 @@
                         </div>
 
                         <div class="button">
-                            <button type="reset">Limpiar Formulario</button>
-                            <button type="submit">Enviar</button>
+                            <button id="reset" type="reset">Limpiar Formulario</button>
+                            <button type="" id="btnSubmit" value="enviar">Enviar</button>
+                        </div>
+
+                        <div class="contenedor-load" id="load">
+                            <div class="lds-ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
 
                         <!--FIN FORMULARIO CONTACTO-->
@@ -339,7 +338,10 @@
         </div>
 
     </footer>
+    <script src="../js/contactoForm.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
