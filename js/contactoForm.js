@@ -11,6 +11,7 @@ function cargar(evt) {
     const email = document.getElementById('email').value;
     const ciudad = document.getElementById('ciudad').value;
     const producto = document.getElementById('producto').value;
+    const comentario = document.getElementById('comentario').value;
     console.log(nombre + apellido + telefono + email + ciudad + producto)
 
     let templateParams = {
@@ -20,6 +21,7 @@ function cargar(evt) {
         email: email,
         ciudad: ciudad,
         producto: producto,
+        comentario: comentario
     };
     console.log(templateParams.ciudad)
 
@@ -47,4 +49,3 @@ function cargar(evt) {
             reset.click();
         });
 }
-
