@@ -4,24 +4,12 @@ async function fetchProductos() {
   let product = await fetch('../js/productos.json');
   return product.json();
 }
-const loadProducts = document.getElementById('loadProducts');
-let loadProductos = loadProducts.style.display = "flex"
 
-function intervalo() {
-  loadProductos = setTimeout(4000)
-}
-
-function clearIntervalo() {
-  loadProductos = loadProducts.style.display = "none"
-
-}
 
 window.onload = async (e) => {
   //loader
-  intervalo();
   let traer = await fetchProductos();
   productos = traer;
-  clearIntervalo();
   //ocultar el loader
 
   if (e.target.baseURI.includes("oferta")) {
