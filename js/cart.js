@@ -189,7 +189,7 @@ function mostrarCarrito() {
           if (cantidadAgregada.cantidad === 0) {
             btnDelete.click();
             Swal.fire({
-              title: 'su carrito esta vacio! Agregue productos..',
+              title: 'Producto eliminado del carro..',
               showClass: {
                 popup: 'animate__animated animate__fadeInDown'
               },
