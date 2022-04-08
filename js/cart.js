@@ -5,17 +5,13 @@ async function fetchProductos() {
   return product.json();
 }
 
-
 window.onload = async (e) => {
-  //loader
   let traer = await fetchProductos();
   productos = traer;
-  //ocultar el loader
 
   if (e.target.baseURI.includes("oferta")) {
     mostrarProductosOferta();
     tituloOfertas();
-
   } else if (e.target.baseURI.includes("productos")) {
     mostrarProductos();
     tituloProductos();
@@ -59,16 +55,12 @@ function mostrarProductosOferta() {
 
                 </div>
                 `;
-
       card.appendChild(contentCard);
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
-        console.log(productosCard);
         productosAgregados.push(productosCard);
         window.localStorage.setItem("array", JSON.stringify(productosAgregados));
-
         productosAgregados = JSON.parse(window.localStorage.getItem("array"));
-        console.log(productosCard);
         Swal.fire({
           title: 'Producto Agregado al Carrito',
           text: `${productosCard.title}: $${productosCard.price}`,
@@ -103,24 +95,16 @@ function mostrarProductos() {
       card.appendChild(contentCard);
       let btnCompra = document.getElementById(`${productosCard.id}`);
       btnCompra.onclick = () => {
-        console.log(productosCard);
-
         productosAgregados = obtenerProductos();
         let findIndex = productosAgregados.findIndex(e => e.id === productosCard.id)
-
         if (findIndex >= 0) {
           let element = productosAgregados[findIndex];
           element.cantidad++;
           productosAgregados[findIndex] = element;
-
         } else {
-
           productosAgregados.push(productosCard);
-
-          console.log(productosCard);
         }
         window.localStorage.setItem("array", JSON.stringify(productosAgregados));
-
         Swal.fire({
           title: 'Producto Agregado al Carrito',
           text: `${productosCard.title}: $${productosCard.price}`,
@@ -134,17 +118,13 @@ function mostrarProductos() {
   };
 };
 
-
 function obtenerProductos() {
   let productos = JSON.parse(window.localStorage.getItem("array"));
   if (!productos) {
     productos = [];
   }
-
   return productos;
-
 }
-
 
 function mostrarCarrito() {
   const contenedorCarro = document.getElementById('contenedorCarro');
@@ -152,9 +132,7 @@ function mostrarCarrito() {
   productosAgregados = JSON.parse(window.localStorage.getItem("array"));
   for (const carro of productosAgregados) {
     añadiendoAlCarro = document.createElement('div');
-
     añadiendoAlCarro.setAttribute('class', 'carro-compras') //creo un div nuevo en el html que va a ser el contenedor del carro
-
     añadiendoAlCarro.innerHTML =
       `       <div class="producto-carro">
                   <div class="imagen-carro">
@@ -173,30 +151,82 @@ function mostrarCarrito() {
               </div> 
               <div class="cantidad-carro">
                     <div class="button-cantidad">
+                     <button type="button" id="menos">-</button>
                       <div id="numberCantidad" class="btn-number">
                       <p>${carro.cantidad}</p>
                       </div>
+                     <button type="button" id="mas">+</button>
                       <div class="btn-delete">
                         <button id="btn-delete${carro.id}"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
                    </div> 
               </div>`;
-
     contenedorCarro.appendChild(añadiendoAlCarro);
-    console.log(carro);
-    console.log(contenedorCarro);
 
+    let btnMenos = document.getElementById('menos');
+    btnMenos.onclick = () => {
+      Swal.fire({
+        title: 'Producto eliminado',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+      for (const cantidadAgregada of productosAgregados) {
+        if (cantidadAgregada.id === carro.id) {
+          cantidadAgregada.cantidad--;
+          if (cantidadAgregada.cantidad === 0) {
+            btnDelete.click();
+            Swal.fire({
+              title: 'su carrito esta vacio! Agregue productos..',
+              showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              }
+            })
+            window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+            mostrarCarrito();
+          }
+        }
+      }
+      window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+      mostrarCarrito();
+    }
+
+    let btnMas = document.getElementById('mas');
+    btnMas.onclick = () => {
+      Swal.fire({
+        title: 'Producto agregado',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+      for (const cantidadAgregada of productosAgregados) {
+        if (cantidadAgregada.id === carro.id) {
+          cantidadAgregada.cantidad++;
+        }
+      };
+      window.localStorage.setItem("array", JSON.stringify(productosAgregados));
+      mostrarCarrito();
+    }
 
     let idBtn = "btn-delete" + carro.id;
     let btnDelete = document.getElementById(idBtn);
     btnDelete.onclick = () => {
-
       productosAgregados = obtenerProductos();
       for (let i = 0; i < productosAgregados.length; i++) {
         if (productosAgregados[i].id == carro.id) {
           productosAgregados.splice(i, 1);
           window.localStorage.setItem("array", JSON.stringify(productosAgregados));
           mostrarCarrito();
+
         };
       };
       sumaProductos();
@@ -205,15 +235,12 @@ function mostrarCarrito() {
   sumaProductos();
 };
 
-
-
 function sumaProductos() {
   let suma = 0;
   const compra = document.getElementById('compra');
   const total = document.createElement('span');
   total.setAttribute('class', 'total');
   /*   let totales = productosAgregados.reduce((acumulador, item) => acumulador + item.price, 0) */
-
   productosAgregados = obtenerProductos();
   for (const iterator of productosAgregados) {
     suma += iterator.price * iterator.cantidad;
@@ -225,7 +252,6 @@ function sumaProductos() {
 };
 
 let botonCompraFinalizada = document.getElementById('comprar');
-
 if (botonCompraFinalizada) {
   botonCompraFinalizada.addEventListener('click', () => {
     contenedorCarro.innerHTML = '';
