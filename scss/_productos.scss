@@ -40,14 +40,11 @@
     .contenedor-productos {
         margin-top: 70px;
 
-
-
         .titulo-producto-oferta {
             color: $secondary-color-5;
             @include titulos-productos-desktop;
 
         }
-
 
         .container-cards {
             width: 100%;
@@ -81,8 +78,6 @@
                     padding-bottom: 15px;
                     box-shadow: 0 0 10px #000;
                     border-radius: 5px;
-
-
 
                     .imagen {
                         display: flex;
@@ -127,8 +122,6 @@
                             font-size: 15px;
                             font-weight: 700;
                             color: #fafafa;
-
-
                         }
 
                         button {
@@ -155,7 +148,7 @@
             }
 
             .tarjeta-contenido:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
                 transition: 1s;
 
 
@@ -200,109 +193,14 @@
                 display: flex;
 
                 .card {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    width: 100%;
-                    max-width: 1700px;
-                    height: 100%;
-                    padding: 1rem;
-                    background: none;
-
 
                     .tarjeta-contenido {
                         width: 50%;
                         max-width: 250px;
                         min-width: 250px;
                         height: 400px;
-                        display: flex;
-                        justify-content: flex-start;
-                        align-content: center;
-                        align-items: center;
-                        flex-direction: column;
                         margin: 15px;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
-                        box-shadow: 0 0 10px #000;
-                        border-radius: 5px;
-
-
-
-                        .imagen {
-                            display: flex;
-                            justify-content: center;
-                            width: 100%;
-                            background-color: #fafafa;
-                            padding: 15px;
-
-                            img {
-                                width: 100%;
-                                height: 200px;
-                            }
-                        }
-
-                        h2 {
-                            background-color: #0c0c0c;
-                            width: 100%;
-                            text-align: center;
-                            font-family: sans-serif;
-                            text-transform: uppercase;
-                            margin-top: 5px;
-                            margin-bottom: 1px;
-                            color: #fafafa;
-                            font-size: 15px;
-                            display: flex;
-                            flex-direction: column;
-                        }
-
-                        .seccion2 {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-
-                            p {
-                                background-color: #080908;
-                                width: 100%;
-                                text-align: center;
-                                font-family: sans-serif;
-                                font-size: 15px;
-                                font-weight: 700;
-                                color: #fafafa;
-
-
-                            }
-
-                            button {
-                                margin-top: 5px;
-                                margin-bottom: 5px;
-                                padding: 10px;
-                                width: 80%;
-                                text-transform: uppercase;
-                                background-color: rgb(36, 8, 216);
-                                color: #fff;
-                                font-weight: 700;
-                                border: hidden;
-                                border-radius: 5px;
-                                cursor: pointer;
-                            }
-
-                            button:hover {
-                                background-color: rgb(50, 25, 209);
-                                color: #fff;
-                            }
-                        }
-
                     }
-                }
-
-                .tarjeta-contenido:hover {
-                    transform: scale(1.1);
-                    transition: 1s;
-
-
                 }
             }
         }
@@ -311,6 +209,7 @@
 
 @media screen and (max-width:500px) {
     .main-productos {
+        width: 100%;
 
         .boton-navegacion {
 
@@ -325,6 +224,30 @@
 
             .titulo-producto-oferta {
                 @include titulos-productos-celular;
+            }
+
+            .container-cards {
+                .card {
+                    width: 100%;
+
+                    .tarjeta-contenido {
+                        width: 50%;
+                        min-width: 220px;
+
+                        .imagen {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            background-color: #fafafa;
+                            padding: 15px;
+
+                            img {
+                                width: 100%;
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
