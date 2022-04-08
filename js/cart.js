@@ -149,13 +149,18 @@ function mostrarCarrito() {
                       <p>$ ${carro.price}</p> 
                  </div> 
               </div> 
+              <div class="precio-carro">
+               <div class="price-carro">
+                      <p>$ ${carro.price * carro.cantidad}</p> 
+                 </div> 
+              </div> 
               <div class="cantidad-carro">
                     <div class="button-cantidad">
-                     <button type="button" id="menos">-</button>
+                     <button type="button" id="menos-${carro.id}">-</button>
                       <div id="numberCantidad" class="btn-number">
                       <p>${carro.cantidad}</p>
                       </div>
-                     <button type="button" id="mas">+</button>
+                     <button type="button" id="mas-${carro.id}">+</button>
                       <div class="btn-delete">
                         <button id="btn-delete${carro.id}"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
@@ -163,7 +168,7 @@ function mostrarCarrito() {
               </div>`;
     contenedorCarro.appendChild(añadiendoAlCarro);
 
-    let btnMenos = document.getElementById('menos');
+    let btnMenos = document.getElementById(`menos-${carro.id}`);
     btnMenos.onclick = () => {
       Swal.fire({
         title: 'Producto eliminado',
@@ -197,7 +202,7 @@ function mostrarCarrito() {
       mostrarCarrito();
     }
 
-    let btnMas = document.getElementById('mas');
+    let btnMas = document.getElementById(`mas-${carro.id}`);
     btnMas.onclick = () => {
       Swal.fire({
         title: 'Producto agregado',
