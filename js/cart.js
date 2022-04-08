@@ -156,16 +156,20 @@ function mostrarCarrito() {
               </div> 
               <div class="cantidad-carro">
                     <div class="button-cantidad">
-                     <button type="button" id="menos-${carro.id}">-</button>
+                    <div class="separacion">
+                       <button type="button" id="menos-${carro.id}">-</button>
                       <div id="numberCantidad" class="btn-number">
                       <p>${carro.cantidad}</p>
                       </div>
                      <button type="button" id="mas-${carro.id}">+</button>
+                      </div>
                       <div class="btn-delete">
                         <button id="btn-delete${carro.id}"><img src="../img/iconos/rectangle-xmark-solid.svg" alt = "" ></button> 
                       </div> 
                    </div> 
-              </div>`;
+              </div>
+              
+              `;
     contenedorCarro.appendChild(añadiendoAlCarro);
 
     let btnMenos = document.getElementById(`menos-${carro.id}`);

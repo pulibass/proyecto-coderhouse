@@ -55,11 +55,13 @@
             justify-content: center;
 
             .titulo-carrito {
-                width: 100%;
+                width: 25%;
                 font-size: 20px;
                 font-family: sans-serif;
                 padding: 5px;
                 text-align: center;
+
+
             }
         }
 
@@ -162,9 +164,18 @@
                         justify-content: center;
                         align-items: center;
 
-                        button {
-                            margin: 5px;
-                            width: 20px;
+                        .separacion {
+                            display: flex;
+                            flex-direction: row;
+
+                            button {
+                                margin: auto;
+                                width: 20px;
+                            }
+
+                            .btn-number {
+                                height: 25px;
+                            }
                         }
 
                         .btn-delete {
@@ -298,10 +309,46 @@
                         .button-cantidad {
                             display: flex;
                             width: 100%;
-                            flex-direction: row;
-                            justify-content: space-around;
+                            flex-direction: column;
+                            justify-content: center;
                             align-items: center;
                             height: 100%;
+
+                            .separacion {
+                                display: flex;
+                                flex-direction: row;
+
+                                button {
+                                    margin: auto;
+                                    width: 20px;
+                                }
+
+                                .btn-number {
+                                    height: 25px;
+                                }
+                            }
+
+
+                            .btn-delete {
+                                width: 50%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                button {
+                                    width: 50px;
+                                    height: 50px;
+                                    background: none;
+                                    border: hidden;
+                                    cursor: pointer;
+
+                                    img {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

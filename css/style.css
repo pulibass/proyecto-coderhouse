@@ -2250,7 +2250,7 @@ header label {
   justify-content: center;
 }
 .main-cart .carrito .titulos .titulo-carrito {
-  width: 100%;
+  width: 25%;
   font-size: 20px;
   font-family: sans-serif;
   padding: 5px;
@@ -2345,9 +2345,16 @@ header label {
   justify-content: center;
   align-items: center;
 }
-.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad button {
-  margin: 5px;
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+  display: flex;
+  flex-direction: row;
+}
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+  margin: auto;
   width: 20px;
+}
+.main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+  height: 25px;
 }
 .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete {
   width: 50%;
@@ -2454,10 +2461,39 @@ header label {
   .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+    margin: auto;
+    width: 20px;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+    height: 25px;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: hidden;
+    cursor: pointer;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .btn-delete button img {
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 500px) {
