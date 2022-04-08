@@ -365,13 +365,42 @@
         .carrito {
             width: 100%;
 
+            .titulos {
+                .titulo-carrito {
+                    font-size: 12px;
+                }
+            }
+
             .contenedor-productos {
                 .carro-compras {
+                    .precio-carro {
+
+
+                        p {
+                            text-align: center;
+                            width: 100%;
+                            height: 100%;
+                            font-size: 12px;
+                            font-family: sans-serif;
+                            font-weight: 700;
+                        }
+                    }
+
                     .cantidad-carro {
                         .button-cantidad {
-                            button {
-                                margin: 5px;
-                                width: 50px;
+
+                            .separacion {
+                                display: flex;
+                                flex-direction: row;
+
+                                button {
+                                    margin: auto;
+                                    width: 15px;
+                                }
+
+                                .btn-number {
+                                    height: 25px;
+                                }
                             }
                         }
                     }

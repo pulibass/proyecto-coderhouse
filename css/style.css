@@ -2504,9 +2504,27 @@ header label {
   .main-cart .carrito {
     width: 100%;
   }
-  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad button {
-    margin: 5px;
-    width: 50px;
+  .main-cart .carrito .titulos .titulo-carrito {
+    font-size: 12px;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .precio-carro p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion button {
+    margin: auto;
+    width: 15px;
+  }
+  .main-cart .carrito .contenedor-productos .carro-compras .cantidad-carro .button-cantidad .separacion .btn-number {
+    height: 25px;
   }
   .main-cart .carrito .compra {
     width: 100%;
